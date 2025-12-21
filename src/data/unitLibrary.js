@@ -126,6 +126,7 @@ const list = {
 			"value":10,
 			"stats":["H1","S32\"","M4\"","Q2","T1-/1-/1-"],
 			"type":"Infantry (Team)",
+			"command":0,
 			"weapons":["6G1 7.76mm Battle Rifle","9GR1 125mm ATGM"],
 			"tags":[ "Assault Dismount"]
 		},
