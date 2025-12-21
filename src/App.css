@@ -1,5 +1,5 @@
 #root {
-  max-width: 2000px;
+  
   margin: 0 auto;
   text-align: center;
 }
@@ -7,17 +7,23 @@
 
 table, th, td {
   text-align: left;
-  min-width: 100px;
+  vertical-align: top;
+}
+.Application{
+  vertical-align: top;
 }
 .UnitLibrary {
   border: 1px solid;
   margin: 10px;
   text-align: center;
+  min-width: 45%;
 }
 .ArmyList{
   border: 1px solid;
+  min-width: 45%;
+  
 }
 .ExtraPadding{
-  margin: 75px;
+  min-width: 100px;
   text-align: center;
 }
