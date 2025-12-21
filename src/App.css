@@ -5,7 +5,19 @@
 }
 
 
-table {
+table, th, td {
+  text-align: left;
+  min-width: 100px;
+}
+.UnitLibrary {
   border: 1px solid;
+  margin: 10px;
+  text-align: center;
+}
+.ArmyList{
+  border: 1px solid;
+}
+.ExtraPadding{
+  margin: 75px;
   text-align: center;
 }

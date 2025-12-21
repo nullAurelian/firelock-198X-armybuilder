@@ -36,9 +36,7 @@ function App() {
       <hr/>     
     </div>
     <div className="Application">
-
-    
-    <table>
+    <table >
       <tbody>
         <tr>
           <th>Unit Library</th>
@@ -46,17 +44,27 @@ function App() {
         </tr>
         <tr>
           <td>
-            <table>
+            <table className="UnitLibrary">
               <tbody>
                 {workingLibrary.map((unit, index) => (
                 <tr key={index}>
                   <td>{unit.name}</td>
+                  <td className="ExtraPadding">{unit.value}</td>
                   <td>
                     <button
                      type="button"
                       onClick={()=>{
-                      alert("Display source JSON here for entry")
-                      }}>
+                        let t = unit.name +"\n\rUnit type: " +unit.type +"\n\rUnit stats: "+unit.stats+ "\n\rUnit traits: \n\r"
+                        for(let i = 0; i < unit.tags.length; i++){
+                          t += unit.tags[i] + "\n\r"
+                        }
+                        t+="\n\rUnit Weapons: \n\r"
+                        for(let i = 0; i < unit.weapons.length; i++){
+                          t += unit.weapons[i] + "\n\r"
+                        }
+                        alert(t)
+                      }}
+                      >
                       Unit Details
                     </button>
                   </td>
@@ -85,12 +93,12 @@ function App() {
             </table>
           </td>
           <td>
-            <table>
+            <table className="ArmyList">
               <tbody>
                 {workingList.map((unit, index) => (
                   <tr key={index}>
                     <td>{unit.name}</td>
-                    <td>{unit.cost}</td>
+                    <td className="ExtraPadding">{unit.cost}</td>
                     <td>
                       <button
                         type="button"
@@ -124,7 +132,7 @@ function App() {
     </div>
     
 
-    <div class="menu">
+    <div className="menu">
       <button 
         type="button"
         onClick={() => {
