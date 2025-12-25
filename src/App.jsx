@@ -34,71 +34,63 @@ function App() {
                 <option value="santagri">Atom Barons of Santagria</option>
             </select>
         </label>
-      </p>
-      <hr/>     
+      </p>    
     </div>
-    <div>
-    <table className="Application">
-      <tbody>
-        <tr>
-          <th>Unit Library</th>
-          <th>Army List</th>
-        </tr>
-        <tr>
-          <td>
-            <table className="UnitLibrary">
-              <tbody>
-                {workingLibrary.map((unit, index) => (
-                <tr key={index}>
-                  <td>{unit.name}</td>
-                  <td className="ExtraPadding">{unit.value}</td>
-                  <td>
-                    <button
-                     type="button"
-                      onClick={()=>{
-                        let t = unit.name +"\n\rUnit type: " +unit.type +"\n\rUnit stats: "+unit.stats+ "\n\rUnit traits: \n\r"
-                        for(let i = 0; i < unit.tags.length; i++){
-                          t += unit.tags[i] + "\n\r"
-                        }
-                        t+="\n\rUnit Weapons: \n\r"
-                        for(let i = 0; i < unit.weapons.length; i++){
-                          t += unit.weapons[i] + "\n\r"
-                        }
-                        alert(t)
-                      }}
-                      >
-                      Unit Details
-                    </button>
-                  </td>
-                  <td>
-                    <button 
-                      type="button" onClick={() => {
-                        //Add only the items necessary to be saved on the army list side + values being tracked
-                        addUnit([
-                          ...workingList,
-                          {
-                            "id":{count},
-                            "name":unit.name,
-                            "cost":unit.value,
-                            "tags":unit.tags,
-                            "command":unit.command
-                          }
-                        ])
-                        count++
-                        //Update tracked values on unit add to army list
-                        updateListValue(workingValue+unit.value)
-                        updateCommandGen(workingCommandGen+unit.command)
-                        if(unit.tags.includes("TACOM")){
-                          updateTacCount(workingTacCount+1)
-                        }
-                      }}>Add + </button>
-                  </td>
-                </tr>
-                ))}
-              </tbody>
-            </table>
-          </td>
-          <td className="List">
+    <div className="Floating">
+      <table className="UnitLibrary">
+        <tbody>
+          {workingLibrary.map((unit, index) => (
+            <tr key={index}>
+              <td>{unit.name}</td>
+              <td className="ExtraPadding">{unit.value}</td>
+              <td>
+                <button
+                  type="button"
+                  onClick={()=>{
+                    let t = unit.name +"\n\rUnit type: " +unit.type +"\n\rUnit stats: "+unit.stats+ "\n\rUnit traits: \n\r"
+                    for(let i = 0; i < unit.tags.length; i++){
+                      t += unit.tags[i] + "\n\r"
+                    }
+                    t+="\n\rUnit Weapons: \n\r"
+                    for(let i = 0; i < unit.weapons.length; i++){
+                      t += unit.weapons[i] + "\n\r"
+                    }
+                    alert(t)
+                    }}
+                  >
+                    Unit Details
+                  </button>
+                </td>
+              <td>
+                <button 
+                  type="button" onClick={() => {
+                    //Add only the items necessary to be saved on the army list side + values being tracked
+                    addUnit([
+                      ...workingList,
+                      {
+                        "id":{count},
+                        "name":unit.name,
+                        "cost":unit.value,
+                        "tags":unit.tags,
+                        "command":unit.command
+                      }
+                    ])
+                      count++
+                      //Update tracked values on unit add to army list
+                      updateListValue(workingValue+unit.value)
+                      updateCommandGen(workingCommandGen+unit.command)
+                      if(unit.tags.includes("TACOM")){
+                        updateTacCount(workingTacCount+1)
+                      }
+                    }}>Add + </button>
+                </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <div className="Floating">      
+          
             <p>
               List Value: {workingValue}
             </p>
@@ -137,10 +129,8 @@ function App() {
             </table>
             
             
-          </td>
-        </tr>
-      </tbody>
-    </table>
+          
+    
     </div>
     
     

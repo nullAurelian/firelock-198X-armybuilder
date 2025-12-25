@@ -3,8 +3,15 @@
   margin: 0 auto;
   text-align: center;
 }
-
-
+div{
+  column-count: 2;
+}
+.Floating{
+  overflow:auto;
+  height: 500px;
+  width: 90%;
+}
+/*
 table, th, td {
   text-align: left;
   vertical-align: top;
@@ -12,18 +19,21 @@ table, th, td {
 .Application{
   vertical-align: top;
 }
+
 .UnitLibrary {
   border: 1px solid;
   margin: 10px;
   text-align: center;
-  min-width: 45%;
+  min-width: 95%;
+
 }
 .ArmyList{
   border: 1px solid;
-  min-width: 45%;
+  min-width: 95%;
   
 }
 .ExtraPadding{
   min-width: 100px;
   text-align: center;
 }
+*/
