@@ -30,21 +30,22 @@ table,td, th {
 }
 .UnitName{
   text-align:left;
-  min-width: 50%;
+  min-width: 275px;
+  max-width: 55%;
 }
 .UnitPointValue{
   width: 10%;
   text-align: center;
 }
 tr.federal{
-  background-color: rgba(69, 105, 151, 0.5);
+  background-color: rgba(81,114,183,0.5);
 }
 tr.lupar{
-  background-color:rgba(105, 105, 105, 0.5)
+  background-color:rgba(115,118,87,0.5)
 }
 tr.rygolic{
-  background-color: rgba(138, 39, 39, 0.5);
+  background-color: rgba(134,54,54,0.5);
 }
 tr.santagri{
-  background-color: rgba(26, 148, 26, 0.5);
+  background-color: rgba(57,125,42,0.5);
 }
