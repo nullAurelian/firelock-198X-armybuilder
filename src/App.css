@@ -30,7 +30,7 @@ table,td, th {
 }
 .UnitName{
   text-align:left;
-  min-width: 275px;
+  min-width: 300px;
   max-width: 55%;
 }
 .UnitPointValue{
