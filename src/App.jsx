@@ -4,91 +4,149 @@ import library from './data/unitLibrary.js'
 
 function App() {
   let count = 0;
+  
   let localLib  = library.units
   //Values being tracked: Faction filter/unit library, army list, sum of unit point values, number of TACOMs and Command Points generated per round
-  const [faction, setFaction] = useState("any")
   const [workingList, addUnit] = useState([])
-  const [workingLibrary, filterUnits] = useState(library.units)
+  const [workingLibrary, filterUnits] = useState(localLib)
   const [workingValue, updateListValue] = useState(0)
   const [workingTacCount, updateTacCount] = useState(0)
   const [workingCommandGen, updateCommandGen] = useState(0)
-
   return (
     <>
     <div className="LibraryFilters">
       <p>
-        <label>
-            <b>Faction: </b>
-            <select name="faction" value={faction} onChange={e => {
-              filterUnits(localLib)
-              setFaction(e.target.value)
-              console.log("Current faction: "+e.target.value)
-              if(e.target.value !== "any"){
-                filterUnits(localLib.filter(a => a.faction.includes(e.target.value)))
-              }
-            }}>
-                <option value="any">All Units</option>
-                <option value="federal">Intermarine Federation</option>
-                <option value="lupar">Kingdom of the Ebon Forest</option>
-                <option value="rygolic">New Rygolic Host</option>
-                <option value="santagri">Atom Barons of Santagria</option>
-            </select>
-        </label>
-      </p>    
+      <input type="checkbox" id="typeFederal" defaultChecked={true} onChange={() => {
+        filterUnits(localLib)
+        filterUnits(build_list_filter(localLib))
+        
+      }}/>Intermarine Federation
+      <input type="checkbox" id="typeLupar" defaultChecked={true} onChange={() => {
+        filterUnits(localLib)
+        filterUnits(build_list_filter(localLib))
+      }}/>Kingdom of the Ebon Forest
+      <input type="checkbox" id="typeRygolic" defaultChecked={true} onChange={() => {
+        filterUnits(localLib)
+        filterUnits(build_list_filter(localLib))
+      }}/>New Rygolic Host
+      <input type="checkbox" id="typeSantagri" defaultChecked={true} onChange={() => {
+        filterUnits(localLib)
+        filterUnits(build_list_filter(localLib))
+      }}/>Atom Baronies of Santagria
+      </p>
+      <p>
+      <input type="checkbox" id="typeInfantry" defaultChecked={true} onChange={() => {
+        filterUnits(localLib)
+        filterUnits(build_list_filter(localLib))
+      }}/>Infantry
+      <input type="checkbox" id="typeVehicle" defaultChecked={true} onChange={() => {
+        filterUnits(localLib)
+        filterUnits(build_list_filter(localLib))
+      }}/>Vehicle
+      <input type="checkbox" id="typeHelicopter" defaultChecked={true} onChange={() => {
+        filterUnits(localLib)
+        filterUnits(build_list_filter(localLib))
+      }}/>Helicopter
+      <input type="checkbox" id="typeAircraft"  defaultChecked={true} onChange={() => {
+        filterUnits(localLib)
+        filterUnits(build_list_filter(localLib))
+      }}/>Aircraft
+      </p>
+      <p>
+      <input type="checkbox" id="isTACOM" defaultChecked={true} onChange={() => {
+        filterUnits(localLib)
+        filterUnits(build_list_filter(localLib))
+      }}/>TACOM
+      <input type="checkbox" id="canEmbark" defaultChecked={true} onChange={() => {
+        filterUnits(localLib)
+        filterUnits(build_list_filter(localLib))
+      }}/>Personnel Carrier
+      <input type="checkbox" id="canTow" defaultChecked={true} onChange={() => {
+        filterUnits(localLib)
+        filterUnits(build_list_filter(localLib))
+      }}/>Tow
+      <input type="checkbox" id="canResupply" defaultChecked={true} onChange={() => {
+        filterUnits(localLib)
+        filterUnits(build_list_filter(localLib))
+      }}/>Resupply
+      <input type="checkbox" id="canGoOnWater" defaultChecked={true} onChange={() => {
+        filterUnits(localLib)
+        filterUnits(build_list_filter(localLib))
+      }}/>Amphibious/Watercraft
+      <input type="checkbox" id="canParadrop" defaultChecked={true} onChange={() => {
+        filterUnits(localLib)
+        filterUnits(build_list_filter(localLib))
+      }}/>Paradrop/Infiltrator
+      
+      </p>
+
     </div>
       <table className="MainBox">
-        <tr>
-          <th>Unit Library</th>
-          <th>Army List</th>
-        </tr>
-        <tr>
-          <td className="TableHolder">
-            <div className="FloatingTable">
-              <table>
-                <tbody>
-                  {workingLibrary.map((unit, index) => (
-                    <tr key={index} className={unit.faction}>
-                      <td className="UnitName">{unit.name}</td>
-                      <td className="UnitPointCost">{unit.value}</td>
-                      <td>
-                        <button
-                          type="button"
-                          onClick={()=>{
-                            let t = unit.name +"\n\rUnit type: " +unit.type +"\n\rUnit stats: "+unit.stats+ "\n\rUnit traits: \n\r"
-                            for(let i = 0; i < unit.tags.length; i++){
-                              t += unit.tags[i] + "\n\r"
-                            }
-                            t+="\n\rUnit Weapons: \n\r"
-                            for(let i = 0; i < unit.weapons.length; i++){
-                              t += unit.weapons[i] + "\n\r"
-                            }
-                            alert(t)
-                          }}
-                        >Unit Details</button>
-                      </td>
-                      <td>
-                        <button 
-                          type="button" onClick={() => {
-                          //Add only the items necessary to be saved on the army list side + values being tracked
-                          addUnit([
-                            ...workingList,
-                            {
-                              "id":{count},
-                              "name":unit.name,
-                              "cost":unit.value,
-                              "tags":unit.tags,
-                              "command":unit.command
-                            }])
-                          count++
-                          //Update tracked values on unit add to army list
-                          updateListValue(workingValue+unit.value)
-                          updateCommandGen(workingCommandGen+unit.command)
-                          if(unit.tags.includes("TACOM")){
-                            updateTacCount(workingTacCount+1)
-                          }}}>Add + </button>
-                      </td>
-                    </tr>
-                  ))}
+        <tbody>
+          <tr>
+            <th>Unit Library</th>
+            <th>Army List</th>
+          </tr>
+          <tr>
+            <td className="TableHolder">
+              <div className="FloatingTable">
+                <table>
+                  <tbody>
+                    {workingLibrary.map((unit, index) => (
+                      <tr key={index} className={unit.faction}>
+                        <td className="UnitName">{unit.name}</td>
+                        <td className="UnitPointCost">{unit.value}</td>
+                        <td>
+                          <button
+                            type="button"
+                            onClick={()=>{
+                              let t = unit.name +"\n\rUnit type: " +unit.type.super +"("+unit.type.sub+")"+"\n\rUnit stats: "+unit.stats+ "\n\rUnit traits: \n\r"
+                              for(let i = 0; i < unit.tags.length; i++){
+                                let e = "(" + unit.tags[i].params +")"
+                                if(e==="()"){e=""}
+                                console.log(unit.tags[i].rule)
+                                console.log(e)
+                                t += unit.tags[i].rule +e + ", "
+                              }
+                              t+="\n\rUnit Weapons: \n\r"
+                              for(let i = 0; i < unit.weapons.length; i++){
+                                let ammo = " Ammo: "+ unit.weapons[i].weaponAmmo
+                                if(ammo===" Ammo: "){ammo=""}
+                                let w = unit.weapons[i].weaponName + ammo + "\r\n\t"
+                                for(let a = 0; a < unit.weapons[i].attacks.length; a++){
+                                  let attk = unit.weapons[i].attacks[a]
+                                  w = w.concat(attk.attackName," ",attk.attackRange," ",attk.attackAccuracy," ",attk.attackStrength," ",attk.attackDice, "\r\n\t\t",attk.attackTags,"\r\n\t")
+                                }
+                                t += w + "\n\r"
+                              }
+                              console.log(t)
+                              alert(t)
+                            }}
+                          >Unit Details</button>
+                        </td>
+                        <td>
+                          <button 
+                            type="button" onClick={() => {
+                            //Add only the items necessary to be saved on the army list side + values being tracked
+                            addUnit([
+                              ...workingList,
+                              {
+                                "id":{count},
+                                "name":unit.name,
+                                "cost":unit.value,
+                                "tags":unit.tags,
+                                "command":unit.command
+                              }])
+                            count++
+                            //Update tracked values on unit add to army list
+                            updateListValue(workingValue+unit.value)
+                            updateCommandGen(workingCommandGen+unit.command)
+                            if(unit.tags.some(tag => tag.rule == "TACOM") && unit.tags.some(tag => tag.params != "Additional")){
+                              updateTacCount(workingTacCount+1)
+                            }}}>Add + </button>
+                        </td>
+                      </tr>
+                    ))}
                 </tbody>
               </table>
             </div>
@@ -108,7 +166,7 @@ function App() {
                           //update tracked values on unit being removed from army list
                           updateListValue(workingValue-unit.cost)
                           updateCommandGen(workingCommandGen-unit.command)
-                          if(unit.tags.includes("TACOM")){
+                          if(unit.tags.some(tag => tag.rule == "TACOM")){
                             updateTacCount(workingTacCount-1)
                           }
                         }}>Remove Unit</button>
@@ -119,6 +177,7 @@ function App() {
             </div>
           </td>
         </tr>
+        </tbody>
       </table>
 
     <div className="ArmyMenu">
@@ -128,7 +187,6 @@ function App() {
       <button 
         type="button"
         onClick={() => {
-          alert("Army list has been reset!")
           //Reset Army list related tracked data
           addUnit([])
           updateListValue(0)
@@ -151,18 +209,70 @@ function App() {
 
 function handle_export(armylist) { //Trigger copy list content to clipboard
   let armyString = ""
+  let armyCost = 0
   console.log(armylist)
   //Format everything in the current army list to a simple text of name only
   for (const u of armylist){
     armyString = armyString.concat(" \r\n ",u.name)
+    armyCost += u.cost
   }
   console.log(armyString)
-  navigator.clipboard.writeText(armyString).then(
+  navigator.clipboard.writeText(armyString.concat("\r\nTotal Point Value:",armyCost)).then(
     () => {
       console.log("Copied list to clipboard!")
       alert("Copied contents to clipboard!")
     },
     () => {console.log("Failed to copy list to clipboard!")}
   )
+}
+
+function build_list_filter(library){
+  let temp = library
+  console.log(temp.length)
+  if(!(document.getElementById("typeFederal").checked)){
+    temp = (temp.filter(units => !units.faction.includes("federal")))
+  }
+  if(!(document.getElementById("typeLupar").checked)){
+    temp = (temp.filter(units => !units.faction.includes("lupar")))
+  }
+  if(!(document.getElementById("typeRygolic").checked)){
+    temp = (temp.filter(units => !units.faction.includes("rygolic")))
+  }
+  if(!(document.getElementById("typeSantagri").checked)){
+    temp = (temp.filter(units => !units.faction.includes("santagri")))
+  }
+  if(!(document.getElementById("typeInfantry").checked)){
+    temp = (temp.filter(units => !units.type.super.includes("Infantry")))
+  }
+  if(!(document.getElementById("typeVehicle").checked)){
+    temp = temp.filter(units => !units.type.super.includes("Vehicle"))
+  }
+  if(!(document.getElementById("typeHelicopter").checked)){
+    temp = temp.filter(units => !units.type.super.includes("Helicopter"))
+  }
+  if(!(document.getElementById("typeAircraft").checked)){
+    temp = temp.filter(units => !units.type.super.includes("Aircraft"))
+  }
+  if(!(document.getElementById("isTACOM").checked)){
+    temp = temp.filter(units => !units.tags.some(tag => tag.rule == "TACOM"))
+  }
+  if(!(document.getElementById("canGoOnWater").checked)){
+    temp = temp.filter(units => !units.type.sub.includes("Watercraft"))
+    temp = temp.filter(units => !units.tags.some(tag => tag.rule == "Amphibious"))
+  }
+  if(!(document.getElementById("canParadrop").checked)){
+    temp = temp.filter(units => !units.tags.some(tag => tag.rule == "Paradrop"))
+    temp = temp.filter(units => !units.tags.some(tag => tag.rule == "Infiltrator"))
+  }
+  if(!(document.getElementById("canEmbark").checked)){
+    temp = temp.filter(units => !units.tags.some(tag => tag.rule == "PC"))
+  }
+  if(!(document.getElementById("canTow").checked)){
+    temp = temp.filter(units => !units.tags.some(tag => tag.rule == "Tow"))
+  }
+  if(!(document.getElementById("canResupply").checked)){
+    temp = temp.filter(units => !units.tags.some(tag => tag.rule == "Resupply"))
+  }
+  return temp
 }
 export default App
