@@ -368,7 +368,8 @@ const list = {
                             "attackTags": [
                                 "Light Indirect(1)",
                                 "No CC",
-                                "Smoke (3\")"
+                                "Smoke (3\")",
+								"Turret"
                             ]
                         }
                     ]
@@ -428,58 +429,64 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D4",
+                            "attackAccuracy": "A4+/6+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Turret"
                             ]
                         }
                     ]
                 },
                 {
-                    "weaponName": "2K56 76mm Gun (76mmHVAP, 76mm HE-Frag)",
-                    "weaponAmmo": "",
+                    "weaponName": "2K56 76mm Gun",
+                    "weaponAmmo": "3",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackName": "76mm HVAP",
+                            "attackTargets": "Vec",
+                            "attackRange": "R32\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/5+",
+                            "attackStrength": "S8/15",
                             "attackTags": [
-                                ""
+                                "No CC (Inf.)",
+								"Turret"
                             ]
                         },
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackName": "76mm HE-Frag",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R32\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/5+",
+                            "attackStrength": "S3/3",
                             "attackTags": [
-                                ""
+                                "No CC (Inf.)",
+								"Turret",
+								"Ignore Cover (1)"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "902V 81mm Smoke Launchers",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "1",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R6\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Light Indirect(1)",
+                                "No CC",
+                                "Smoke (3\")",
+								"Turret"
                             ]
                         }
                     ]
@@ -543,13 +550,13 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/5+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Multi-Gun"
                             ]
                         }
                     ]
@@ -560,47 +567,66 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R24\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/6+",
+                            "attackStrength": "S3/4",
                             "attackTags": [
-                                ""
+                                "Turret"
                             ]
                         }
                     ]
                 },
                 {
-                    "weaponName": "2K41 100mm Gun (100mm APDS, 100mm HE-Frag)",
-                    "weaponAmmo": "",
+                    "weaponName": "2K41 100mm Gun",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackName": "100mm APDS",
+                            "attackTargets": "Vec",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S12/18",
                             "attackTags": [
-                                ""
+                                "No CC (Inf.)",
+								"Thermal Sights",
+								"Turret"
+                            ]
+                        },
+						{
+                            "attackName": "100mm HE-Frag",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S4/4",
+                            "attackTags": [
+								"No CC (Inf.)",
+								"Thermal Sights",
+								"Turret",
+                                "Ignore Cover (1)"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "902V 81mm Smoke Launchers",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "1",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R6\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Light Indirect(1)",
+                                "No CC",
+                                "Smoke (3\")",
+								"Turret"
                             ]
                         }
                     ]
@@ -651,52 +677,66 @@ const list = {
             "command": 4,
             "weapons": [
                 {
-                    "weaponName": "6GZ1 14.5mm HMG",
+                    "weaponName": "6GZ1 14,5mm HMG",
                     "weaponAmmo": "",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R24\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/6+",
+                            "attackStrength": "S3/4",
                             "attackTags": [
-                                ""
+                                "Turret"
                             ]
                         }
                     ]
                 },
                 {
-                    "weaponName": "2K43 115mm Gun (115mm Sabot, 115mm HEAT)",
-                    "weaponAmmo": "",
+                    "weaponName": "2K43 115mm Gun",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackName": "115mm Sabot",
+                            "attackTargets": "Vec",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A2+/3+",
+                            "attackStrength": "S14/21",
                             "attackTags": [
-                                ""
+                                "No CC (Inf.)", "Thermal Sights", "Turret"
+                            ]
+                        },
+						{
+                            "attackName": "115mm HEAT",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A2+/3+",
+                            "attackStrength": "S11/2",
+                            "attackTags": [
+                                "Shaped Charge"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "902V 81mm Smoke Launchers",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "1",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R6\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Light Indirect(1)",
+                                "No CC",
+                                "Smoke (3\")",
+								"Turret"
                             ]
                         }
                     ]
@@ -747,52 +787,78 @@ const list = {
             "command": 4,
             "weapons": [
                 {
-                    "weaponName": "6GZ1 14.5mm HMG",
+                    "weaponName": "6GZ1 14,5mm HMG",
                     "weaponAmmo": "",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R24\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/6+",
+                            "attackStrength": "S3/4",
                             "attackTags": [
-                                ""
+								"Thermal Sights",
+                                "Turret"
                             ]
                         }
                     ]
                 },
                 {
-                    "weaponName": "2K81 152mm Gun-Launcher (152mm Gun-Launched ATGM, 152mm Gun-Launched Thermobaric, 152mm Tandem HEAT)",
-                    "weaponAmmo": "",
+                    "weaponName": "2K81 152mm Gun-Launcher",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackName": "152mm Gun-Launched ATGM",
+                            "attackTargets": "Vec",
+                            "attackRange": "R12-60\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A2+/xx",
+                            "attackStrength": "S18/3",
                             "attackTags": [
-                                ""
+                                "No CC (Inf.)","Thermal Sights","Turret","Guided Missile (1)","Shaped Charge"
+                            ]
+                        },
+						{
+                            "attackName": "152mm Gun-Launched Thermobaric",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R12-60\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/xx",
+                            "attackStrength": "S3/3",
+                            "attackTags": [
+                                "No CC (Inf.)","Thermal Sights","Turret","Guided Missile (1)","Ignore Cover (2)", "Radius (2\")","Rear Attack"
+                            ]
+                        },
+						{
+                            "attackName": "152mm Tandem Heat",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A2+/3+",
+                            "attackStrength": "S18/3",
+                            "attackTags": [
+                                "No CC (Inf.)","Thermal Sights","Turret","Shaped Charge"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "902V 81mm Smoke Launchers",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "1",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R6\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Light Indirect(1)",
+                                "No CC",
+                                "Smoke (3\")",
+								"Turret"
                             ]
                         }
                     ]
@@ -847,30 +913,30 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A5+/5+",
+                            "attackStrength": "S1-/1",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "6L4 73mm RPG",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "3",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A5+/6+",
+                            "attackStrength": "S6/1",
                             "attackTags": [
-                                ""
+                                "Shaped Charge","Small Arm"
                             ]
                         }
                     ]
@@ -913,13 +979,13 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
@@ -930,30 +996,30 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/xx",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Defensive CC"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "6L1 85mm RPG",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "3",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/6+",
+                            "attackStrength": "S8/1+",
                             "attackTags": [
-                                ""
+                                "Shaped Charge","Small Arm"
                             ]
                         }
                     ]
@@ -991,35 +1057,36 @@ const list = {
             },
             "weapons": [
                 {
-                    "weaponName": "",
+                    "weaponName": "6G1A 7.76mm Automatic Rifle",
                     "weaponAmmo": "",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
                 },
                 {
-                    "weaponName": "",
-                    "weaponAmmo": "",
+                    "weaponName": "6L3 10mm HEDP Grenade Launcher",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A*",
+                            "attackStrength": "S5/1+",
                             "attackTags": [
-                                ""
+                                "Shaped Charge",
+                                "Underbarrel (6G1A)"
                             ]
                         }
                     ]
@@ -1064,36 +1131,47 @@ const list = {
                 ]
             },
             "weapons": [
-                {
+               {
                     "weaponName": "6G1 7.76mm Battle Rifle",
                     "weaponAmmo": "",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
                 },
                 {
-                    "weaponName": "6L2 60mm Knee Mortar (60mm Frag, 60mm Smoke)",
-                    "weaponAmmo": "",
+                    "weaponName": "6L2 60mm Knee Mortar",
+                    "weaponAmmo": "6",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackName": "60mm Frag",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R16\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/xx",
+                            "attackStrength": "S1+/1+",
+                            "attackTags": [
+                                "Light Indirect (1)","No CC","Air-Filling"
+                            ]
+                        },
+						{
+                            "attackName": "60mm Smoke",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R16\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/xx",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Smoke (3\")"
                             ]
                         }
                     ]
@@ -1136,30 +1214,30 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "9GR1 125mm ATGM",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Vec",
+                            "attackRange": "R12-60\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S14/2",
                             "attackTags": [
-                                ""
+                                "Guided Missile (2)","MCLOS","Shaped Charge"
                             ]
                         }
                     ]
@@ -1196,36 +1274,36 @@ const list = {
                 ]
             },
             "weapons": [
-                {
+               {
                     "weaponName": "6G1 7.76mm Battle Rifle",
                     "weaponAmmo": "",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "9GR2 85mm MANPADS",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Air",
+                            "attackRange": "R60\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/xx",
+                            "attackStrength": "S5/5",
                             "attackTags": [
-                                ""
+                                "Air-Filling","Guided Missle (2)","Homing","Small Arm"
                             ]
                         }
                     ]
@@ -1268,52 +1346,52 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
                 },
                 {
-                    "weaponName": "6L5 73mm Recoilless Rifle (73mm HEAT, 73mm Incendiary, 73mm Smoke)",
-                    "weaponAmmo": "",
+                    "weaponName": "6L5 73mm Recoilless Rifle",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackName": "73mm HEAT",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R24\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/xx",
+                            "attackStrength": "S8/1+",
                             "attackTags": [
-                                ""
+                                "No CC (Inf.)","Shaped Charge"
                             ]
                         },
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackName": "73mm Incendiary",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R24\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/xx",
+                            "attackStrength": "S1+/1+",
                             "attackTags": [
-                                ""
+                                "Ignore Cover (2)","No CC (Inf.)","Rear Attack"
                             ]
                         },
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackName": "73mm Smoke",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R24\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/xx",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "No CC","Smoke (3\")"
                             ]
                         }
                     ]
@@ -1356,30 +1434,41 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
                 },
                 {
-                    "weaponName": "6L6 57mm Light Recoilless Rifle (57mm HEAT, 57mm Canister)",
-                    "weaponAmmo": "",
+                    "weaponName": "6L6 57mm Light Recoilless Rifle",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackName": "57mm HEAT",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R24\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/5+",
+                            "attackStrength": "S6/1",
                             "attackTags": [
-                                ""
+                                "Small Arm","Shaped Charge"
+                            ]
+                        }, 
+						{
+                            "attackName": "57mm Canister",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R12\"",
+                            "attackDice": "D3",
+                            "attackAccuracy": "A3+/5+",
+                            "attackStrength": "S1/1",
+                            "attackTags": [
+                                "Small Arm"
                             ]
                         }
                     ]
@@ -1424,19 +1513,19 @@ const list = {
                 ]
             },
             "weapons": [
-                {
+               {
                     "weaponName": "6G1 7.76mm Battle Rifle",
                     "weaponAmmo": "",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
@@ -1447,13 +1536,13 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R0\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A1+/1+",
+                            "attackStrength": "S1/1",
                             "attackTags": [
-                                ""
+                                "Melee"
                             ]
                         }
                     ]
@@ -1500,13 +1589,13 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R16\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A2+/xx",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Discreet","No CC","Scoped","Small Arm","Thermal Sight"
                             ]
                         }
                     ]
@@ -1517,13 +1606,13 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A5+/5+",
+                            "attackStrength": "S1-/1",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
@@ -1534,13 +1623,13 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "All",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/xx",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Designator","Discreet"
                             ]
                         }
                     ]
@@ -1591,13 +1680,13 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
@@ -1648,30 +1737,31 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Turret"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "2K15 40mm HE Grenade Launcher",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R14\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/5+",
+                            "attackStrength": "S1+/2",
                             "attackTags": [
-                                ""
+                                "Ignore Cover (1)",
+                                "Turret"
                             ]
                         }
                     ]
@@ -1722,64 +1812,78 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Turret"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "2K28 73mm Low-Pressure Gun (73mm HEAT, 73mm HE-Frag)",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackName": "73mm HEAT",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R22\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S8/1+",
                             "attackTags": [
-                                ""
+                                "No CC (Inf.)","Turret","Shaped Charge"
+                            ]
+                        },
+						{
+                            "attackName": "73mm HE-Frag",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R22\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S3/3",
+                            "attackTags": [
+                                "No CC (Inf.)","Turret","Ignore Cover (1)"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "9GR1 125mm ATGM",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Vec",
+                            "attackRange": "R12-60\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S14/2",
                             "attackTags": [
-                                ""
+                                "Guided Missile (2)","MCLOS","Shaped Charge","Turret"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "902V 81mm Smoke Launchers",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "1",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R6\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Light Indirect(1)",
+                                "No CC",
+                                "Smoke (3\")",
+								"Turret"
                             ]
                         }
                     ]
@@ -1834,64 +1938,67 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Turret"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "2A34 23mm Autocannon",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R32\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S4/6",
                             "attackTags": [
-                                ""
+                                "No CC (Inf.)","Turret"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "9GR1 125mm ATGM",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Vec",
+                            "attackRange": "R12-60\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S14/2",
                             "attackTags": [
-                                ""
+                                "Guided Missile (2)","MCLOS","Shaped Charge","Turret"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "902V 81mm Smoke Launchers",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "1",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R6\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Light Indirect(1)",
+                                "No CC",
+                                "Smoke (3\")",
+								"Turret"
                             ]
                         }
                     ]
@@ -2034,58 +2141,61 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Turret"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "2K81 152mm Gun-Launcher",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
                             "attackName": "152mm HEAT",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R32\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/5+",
+                            "attackStrength": "S14/2",
                             "attackTags": [
-                                ""
+                                "No CC (Inf.)", "Shaped Charge"
                             ]
                         },
                         {
                             "attackName": "152mm Beehive",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R16\"",
+                            "attackDice": "D5",
+                            "attackAccuracy": "A4+/5+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Defensive CC (Inf.)"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "902V 81mm Smoke Launchers",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "1",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R6\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Light Indirect(1)",
+                                "No CC",
+                                "Smoke (3\")",
+								"Turret"
                             ]
                         }
                     ]
@@ -2136,58 +2246,64 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D4",
+                            "attackAccuracy": "A4+/6+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Turret"
                             ]
                         }
                     ]
                 },
                 {
-                    "weaponName": "2K56 76mm Gun (76mmHVAP, 76mm HE-Frag)",
-                    "weaponAmmo": "",
+                    "weaponName": "2K56 76mm Gun",
+                    "weaponAmmo": "3",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackName": "76mm HVAP",
+                            "attackTargets": "Vec",
+                            "attackRange": "R32\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/5+",
+                            "attackStrength": "S8/15",
                             "attackTags": [
-                                ""
+                                "No CC (Inf.)",
+								"Turret"
                             ]
                         },
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackName": "76mm HE-Frag",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R32\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/5+",
+                            "attackStrength": "S3/3",
                             "attackTags": [
-                                ""
+                                "No CC (Inf.)",
+								"Turret",
+								"Ignore Cover (1)"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "902V 81mm Smoke Launchers",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "1",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R6\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Light Indirect(1)",
+                                "No CC",
+                                "Smoke (3\")",
+								"Turret"
                             ]
                         }
                     ]
@@ -2242,11 +2358,11 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
                                 ""
                             ]
@@ -2259,47 +2375,66 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R24\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/6+",
+                            "attackStrength": "S3/4",
                             "attackTags": [
-                                ""
+                                "Turret"
                             ]
                         }
                     ]
                 },
                 {
-                    "weaponName": "2K41 100mm Gun (100mm APDS, 100mm HE-Frag)",
-                    "weaponAmmo": "",
+                    "weaponName": "2K41 100mm Gun",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackName": "100mm APDS",
+                            "attackTargets": "Vec",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S12/18",
                             "attackTags": [
-                                ""
+                                "No CC (Inf.)",
+								"Thermal Sights",
+								"Turret"
+                            ]
+                        },
+						{
+                            "attackName": "100mm HE-Frag",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S4/4",
+                            "attackTags": [
+								"No CC (Inf.)",
+								"Thermal Sights",
+								"Turret",
+                                "Ignore Cover (1)"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "902V 81mm Smoke Launchers",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "1",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R6\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Light Indirect(1)",
+                                "No CC",
+                                "Smoke (3\")",
+								"Turret"
                             ]
                         }
                     ]
@@ -2341,52 +2476,66 @@ const list = {
             },
             "weapons": [
                 {
-                    "weaponName": "6GZ1 14.5mm HMG",
+                    "weaponName": "6GZ1 14,5mm HMG",
                     "weaponAmmo": "",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R24\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/6+",
+                            "attackStrength": "S3/4",
                             "attackTags": [
-                                ""
+                                "Turret"
                             ]
                         }
                     ]
                 },
                 {
-                    "weaponName": "2K43 115mm Gun (115mm Sabot, 115mm HEAT)",
-                    "weaponAmmo": "",
+                    "weaponName": "2K43 115mm Gun",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackName": "115mm Sabot",
+                            "attackTargets": "Vec",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A2+/3+",
+                            "attackStrength": "S14/21",
                             "attackTags": [
-                                ""
+                                "No CC (Inf.)", "Thermal Sights", "Turret"
+                            ]
+                        },
+						{
+                            "attackName": "115mm HEAT",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A2+/3+",
+                            "attackStrength": "S11/2",
+                            "attackTags": [
+                                "Shaped Charge"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "902V 81mm Smoke Launchers",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "1",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R6\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Light Indirect(1)",
+                                "No CC",
+                                "Smoke (3\")",
+								"Turret"
                             ]
                         }
                     ]
@@ -2428,52 +2577,78 @@ const list = {
             },
             "weapons": [
                 {
-                    "weaponName": "6GZ1 14.5mm HMG",
+                    "weaponName": "6GZ1 14,5mm HMG",
                     "weaponAmmo": "",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R24\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/6+",
+                            "attackStrength": "S3/4",
                             "attackTags": [
-                                ""
+								"Thermal Sights",
+                                "Turret"
                             ]
                         }
                     ]
                 },
                 {
-                    "weaponName": "2K81 152mm Gun-Launcher (152mm Gun-Launched ATGM, 152mm Gun-Launched Thermobaric, 152mm Tandem HEAT)",
-                    "weaponAmmo": "",
+                    "weaponName": "2K81 152mm Gun-Launcher",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackName": "152mm Gun-Launched ATGM",
+                            "attackTargets": "Vec",
+                            "attackRange": "R12-60\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A2+/xx",
+                            "attackStrength": "S18/3",
                             "attackTags": [
-                                ""
+                                "No CC (Inf.)","Thermal Sights","Turret","Guided Missile (1)","Shaped Charge"
+                            ]
+                        },
+						{
+                            "attackName": "152mm Gun-Launched Thermobaric",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R12-60\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/xx",
+                            "attackStrength": "S3/3",
+                            "attackTags": [
+                                "No CC (Inf.)","Thermal Sights","Turret","Guided Missile (1)","Ignore Cover (2)", "Radius (2\")","Rear Attack"
+                            ]
+                        },
+						{
+                            "attackName": "152mm Tandem Heat",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A2+/3+",
+                            "attackStrength": "S18/3",
+                            "attackTags": [
+                                "No CC (Inf.)","Thermal Sights","Turret","Shaped Charge"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "902V 81mm Smoke Launchers",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "1",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R6\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Light Indirect(1)",
+                                "No CC",
+                                "Smoke (3\")",
+								"Turret"
                             ]
                         }
                     ]
@@ -2520,30 +2695,63 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
                 },
                 {
-                    "weaponName": "2M9 82mm Automatic Mortar (82mm HEAT, 82mm Frag, 82mm Chemical-SP, 82mm Smoke)",
-                    "weaponAmmo": "",
+                    "weaponName": "2M9 82mm Automatic Mortar",
+                    "weaponAmmo": "6",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackName": "82mm HEAT",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R28\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/xx",
+                            "attackStrength": "S8/1+",
+                            "attackTags": [
+                                "Barrage (3)", "No CC", "Shaped Charge"
+                            ]
+                        },
+						{
+                            "attackName": "82mm Frag",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/xx",
+                            "attackStrength": "S[D3]",
+                            "attackTags": [
+                                "Barrage (3)", "No CC", "Air-Filling", "Light Indirect (3)","Radius (2\")"
+                            ]
+                        },
+						{
+                            "attackName": "82mm Chemical-SP",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/xx",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Barrage (3)", "No CC", "Light Indirect (3)","Chemical-SP (2\")"
+                            ]
+                        },
+						{
+                            "attackName": "82mm Smoke",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R40\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A++/xx",
+                            "attackStrength": "",
+                            "attackTags": [
+                                "Barrage (3)", "No CC", "Light Indirect (3)", "Smoke (3\")"
                             ]
                         }
                     ]
@@ -2586,30 +2794,63 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
                 },
                 {
-                    "weaponName": "2K52 152mm Howitzer(152mm HEAT, 152mm Frag, 152mm Chemical-SP, 152mm Smoke)",
+                    "weaponName": "2K52 152mm Howitzer",
                     "weaponAmmo": "",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackName": "152mm HEAT",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/xx",
+                            "attackStrength": "S14/2",
+                            "attackTags": [
+                                "No CC","Shaped Charge"
+                            ]
+                        },
+						{
+                            "attackName": "152mm Frag",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R∞\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4++/xx",
+                            "attackStrength": "S[D6]",
+                            "attackTags": [
+                                "No CC", "Air-Filling","Heavy Indirect (3)","Radius (3\")"
+                            ]
+                        },
+						{
+                            "attackName": "152mm Chemical-SP",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R∞\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/xx",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "No CC", "Chemical-SP (4\")","Heavy Indirect (3)"
+                            ]
+                        },
+						{
+                            "attackName": "152mm Smoke",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R∞\"",
+                            "attackDice": "D4",
+                            "attackAccuracy": "A++/xx",
+                            "attackStrength": "",
+                            "attackTags": [
+                                "No CC", "Heavy Indirect (3)", "Smoke (3\")"
                             ]
                         }
                     ]
@@ -2652,30 +2893,30 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Turret"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "9GR1M 125mm ATGM Rack",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "6",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Vec",
+                            "attackRange": "R12-60\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/xx",
+                            "attackStrength": "S16/3",
                             "attackTags": [
-                                ""
+                                "Barrage (3, point)","Guided Missile (2)","MCLOS","Shaped Charge","Turret"
                             ]
                         }
                     ]
@@ -2722,30 +2963,30 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A5+/5+",
+                            "attackStrength": "S1-/1",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "2A37 37mm Rotary Cannon",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R36\"",
+                            "attackDice": "D3",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S5/7",
                             "attackTags": [
-                                ""
+                                "No CC (Inf.)","Radar Anti-Air","Tracking","Turret"
                             ]
                         }
                     ]
@@ -2792,30 +3033,52 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Turret"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "2M9 82mm Automatic Mortar (82mm Frag, 82mm Chemical-SP, 82mm Smoke)",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "6",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackName": "82mm Frag",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/5+",
+                            "attackStrength": "S[D3]",
+                            "attackTags": [
+                                "Barrage (3)","Light Indirect (3)","No CC","Air-Filling","Radius (2\")"
+                            ]
+                        },
+						{
+                            "attackName": "82mm Chemical-SP",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Barrage (3)","Light Indirect (3)","No CC","Chemical-SP(2\")"
+                            ]
+                        },
+						{
+                            "attackName": "82mm Smoke",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R40\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A++/++",
+                            "attackStrength": "",
+                            "attackTags": [
+                                "Barrage (3)","Light Indirect (3)","No CC","Smoke {3\")"
                             ]
                         }
                     ]
@@ -2857,35 +3120,68 @@ const list = {
             },
             "weapons": [
                 {
-                    "weaponName": "6GZ1 14.5mm HMG",
+                    "weaponName": "6GZ1 14,5mm HMG",
                     "weaponAmmo": "",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R24\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/6+",
+                            "attackStrength": "S3/4",
                             "attackTags": [
-                                ""
+                                "Turret"
                             ]
                         }
                     ]
                 },
                 {
-                    "weaponName": "2K52 152mm Howitzer(152mm HEAT, 152mm Frag, 152mm Chemical-SP, 152mm Smoke)",
+                    "weaponName": "2K52 152mm Howitzer",
                     "weaponAmmo": "",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackName": "152mm HEAT",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/xx",
+                            "attackStrength": "S14/2",
+                            "attackTags": [
+                                "No CC","Shaped Charge"
+                            ]
+                        },
+						{
+                            "attackName": "152mm Frag",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R∞\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4++/xx",
+                            "attackStrength": "S[D6]",
+                            "attackTags": [
+                                "No CC", "Air-Filling","Heavy Indirect (3)","Radius (3\")"
+                            ]
+                        },
+						{
+                            "attackName": "152mm Chemical-SP",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R∞\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/xx",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "No CC", "Chemical-SP (4\")","Heavy Indirect (3)"
+                            ]
+                        },
+						{
+                            "attackName": "152mm Smoke",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R∞\"",
+                            "attackDice": "D4",
+                            "attackAccuracy": "A++/xx",
+                            "attackStrength": "",
+                            "attackTags": [
+                                "No CC", "Heavy Indirect (3)", "Smoke (3\")"
                             ]
                         }
                     ]
@@ -2927,18 +3223,18 @@ const list = {
             },
             "weapons": [
                 {
-                    "weaponName": "6GN3 14.5mm HMG",
+                    "weaponName": "6GZ1 14,5mm HMG",
                     "weaponAmmo": "",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R24\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/6+",
+                            "attackStrength": "S3/4",
                             "attackTags": [
-                                ""
+                                "Turret"
                             ]
                         }
                     ]
@@ -2949,30 +3245,32 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+								"Multi-Gun",
+                                "Turret"
                             ]
                         }
                     ]
                 },
                 {
-                    "weaponName": "2K15 40mm HE Grenade Launchers",
-                    "weaponAmmo": "",
+                    "weaponName": "2K15 40mm HE Grenade Launcher",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R14\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/5+",
+                            "attackStrength": "S1+/2",
                             "attackTags": [
-                                ""
+                                "Ignore Cover (1)",
+                                "Multi-Gun", "Turret"
                             ]
                         }
                     ]
@@ -3014,17 +3312,17 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Door Gun (Sides)"
                             ]
                         }
                     ]
-                }
+                },
             ],
             "tags": [
                 {
@@ -3062,17 +3360,17 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D4",
+                            "attackAccuracy": "A4+/6+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Door Gun (Sides)"
                             ]
                         }
                     ]
-                }
+                },
             ],
             "tags": [
                 {
@@ -3118,47 +3416,47 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D4",
+                            "attackAccuracy": "A4+/6+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Turret"
                             ]
                         }
                     ]
                 },
                 {
-                    "weaponName": "2K15 40mm Grenade Launcher",
-                    "weaponAmmo": "",
+                    "weaponName": "2K15 40mm HEDP Grenade Launcher",
+                    "weaponAmmo": "3",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R14\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/5+",
+                            "attackStrength": "S5/1+",
                             "attackTags": [
-                                ""
+                                "Shaped Charge"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "9GR1 125mm ATGM",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Vec",
+                            "attackRange": "R12-60\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S14/2",
                             "attackTags": [
-                                ""
+                                "Guided Missile (2)","MCLOS","Shaped Charge"
                             ]
                         }
                     ]
@@ -3206,11 +3504,11 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R2\"",
+                            "attackDice": "D3",
+                            "attackAccuracy": "A4+",
+                            "attackStrength": "S1",
                             "attackTags": [
                                 ""
                             ]
@@ -3219,34 +3517,34 @@ const list = {
                 },
                 {
                     "weaponName": "4BB2 350kg Dual-Purpose Cluster Bomb",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "6",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R0\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A2+",
+                            "attackStrength": "S6/1",
                             "attackTags": [
-                                ""
+                                "Rear Attack", "Saturating (6\")","Shaped Charge"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "9GR6 200mm Beam-Riding AAM",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Air",
+                            "attackRange": "R50\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A5+",
+                            "attackStrength": "S6",
                             "attackTags": [
-                                ""
+                                "Air-Filling","Guided Missile (2)","Barrage (2)", "No CC"
                             ]
                         }
                     ]
@@ -3286,15 +3584,15 @@ const list = {
             "weapons": [
                 {
                     "weaponName": "2A34 23mm Autocannons, triplet",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "3",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D3",
+                            "attackAccuracy": "A4+",
+                            "attackStrength": "S4",
                             "attackTags": [
                                 ""
                             ]
@@ -3303,34 +3601,36 @@ const list = {
                 },
                 {
                     "weaponName": "4BN2 350kg Napalm Bomb",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R0\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A3+",
+                            "attackStrength": "S1+",
                             "attackTags": [
-                                ""
+                                "Barrage (2)","Ignore Cover (2)","Lingering","Radius (2\")", "Rear Attack"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "9GR4 120mm Infrared AAM",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Air",
+                            "attackRange": "R24\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+",
+                            "attackStrength": "S6",
                             "attackTags": [
-                                ""
+                                "Air-Filling",
+								"Guided Missile (1)",
+								"Homing"
                             ]
                         }
                     ]
@@ -3370,15 +3670,15 @@ const list = {
             "weapons": [
                 {
                     "weaponName": "2A40 37mm Autocannons, triplet",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "3",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D3",
+                            "attackAccuracy": "A4+",
+                            "attackStrength": "S5",
                             "attackTags": [
                                 ""
                             ]
@@ -3387,34 +3687,34 @@ const list = {
                 },
                 {
                     "weaponName": "4BE1 500kg HE Bomb",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R0\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+",
+                            "attackStrength": "S8",
                             "attackTags": [
-                                ""
+                                "Air-Filling","Barrage (2)","Radius (3\")","Rear Attack"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "9GR3 275mm AGM",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Vec",
+                            "attackRange": "R50\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+",
+                            "attackStrength": "S24/8",
                             "attackTags": [
-                                ""
+                                "Guided Missile (2)", "MCLOS", "Shaped Charge", "Thermal Sights"
                             ]
                         }
                     ]
@@ -3457,18 +3757,18 @@ const list = {
             "command": 3,
             "weapons": [
                 {
-                    "weaponName": "Ml2. 38 .30 LMG",
+                    "weaponName": "Mle. 38 .30 LMG",
                     "weaponAmmo": "",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R10\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/5+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
@@ -3479,13 +3779,13 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/6+",
+                            "attackStrength": "S8/1",
                             "attackTags": [
-                                ""
+                                "Shaped Charge","Small Arm"
                             ]
                         }
                     ]
@@ -3496,30 +3796,30 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf",
+                            "attackRange": "R0\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A1+/1+",
+                            "attackStrength": "S1/1",
                             "attackTags": [
-                                ""
+                                "Melee"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "Stimulant-Laced Bomb, \"Signal Salt\"",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "1",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R6\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Light Indirect (0)","Radius(3\")","Rally(Salt)","Small Arm"
                             ]
                         }
                     ]
@@ -3578,31 +3878,42 @@ const list = {
                     "weaponAmmo": "",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackName": "4-Gauage Houndshot",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R6\"",
+                            "attackDice": "D3",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
+                            ]
+                        },
+						{
+                            "attackName": "4-Gauge Rifled Slug",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R6\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/3+",
+                            "attackStrength": "S2/3",
+                            "attackTags": [
+                                "Small Arm"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "PtDs. 13 Tactical Breaching Charge",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Vec",
+                            "attackRange": "R0\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A1+/1+",
+                            "attackStrength": "S12/12",
                             "attackTags": [
-                                ""
+                                "Melee"
                             ]
                         }
                     ]
@@ -3613,30 +3924,30 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf",
+                            "attackRange": "R0\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A1+/1+",
+                            "attackStrength": "S1/1",
                             "attackTags": [
-                                ""
+                                "Melee"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "Stimulant-Laced Filter \"Signal Snuff\"",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "1",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "Inf (Self)",
+                            "attackRange": "R0\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Discreet","Rally","This attack may only target self."
                             ]
                         }
                     ]
@@ -3692,13 +4003,13 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Multi-Gun","Small Arm"
                             ]
                         }
                     ]
@@ -3709,30 +4020,30 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf",
+                            "attackRange": "R0\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A1+/1+",
+                            "attackStrength": "S1/1",
                             "attackTags": [
-                                ""
+                                "Melee"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "Stimulant-Laced Bomb, \"Signal Salt\"",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "1",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R6\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Light Indirect (0)","Radius(3\")","Rally(Salt)","Small Arm"
                             ]
                         }
                     ]
@@ -3799,13 +4110,13 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
@@ -3816,13 +4127,13 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf",
+                            "attackRange": "R0\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A1+/1+",
+                            "attackStrength": "S1/1",
                             "attackTags": [
-                                ""
+                                "Melee"
                             ]
                         }
                     ]
@@ -3877,13 +4188,13 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R10\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/5+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
@@ -3894,13 +4205,13 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/6+",
+                            "attackStrength": "S8/1",
                             "attackTags": [
-                                ""
+                                "Shaped Charge","Small Arm"
                             ]
                         }
                     ]
@@ -3911,13 +4222,13 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf",
+                            "attackRange": "R0\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A1+/1+",
+                            "attackStrength": "S1/1",
                             "attackTags": [
-                                ""
+                                "Melee"
                             ]
                         }
                     ]
@@ -3968,30 +4279,52 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "Lacra 3.5-inch Shouldered R.R.",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackName": "3.5-inch Rocket-Assisted Sabot",
+                            "attackTargets": "Vec",
+                            "attackRange": "R20\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/5+",
+                            "attackStrength": "S8/12",
                             "attackTags": [
-                                ""
+                                "Small Arm"
+                            ]
+                        },
+						{
+                            "attackName": "3.5-inch HEAT",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R16\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/5+",
+                            "attackStrength": "S9/1+",
+                            "attackTags": [
+                                "Small Arm", "Shaped Charge"
+                            ]
+                        },
+						{
+                            "attackName": "3.5-inch Incendiary",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R16\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/5+",
+                            "attackStrength": "S1+/1+",
+                            "attackTags": [
+                                "Small Arm", "Ignore Cover (2)","Rear Attack"
                             ]
                         }
                     ]
@@ -4002,13 +4335,13 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
+                            "attackTargets": "All",
+                            "attackRange": "R40\"",
                             "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackAccuracy": "A++/xx",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Designator","Discreet"
                             ]
                         }
                     ]
@@ -4019,13 +4352,13 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf",
+                            "attackRange": "R0\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A1+/1+",
+                            "attackStrength": "S1+/1+",
                             "attackTags": [
-                                ""
+                                "Melee"
                             ]
                         }
                     ]
@@ -4075,31 +4408,42 @@ const list = {
                     "weaponAmmo": "",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackName": "4-Gauage Houndshot",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R6\"",
+                            "attackDice": "D3",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
+                            ]
+                        },
+						{
+                            "attackName": "4-Gauge Rifled Slug",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R6\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/3+",
+                            "attackStrength": "S2/3",
+                            "attackTags": [
+                                "Small Arm"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "PtDs. 13 Tactical Breaching Charge",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Vec",
+                            "attackRange": "R0\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A1+/1+",
+                            "attackStrength": "S12/12",
                             "attackTags": [
-                                ""
+                                "Melee"
                             ]
                         }
                     ]
@@ -4110,30 +4454,30 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf",
+                            "attackRange": "R0\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A1+/1+",
+                            "attackStrength": "S1/1",
                             "attackTags": [
-                                ""
+                                "Melee"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "Stimulant-Laced Filter \"Signal Snuff\"",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "1",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "Inf (Self)",
+                            "attackRange": "R0\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Discreet","Rally","This attack may only target self."
                             ]
                         }
                     ]
@@ -4180,13 +4524,13 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
@@ -4197,13 +4541,13 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R20\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/6+",
+                            "attackStrength": "S2/3",
                             "attackTags": [
-                                ""
+                                "Defensive CC"
                             ]
                         }
                     ]
@@ -4254,7 +4598,35 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1/1+",
+                            "attackTags": [
+                                "Small Arm"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "weaponName": "Lacra-76 \"Hima\" 3-inch Launcher",
+                    "weaponAmmo": "4",
+                    "attacks": [
+                        {
+                            "attackName": "3-inch HEAT",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/xx",
+                            "attackStrength": "S8/1+",
+                            "attackTags": [
+                                "Shaped Charge"
+                            ]
+                        },
+						{
+                            "attackName": "3-inch Frag",
+                            "attackTargets": "Gnd",
                             "attackRange": "",
                             "attackDice": "",
                             "attackAccuracy": "",
@@ -4262,16 +4634,21 @@ const list = {
                             "attackTags": [
                                 ""
                             ]
-                        }
-                    ]
-                },
-                {
-                    "weaponName": "Lacra-76 \"Hima\" 3-inch Launcher",
-                    "weaponAmmo": "",
-                    "attacks": [
-                        {
-                            "attackName": "",
-                            "attackTargets": "",
+                        },
+						{
+                            "attackName": "3-inch Smoke",
+                            "attackTargets": "Gnd",
+                            "attackRange": "",
+                            "attackDice": "",
+                            "attackAccuracy": "",
+                            "attackStrength": "",
+                            "attackTags": [
+                                ""
+                            ]
+                        },
+						{
+                            "attackName": "3-inch Signal Salt",
+                            "attackTargets": "Gnd",
                             "attackRange": "",
                             "attackDice": "",
                             "attackAccuracy": "",
@@ -4324,13 +4701,13 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
@@ -4398,13 +4775,13 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
@@ -4468,13 +4845,13 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
@@ -4485,13 +4862,13 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf",
+                            "attackRange": "R0\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A1+/1+",
+                            "attackStrength": "S1/1",
                             "attackTags": [
-                                ""
+                                "Melee"
                             ]
                         }
                     ]
@@ -4611,13 +4988,13 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
@@ -4641,17 +5018,17 @@ const list = {
                 },
                 {
                     "weaponName": "Stimulant-Laced Bomb, \"Signal Salt\"",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "1",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R6\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Light Indirect (0)","Radius(3\")","Rally(Salt)","Small Arm"
                             ]
                         }
                     ]
@@ -4706,13 +5083,13 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
@@ -5299,13 +5676,13 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R10\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/5+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
@@ -5488,13 +5865,13 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
@@ -5620,13 +5997,13 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
@@ -5686,13 +6063,13 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
@@ -5800,13 +6177,13 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R10\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/5+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
@@ -5817,13 +6194,13 @@ const list = {
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/6+",
+                            "attackStrength": "S8/1",
                             "attackTags": [
-                                ""
+                                "Shaped Charge","Small Arm"
                             ]
                         }
                     ]
