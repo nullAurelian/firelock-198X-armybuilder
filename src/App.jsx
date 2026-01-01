@@ -1,11 +1,15 @@
 import { useState } from 'react'
 import './App.css'
-import library from './data/unitLibrary.js'
+import generics from './data/unitLibrary.js'
+
+import fedlist from './data/federalLibrary.js'
+import luplist from './data/luparLibrary.js'
+import rygolist from './data/rygolicLibrary.js'
+import santalist from './data/santagriLibrary.js'
 
 function App() {
   let count = 0;
-  
-  let localLib  = library.units
+  let localLib  = fedlist.concat(luplist,rygolist,santalist,generics)
   //Values being tracked: Faction filter/unit library, army list, sum of unit point values, number of TACOMs and Command Points generated per round
   const [workingList, addUnit] = useState([])
   const [workingLibrary, filterUnits] = useState(localLib)
