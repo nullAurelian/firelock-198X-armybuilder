@@ -81,6 +81,10 @@ function App() {
         filterUnits(localLib)
         filterUnits(build_list_filter(localLib))
       }}/>Paradrop/Infiltrator
+      <input type="checkbox" id="canAssault" defaultChecked={false} onChange={() => {
+        filterUnits(localLib)
+        filterUnits(build_list_filter(localLib))
+      }}/>Assault Specialist/Assault Dismount
       
       </p>
 
@@ -276,6 +280,9 @@ function build_list_filter(library){
   }
   if((document.getElementById("canResupply").checked)){
     temp = temp.filter(units => units.tags.some(tag => tag.rule == "Resupply"))
+  }
+  if((document.getElementById("canAssault").checked)){
+    temp = temp.filter(units => units.tags.some(tag => tag.rule == "Assault Specialist")).concat(temp.filter(units => units.tags.some(tag => tag.rule == "Assault Dismount")))
   }
   return [...new Set(temp)]
 }
