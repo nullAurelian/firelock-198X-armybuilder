@@ -19,7 +19,7 @@ function App() {
   return (
     <>
     <div className="LibraryFilters">
-      <p>
+      <p>Show faction: 
       <input type="checkbox" id="typeFederal" defaultChecked={true} onChange={() => {
         filterUnits(localLib)
         filterUnits(build_list_filter(localLib))
@@ -38,7 +38,7 @@ function App() {
         filterUnits(build_list_filter(localLib))
       }}/>Atom Baronies of Santagria
       </p>
-      <p>
+      <p> Show type: 
       <input type="checkbox" id="typeInfantry" defaultChecked={true} onChange={() => {
         filterUnits(localLib)
         filterUnits(build_list_filter(localLib))
@@ -56,28 +56,28 @@ function App() {
         filterUnits(build_list_filter(localLib))
       }}/>Aircraft
       </p>
-      <p>
-      <input type="checkbox" id="isTACOM" defaultChecked={true} onChange={() => {
+      <p>Unit must have: 
+      <input type="checkbox" id="isTACOM" defaultChecked={false} onChange={() => {
         filterUnits(localLib)
         filterUnits(build_list_filter(localLib))
       }}/>TACOM
-      <input type="checkbox" id="canEmbark" defaultChecked={true} onChange={() => {
+      <input type="checkbox" id="canEmbark" defaultChecked={false} onChange={() => {
         filterUnits(localLib)
         filterUnits(build_list_filter(localLib))
       }}/>Personnel Carrier
-      <input type="checkbox" id="canTow" defaultChecked={true} onChange={() => {
+      <input type="checkbox" id="canTow" defaultChecked={false} onChange={() => {
         filterUnits(localLib)
         filterUnits(build_list_filter(localLib))
       }}/>Tow
-      <input type="checkbox" id="canResupply" defaultChecked={true} onChange={() => {
+      <input type="checkbox" id="canResupply" defaultChecked={false} onChange={() => {
         filterUnits(localLib)
         filterUnits(build_list_filter(localLib))
       }}/>Resupply
-      <input type="checkbox" id="canGoOnWater" defaultChecked={true} onChange={() => {
+      <input type="checkbox" id="canGoOnWater" defaultChecked={false} onChange={() => {
         filterUnits(localLib)
         filterUnits(build_list_filter(localLib))
       }}/>Amphibious/Watercraft
-      <input type="checkbox" id="canParadrop" defaultChecked={true} onChange={() => {
+      <input type="checkbox" id="canParadrop" defaultChecked={false} onChange={() => {
         filterUnits(localLib)
         filterUnits(build_list_filter(localLib))
       }}/>Paradrop/Infiltrator
@@ -232,7 +232,7 @@ function handle_export(armylist) { //Trigger copy list content to clipboard
 
 function build_list_filter(library){
   let temp = library
-  console.log(temp.length)
+  //Faction filters
   if(!(document.getElementById("typeFederal").checked)){
     temp = (temp.filter(units => !units.faction.includes("federal")))
   }
@@ -245,6 +245,7 @@ function build_list_filter(library){
   if(!(document.getElementById("typeSantagri").checked)){
     temp = (temp.filter(units => !units.faction.includes("santagri")))
   }
+  //Unit type filters
   if(!(document.getElementById("typeInfantry").checked)){
     temp = (temp.filter(units => !units.type.super.includes("Infantry")))
   }
@@ -257,26 +258,25 @@ function build_list_filter(library){
   if(!(document.getElementById("typeAircraft").checked)){
     temp = temp.filter(units => !units.type.super.includes("Aircraft"))
   }
-  if(!(document.getElementById("isTACOM").checked)){
-    temp = temp.filter(units => !units.tags.some(tag => tag.rule == "TACOM"))
+  //Traits filters
+  if((document.getElementById("isTACOM").checked)){
+    temp = temp.filter(units => units.tags.some(tag => tag.rule == "TACOM"))
   }
-  if(!(document.getElementById("canGoOnWater").checked)){
-    temp = temp.filter(units => !units.type.sub.includes("Watercraft"))
-    temp = temp.filter(units => !units.tags.some(tag => tag.rule == "Amphibious"))
+  if((document.getElementById("canGoOnWater").checked)){
+    temp = temp.filter(units => units.type.sub.includes("Watercraft")).concat(temp.filter(units => units.tags.some(tag => tag.rule == "Amphibious")))
   }
-  if(!(document.getElementById("canParadrop").checked)){
-    temp = temp.filter(units => !units.tags.some(tag => tag.rule == "Paradrop"))
-    temp = temp.filter(units => !units.tags.some(tag => tag.rule == "Infiltrator"))
+  if((document.getElementById("canParadrop").checked)){
+    temp = temp.filter(units => units.tags.some(tag => tag.rule == "Paradrop")).concat(temp.filter(units => units.tags.some(tag => tag.rule == "Infiltrator")))
   }
-  if(!(document.getElementById("canEmbark").checked)){
-    temp = temp.filter(units => !units.tags.some(tag => tag.rule == "PC"))
+  if((document.getElementById("canEmbark").checked)){
+    temp = temp.filter(units => units.tags.some(tag => tag.rule == "PC"))
   }
-  if(!(document.getElementById("canTow").checked)){
-    temp = temp.filter(units => !units.tags.some(tag => tag.rule == "Tow"))
+  if((document.getElementById("canTow").checked)){
+    temp = temp.filter(units => units.tags.some(tag => tag.rule == "Tow"))
   }
-  if(!(document.getElementById("canResupply").checked)){
-    temp = temp.filter(units => !units.tags.some(tag => tag.rule == "Resupply"))
+  if((document.getElementById("canResupply").checked)){
+    temp = temp.filter(units => units.tags.some(tag => tag.rule == "Resupply"))
   }
-  return temp
+  return [...new Set(temp)]
 }
 export default App
