@@ -145,7 +145,7 @@ function App() {
                             //Update tracked values on unit add to army list
                             updateListValue(workingValue+unit.value)
                             updateCommandGen(workingCommandGen+unit.command)
-                            if(unit.tags.some(tag => tag.rule == "TACOM") && unit.tags.some(tag => tag.params != "Additional")){
+                            if(unit.tags.some(tag => tag.rule == "TACOM") && !unit.tags.some(tag => tag.params == "Additional")){
                               updateTacCount(workingTacCount+1)
                             }}}>Add + </button>
                         </td>
@@ -170,7 +170,7 @@ function App() {
                           //update tracked values on unit being removed from army list
                           updateListValue(workingValue-unit.cost)
                           updateCommandGen(workingCommandGen-unit.command)
-                          if(unit.tags.some(tag => tag.rule == "TACOM")){
+                          if(unit.tags.some(tag => tag.rule == "TACOM") && !unit.tags.some(tag => tag.params == "Additional")){
                             updateTacCount(workingTacCount-1)
                           }
                         }}>Remove Unit</button>
