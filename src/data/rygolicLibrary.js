@@ -40,6 +40,104 @@
 */
 const rygolist = [
     {
+            "name": "Node Team",
+            "faction": [
+                "rygolic"
+            ],
+            "value": 0,
+            "stats": [
+                "H1",
+                "S24\"",
+                "M5\"",
+                "Q3",
+                "T1+/1/1",
+                "C2"
+            ],
+            "type": {
+                "super": [
+                    "Infantry"
+                ],
+                "sub": [
+                    "Team",
+                    "40x40"
+                ]
+            },
+            "command": 2,
+            "weapons": [
+                {
+                    "weaponName": "\"Snake Green\" 5mm Assault Rifle",
+                    "weaponAmmo": "",
+                    "attacks": [
+                        {
+                            "attackName": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S1/1",
+                            "attackTags": [
+                                "Small Arm", "Thermal Sights"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "weaponName": "\"Tread Curve\" 20mm Grenade Launcher",
+                    "weaponAmmo": "3",
+                    "attacks": [
+                        {
+                            "attackName": "",
+                            "attackTargets": "Vec",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A*",
+                            "attackStrength": "S3/4",
+                            "attackTags": [
+                                "Underbarrel (Snake Green)"
+                            ]
+                        },
+                        {
+                            "attackName": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A*",
+                            "attackStrength": "S1+/1+",
+                            "attackTags": [
+                                "Underbarrel (Snake Green)","Ignore Cover (1)"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "tags": [
+                {
+                    "rule": "TACOM",
+                    "params": ""
+                },
+                {
+                    "rule": "Fearless",
+                    "params": ""
+                },
+                {
+                    "rule": "NBC",
+                    "params": ""
+                },
+                {
+                    "rule": "Rygonet",
+                    "params": "12\""
+                },
+                {
+                    "rule": "Brigade",
+                    "params": "2, 12\""
+                },
+                {
+                    "rule": "One Node Team comes free per 100 points as a standard TACOM. Further Node Teams may be purchased for 20 points each at no limit.",
+                    "params": ""
+                }
+            ]
+    },
+    {
             "name": "Node Team (Additional)",
             "faction": [
                 "rygolic"
@@ -70,30 +168,41 @@ const rygolist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S1/1",
                             "attackTags": [
-                                ""
+                                "Small Arm", "Thermal Sights"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Tread Curve\" 20mm Grenade Launcher",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "3",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Vec",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A*",
+                            "attackStrength": "S3/4",
                             "attackTags": [
-                                ""
+                                "Underbarrel (Snake Green)"
+                            ]
+                        },
+                        {
+                            "attackName": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A*",
+                            "attackStrength": "S1+/1+",
+                            "attackTags": [
+                                "Underbarrel (Snake Green)","Ignore Cover (1)"
                             ]
                         }
                     ]
@@ -125,8 +234,8 @@ const rygolist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "G1 Ganglion",
             "faction": [
                 "rygolic"
@@ -199,8 +308,8 @@ const rygolist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "S3 Stoma",
             "faction": [
                 "rygolic"
@@ -231,30 +340,30 @@ const rygolist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A3+/3+",
+                            "attackStrength": "S1/1",
                             "attackTags": [
-                                ""
+                                "Thermal Sights","Turret"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Pitch Break\" 25mm Autocannon",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R32\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A3+/3+",
+                            "attackStrength": "S4/6",
                             "attackTags": [
-                                ""
+                                "No CC (Inf.)","Thermal Sights","Tracking","Turret"
                             ]
                         }
                     ]
@@ -282,8 +391,8 @@ const rygolist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "Tactical Team",
             "faction": [
                 "rygolic"
@@ -313,47 +422,58 @@ const rygolist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S1/1",
                             "attackTags": [
-                                ""
+                                "Small Arm", "Thermal Sights"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Tread Curve\" 20mm Grenade Launcher",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "3",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Vec",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A*",
+                            "attackStrength": "S3/4",
                             "attackTags": [
-                                ""
+                                "Underbarrel (Snake Green)"
+                            ]
+                        },
+                        {
+                            "attackName": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A*",
+                            "attackStrength": "S1+/1+",
+                            "attackTags": [
+                                "Underbarrel (Snake Green)","Ignore Cover (1)"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Side Fast\" 140mm ATGM",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "1",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Vec",
+                            "attackRange": "R6-30\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/xx",
+                            "attackStrength": "S14/2",
                             "attackTags": [
-                                ""
+                                "Guided Missile (1)","Shaped Charge","Thermal Sights"
                             ]
                         }
                     ]
@@ -369,8 +489,8 @@ const rygolist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "Legionnaires",
             "faction": [
                 "rygolic"
@@ -400,47 +520,58 @@ const rygolist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S1/1",
                             "attackTags": [
-                                ""
+                                "Small Arm", "Thermal Sights"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Tread Curve\" 20mm Grenade Launcher",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "3",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Vec",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A*",
+                            "attackStrength": "S3/4",
                             "attackTags": [
-                                ""
+                                "Underbarrel (Snake Green)"
+                            ]
+                        },
+                        {
+                            "attackName": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A*",
+                            "attackStrength": "S1+/1+",
+                            "attackTags": [
+                                "Underbarrel (Snake Green)","Ignore Cover (1)"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Side Fast\" 140mm ATGM",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "3",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Vec",
+                            "attackRange": "R6-30\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/xx",
+                            "attackStrength": "S14/2",
                             "attackTags": [
-                                ""
+                                "Guided Missile (1)","Shaped Charge","Thermal Sights"
                             ]
                         }
                     ]
@@ -456,8 +587,8 @@ const rygolist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "Smartgun Team Team",
             "faction": [
                 "rygolic"
@@ -487,13 +618,13 @@ const rygolist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S1/1",
                             "attackTags": [
-                                ""
+                                "Small Arm", "Thermal Sights"
                             ]
                         }
                     ]
@@ -504,13 +635,13 @@ const rygolist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R16\"",
+                            "attackDice": "D3",
+                            "attackAccuracy": "A2+/3+",
+                            "attackStrength": "S1/1",
                             "attackTags": [
-                                ""
+                                "Scoped","Thermal Sights","Tracking","Turret"
                             ]
                         }
                     ]
@@ -526,8 +657,8 @@ const rygolist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "Laser Team",
             "faction": [
                 "rygolic"
@@ -557,13 +688,13 @@ const rygolist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S1/1",
                             "attackTags": [
-                                ""
+                                "Small Arm", "Thermal Sights"
                             ]
                         }
                     ]
@@ -574,13 +705,13 @@ const rygolist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A1+/xx",
+                            "attackStrength": "S1+/1+",
                             "attackTags": [
-                                ""
+                                "Laser","Small Arm"
                             ]
                         }
                     ]
@@ -596,8 +727,8 @@ const rygolist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "MANPADS Team",
             "faction": [
                 "rygolic"
@@ -627,47 +758,58 @@ const rygolist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S1/1",
                             "attackTags": [
-                                ""
+                                "Small Arm", "Thermal Sights"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Tread Curve\" 20mm Grenade Launcher",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "3",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Vec",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A*",
+                            "attackStrength": "S3/4",
                             "attackTags": [
-                                ""
+                                "Underbarrel (Snake Green)"
+                            ]
+                        },
+                        {
+                            "attackName": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A*",
+                            "attackStrength": "S1+/1+",
+                            "attackTags": [
+                                "Underbarrel (Snake Green)","Ignore Cover (1)"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Pole Gaurd\" 70mm MANPADS",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Air",
+                            "attackRange": "R60\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/xx",
+                            "attackStrength": "S5/5",
                             "attackTags": [
-                                ""
+                                "Guided Missile (1)","Homing","Small Arm"
                             ]
                         }
                     ]
@@ -683,8 +825,8 @@ const rygolist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "Chemical Team",
             "faction": [
                 "rygolic"
@@ -714,30 +856,52 @@ const rygolist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R6\"",
+                            "attackDice": "D3",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S1-/1+",
                             "attackTags": [
-                                ""
+                                "Ignore Cover (1)","Small Arm","Thermal Sights"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Weave Liner\" 70mm Dual RPG",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "6",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackName": "70mm HEAT",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R10\"",
+                            "attackDice": "1",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S7/1+",
+                            "attackTags": [
+                                "Barrage (2)","Small Arm","Thermal Sights","Shaped Charge"
+                            ]
+                        },
+                        {
+                            "attackName": "70mm Thermobaric",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R10\"",
+                            "attackDice": "1",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S2/2",
+                            "attackTags": [
+                                "Barrage (2)","Small Arm","Thermal Sights","Ignore Cover (2)","Rear Attack"
+                            ]
+                        },
+                        {
+                            "attackName": "70mm Nerve Agent",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R10\"",
+                            "attackDice": "1",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Barrage (2)","Small Arm","Thermal Sights","Chemical Weapon (2\")"
                             ]
                         }
                     ]
@@ -757,8 +921,8 @@ const rygolist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "Guided Mortar Spider",
             "faction": [
                 "rygolic"
@@ -788,30 +952,30 @@ const rygolist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S1/1",
                             "attackTags": [
-                                ""
+                                "Small Arm", "Thermal Sights"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Trace Rung\" 80mm Guided Mortar",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S4/4",
                             "attackTags": [
-                                ""
+                                "Guided Shell","Light Indirect (1)","No CC","Thermal Sights"
                             ]
                         }
                     ]
@@ -827,8 +991,8 @@ const rygolist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "Carabiner Horse",
             "faction": [
                 "rygolic"
@@ -858,13 +1022,13 @@ const rygolist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "All",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Designator","Discreet"
                             ]
                         }
                     ]
@@ -888,8 +1052,8 @@ const rygolist = [
                     "params": "2"
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "Capsule Squad",
             "faction": [
                 "rygolic"
@@ -919,30 +1083,41 @@ const rygolist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S1/1",
                             "attackTags": [
-                                ""
+                                "Small Arm", "Thermal Sights"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Tread Curve\" 20mm Grenade Launcher",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "3",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Vec",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A*",
+                            "attackStrength": "S3/4",
                             "attackTags": [
-                                ""
+                                "Underbarrel (Snake Green)"
+                            ]
+                        },
+                        {
+                            "attackName": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A*",
+                            "attackStrength": "S1+/1+",
+                            "attackTags": [
+                                "Underbarrel (Snake Green)","Ignore Cover (1)"
                             ]
                         }
                     ]
@@ -962,8 +1137,8 @@ const rygolist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "Assassin",
             "faction": [
                 "rygolic"
@@ -993,13 +1168,13 @@ const rygolist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D3",
+                            "attackAccuracy": "A2+/2+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm","Thermal Sights"
                             ]
                         }
                     ]
@@ -1010,30 +1185,30 @@ const rygolist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A2+/2+",
+                            "attackStrength": "S1/1",
                             "attackTags": [
-                                ""
+                                "Discreet","Multi-Gun","Scoped","Small Arm","Thermal Sights"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Site Cause\" Plastic Explosive Charge",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Vec",
+                            "attackRange": "R0\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A1+/1+",
+                            "attackStrength": "S12/12",
                             "attackTags": [
-                                ""
+                                "Melee","Multi-Gun"
                             ]
                         }
                     ]
@@ -1061,14 +1236,14 @@ const rygolist = [
                     "params": "8\""
                 }
             ]
-        },
-        {
-            "name": "Simulacrum",
-            "faction": [
-                "rygolic"
-            ],
-            "value": 30,
-            "stats": [
+    },
+    {
+        "name": "Simulacrum",
+        "faction": [
+            "rygolic"
+        ],
+        "value": 30,
+        "stats": [
                 "H1",
                 "S32\"",
                 "M4\"",
@@ -1126,8 +1301,8 @@ const rygolist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "C1 Candor",
             "faction": [
                 "rygolic"
@@ -1157,13 +1332,13 @@ const rygolist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A3+/3+",
+                            "attackStrength": "S1/1",
                             "attackTags": [
-                                ""
+                                "Thermal Sights","Turret"
                             ]
                         }
                     ]
@@ -1174,30 +1349,30 @@ const rygolist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A1+/1+",
+                            "attackStrength": "S1+/1+",
                             "attackTags": [
-                                ""
+                                "Laser","Turret"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Tread Bus\" 65mm Smoke Launchers",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "1",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R6\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Light Indirect (0)","No CC","Smoke (2\")", "Turret"
                             ]
                         }
                     ]
@@ -1213,8 +1388,8 @@ const rygolist = [
                     "params": "2, Rear"
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "P1 Parallax",
             "faction": [
                 "rygolic"
@@ -1244,64 +1419,64 @@ const rygolist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A3+/3+",
+                            "attackStrength": "S1/1",
                             "attackTags": [
-                                ""
+                                "Thermal Sights","Turret"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Pitch Break\" 25mm Autocannon",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R32\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A3+/3+",
+                            "attackStrength": "S4/6",
                             "attackTags": [
-                                ""
+                                "No CC (Inf.)","Thermal Sights","Tracking","Turret"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Side Judge\" 150mm ATGM",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "3",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Vec",
+                            "attackRange": "R6-60\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/xx",
+                            "attackStrength": "S15/2",
                             "attackTags": [
-                                ""
+                                "Guided Missile (2)","Shaped Charge","Thermal Sights","Turret"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Tread Bus\" 65mm Smoke Launchers",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "1",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R6\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Light Indirect (0)","No CC","Smoke (2\")", "Turret"
                             ]
                         }
                     ]
@@ -1321,8 +1496,8 @@ const rygolist = [
                     "params": "2, Rear"
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "P2 Perigee",
             "faction": [
                 "rygolic"
@@ -1352,64 +1527,64 @@ const rygolist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A3+/3+",
+                            "attackStrength": "S1/1",
                             "attackTags": [
-                                ""
+                                "Thermal Sights","Turret"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Pitch Break\" 25mm Autocannon",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R32\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A3+/3+",
+                            "attackStrength": "S4/6",
                             "attackTags": [
-                                ""
+                                "No CC (Inf.)","Thermal Sights","Tracking","Turret"
                             ]
                         }
                     ]
                 },
                 {
-                    "weaponName": "",
-                    "weaponAmmo": "",
+                    "weaponName": "\"Pole Guard\" 70mm SAM",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Air",
+                            "attackRange": "R60\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/xx",
+                            "attackStrength": "S5/5",
                             "attackTags": [
-                                ""
+                                "Guided Missile (1)","Homing", "Turret"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Tread Bus\" 65mm Smoke Launchers",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "1",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R6\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Light Indirect (0)","No CC","Smoke (2\")", "Turret"
                             ]
                         }
                     ]
@@ -1429,8 +1604,8 @@ const rygolist = [
                     "params": "2, Rear"
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "M1 Microwave",
             "faction": [
                 "rygolic"
@@ -1456,17 +1631,17 @@ const rygolist = [
             "weapons": [
                 {
                     "weaponName": "\"Pitch Break\" 25mm Autocannon",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R32\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A3+/3+",
+                            "attackStrength": "S4/6",
                             "attackTags": [
-                                ""
+                                "No CC (Inf.)","Thermal Sights","Tracking","Turret"
                             ]
                         }
                     ]
@@ -1482,8 +1657,8 @@ const rygolist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "S1 Synod",
             "faction": [
                 "rygolic"
@@ -1513,47 +1688,69 @@ const rygolist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R20\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A3+/3+",
+                            "attackStrength": "S2/3",
                             "attackTags": [
-                                ""
+                                "Thermal Sights","Turret"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Bridge Spike\" 75mm Rifled Gun",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackName": "75mm Sabot",
+                            "attackTargets": "Vec",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/3+",
+                            "attackStrength": "S10/15",
                             "attackTags": [
-                                ""
+                                "Round Extruder","Thermal Sights","Turret","No CC (Inf.)"
+                            ]
+                        },
+                        {
+                            "attackName": "75mm HEAT",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/3+",
+                            "attackStrength": "S8/1+",
+                            "attackTags": [
+                                "Round Extruder","Thermal Sights","Turret","No CC (Inf.)","Shaped Charge"
+                            ]
+                        },
+                        {
+                            "attackName": "75mm Beehive",
+                            "attackTargets": "All",
+                            "attackRange": "R20\"",
+                            "attackDice": "D3",
+                            "attackAccuracy": "A2+/2+",
+                            "attackStrength": "S1/1+",
+                            "attackTags": [
+                                "Round Extruder","Thermal Sights","Turret","Defensive CC (Inf.)"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Tread Bus\" 65mm Smoke Launchers",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "1",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R6\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Light Indirect (0)","No CC","Smoke (2\")", "Turret"
                             ]
                         }
                     ]
@@ -1565,8 +1762,8 @@ const rygolist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "C1 Cabal",
             "faction": [
                 "rygolic"
@@ -1596,47 +1793,69 @@ const rygolist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A3+/3+",
+                            "attackStrength": "S1/1",
                             "attackTags": [
-                                ""
+                                "Thermal Sights","Turret"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Bridge Dart\" 105mm Gun",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "6",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackName": "105mm Sabot",
+                            "attackTargets": "Vec",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A2+/3+",
+                            "attackStrength": "S14/21",
                             "attackTags": [
-                                ""
+                                "No CC (Inf.)","Thermal Sights","Turret"
+                            ]
+                        },
+                        {
+                            "attackName": "105mm HEAT",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A2+/3+",
+                            "attackStrength": "S10/2",
+                            "attackTags": [
+                                "No CC (Inf.)","Thermal Sights","Turret","Shaped Charge"
+                            ]
+                        },
+                        {
+                            "attackName": "105mm Proximity Fuse HE",
+                            "attackTargets": "All",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A2+/3+",
+                            "attackStrength": "S4/4",
+                            "attackTags": [
+                                "No CC (Inf.)","Thermal Sights","Turret","Air-Filling","Tracking (Flak)"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Tread Bus\" 65mm Smoke Launchers",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "1",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R6\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Light Indirect (0)","No CC","Smoke (2\")", "Turret"
                             ]
                         }
                     ]
@@ -1652,8 +1871,8 @@ const rygolist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "X1 X-ray",
             "faction": [
                 "rygolic"
@@ -1678,52 +1897,63 @@ const rygolist = [
             "command": 0,
             "weapons": [
                 {
-                    "weaponName": "",
+                    "weaponName": "\"Sun Point\" 6kW Laser Weapon",
                     "weaponAmmo": "",
                     "attacks": [
                         {
-                            "attackName": "\"Sun Point\" 6kW Laser Weapon",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackName": "",
+                            "attackTargets": "All",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A1+/1+",
+                            "attackStrength": "S1+/1+",
                             "attackTags": [
-                                ""
+                                "Laser","Turret"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Bridge Dart\" 105mm Gun",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackName": "105mm Rocket-Assisted Sabot",
+                            "attackTargets": "Vec",
+                            "attackRange": "R50\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A2+/3+",
+                            "attackStrength": "S16/24",
                             "attackTags": [
-                                ""
+                                "No CC (Inf.)","Round Extruder","Thermal Sights","Turret"
+                            ]
+                        },
+                        {
+                            "attackName": "105mm Rocket-Assisted HEAT",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R50\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A2+/3+",
+                            "attackStrength": "S10/2",
+                            "attackTags": [
+                                "No CC (Inf.)","Round Extruder","Thermal Sights","Turret","Shaped Charge"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Tread Bus\" 65mm Smoke Launchers",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "1",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R6\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Light Indirect (0)","No CC","Smoke (2\")", "Turret"
                             ]
                         }
                     ]
@@ -1739,8 +1969,8 @@ const rygolist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "Automated Sentry",
             "faction": [
                 "rygolic"
@@ -1770,13 +2000,13 @@ const rygolist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R20\"",
+                            "attackDice": "D3",
+                            "attackAccuracy": "A4+/xx",
+                            "attackStrength": "S2/3",
                             "attackTags": [
-                                ""
+                                "Thermal Sights","Tracking","Turret"
                             ]
                         }
                     ]
@@ -1792,12 +2022,16 @@ const rygolist = [
                     "params": ""
                 },
                 {
-                    "rule": "Amphibious",
+                    "rule": "Paradrop",
                     "params": ""
+                },
+                {
+                    "rule":"This unit cannot fire during the first Fire Phase of the game if Paradropped",
+                    "params":""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "Automated ATGM",
             "faction": [
                 "rygolic"
@@ -1823,17 +2057,17 @@ const rygolist = [
             "weapons": [
                 {
                     "weaponName": "\"Side Judge\" 150mm ATGM",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "3",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Vec",
+                            "attackRange": "R6-60\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/xx",
+                            "attackStrength": "S15/2",
                             "attackTags": [
-                                ""
+                                "Guided Missile (2)","Shaped Charge","Thermal Sights","Turret"
                             ]
                         }
                     ]
@@ -1849,12 +2083,16 @@ const rygolist = [
                     "params": ""
                 },
                 {
-                    "rule": "Amphibious",
+                    "rule": "Paradrop",
                     "params": ""
+                },
+                {
+                    "rule":"This unit cannot fire during the first Fire Phase of the game if Paradropped",
+                    "params":""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "S2 Stochast",
             "faction": [
                 "rygolic"
@@ -1884,30 +2122,30 @@ const rygolist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R20\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A3+/3+",
+                            "attackStrength": "S2/3",
                             "attackTags": [
-                                ""
+                                "Thermal Sights","Turret"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Ink Strake\" 55mm Thermobaric Rockets",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R28\"",
+                            "attackDice": "D3",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S2/2",
                             "attackTags": [
-                                ""
+                                "Ignore Cover (2)","No CC","Rear Attack","Saturating (4)","Thermal Sights","Turret"
                             ]
                         }
                     ]
@@ -1919,8 +2157,8 @@ const rygolist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "C2 Chorus",
             "faction": [
                 "rygolic"
@@ -1950,13 +2188,13 @@ const rygolist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A3+/3+",
+                            "attackStrength": "S1/1",
                             "attackTags": [
-                                ""
+                                "Thermal Sights","Turret"
                             ]
                         }
                     ]
@@ -1967,47 +2205,58 @@ const rygolist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "All",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Designator","Discreet","Turret"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Star Shelf\" 155mm Missile Launcher",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "6",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackName": "ATGM Guidance Mode",
+                            "attackTargets": "Vec",
+                            "attackRange": "R12-60\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/xx",
+                            "attackStrength": "S16/3",
                             "attackTags": [
-                                ""
+                                "Guided Missile (1)","Shaped Charge","Turret"
+                            ]
+                        },
+                        {
+                            "attackName": "SAM Guidance Mode",
+                            "attackTargets": "Air",
+                            "attackRange": "R60\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/xx",
+                            "attackStrength": "S16/3",
+                            "attackTags": [
+                                "Guided Missile (1)","Shaped Charge","Turret","Radar Anti-Air"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Tread Bus\" 65mm Smoke Launchers",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "1",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R6\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Light Indirect (0)","No CC","Smoke (2\")", "Turret"
                             ]
                         }
                     ]
@@ -2019,8 +2268,8 @@ const rygolist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "X2 Xiphos",
             "faction": [
                 "rygolic"
@@ -2050,30 +2299,52 @@ const rygolist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A3+/3+",
+                            "attackStrength": "S1/1",
                             "attackTags": [
-                                ""
+                                "Thermal Sights","Turret"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Bridge Arrow\" 155mm Howitzer",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackName": "155mm LOSAT",
+                            "attackTargets": "Vec",
+                            "attackRange": "R60\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A2+/3+",
+                            "attackStrength": "S21/14",
+                            "attackTags": [
+                                "No CC","Round Extruder","Thermal Sights","Guided Missile (1)"
+                            ]
+                        },
+                        {
+                            "attackName": "155mm Guided HE",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R∞\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S8/8",
+                            "attackTags": [
+                                "No CC","Round Extruder","Thermal Sights","Heavy Indirect (2)","Guided Shell"
+                            ]
+                        },
+                        {
+                            "attackName": "155mm Smoke",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R∞\"",
+                            "attackDice": "D4",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "No CC","Round Extruder","Thermal Sights","Heavy Indirect (2)","Smoke (4\")"
                             ]
                         }
                     ]
@@ -2089,8 +2360,8 @@ const rygolist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "X3 Xenon",
             "faction": [
                 "rygolic"
@@ -2120,13 +2391,13 @@ const rygolist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A3+/3+",
+                            "attackStrength": "S1/1",
                             "attackTags": [
-                                ""
+                                "Thermal Sights","Turret"
                             ]
                         }
                     ]
@@ -2136,14 +2407,25 @@ const rygolist = [
                     "weaponAmmo": "",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackName": "Focused Array",
+                            "attackTargets": "All",
+                            "attackRange": "R40\"",
+                            "attackDice": "D4",
+                            "attackAccuracy": "A1+/1+",
+                            "attackStrength": "S2/2",
+                            "attackTags": [
+                                "Laser","Turret"
+                            ]
+                        },
+                        {
+                            "attackName": "Dispersed Array",
+                            "attackTargets": "All",
+                            "attackRange": "R4-20\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Laser","Turret","Radius (3\")","All units (including airborne untis) in the radius take maximum Pin"
                             ]
                         }
                     ]
@@ -2154,30 +2436,30 @@ const rygolist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R0\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Radius (6\")","Infantry in radius take one pin","Smoke radii with their centers in this radius are cleared"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Tread Bus\" 65mm Smoke Launchers",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "1",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R6\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Light Indirect (0)","No CC","Smoke (2\")", "Turret"
                             ]
                         }
                     ]
@@ -2193,8 +2475,8 @@ const rygolist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "Y1 Yardfish",
             "faction": [
                 "rygolic"
@@ -2224,30 +2506,30 @@ const rygolist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R40\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A1+/1+",
+                            "attackStrength": "S1+/1+",
                             "attackTags": [
-                                ""
+                                "Laser","Turret"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Dredge Top\" 149mm VLS Missiles",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Vec/Air",
+                            "attackRange": "R12-60\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/3+",
+                            "attackStrength": "S8/8",
                             "attackTags": [
-                                ""
+                                "Guided Missile (2)","Radar Anti-Air","Turret"
                             ]
                         }
                     ]
@@ -2263,8 +2545,8 @@ const rygolist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "R1 Redstone",
             "faction": [
                 "rygolic"
@@ -2331,8 +2613,8 @@ const rygolist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "R2 Repeater",
             "faction": [
                 "rygolic"
@@ -2361,13 +2643,13 @@ const rygolist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R24\"",
+                            "attackDice": "D3",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S3/4",
                             "attackTags": [
-                                ""
+                                "Door Gun (Front)","Thermal Sights","Tracking"
                             ]
                         }
                     ]
@@ -2395,8 +2677,8 @@ const rygolist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "H1 Handler",
             "faction": [
                 "rygolic"
@@ -2425,30 +2707,30 @@ const rygolist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "All",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Designator","Discreet"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Tread Plate\" 65mm Smoke Array",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R12\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Light Indirect (1)","No CC","Smoke (4\")","Turret"
                             ]
                         }
                     ]
@@ -2464,8 +2746,8 @@ const rygolist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "H2 Hangman",
             "faction": [
                 "rygolic"
@@ -2490,34 +2772,34 @@ const rygolist = [
             "weapons": [
                 {
                     "weaponName": "\"Bolt Fleck\" 100mm Flechette Gun",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "3",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R16\"",
+                            "attackDice": "D4",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Thermal Sights"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Weave Stalk\" 70mm Dual Rocket Pod",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R16\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A6+/5+",
+                            "attackStrength": "S7/1+",
                             "attackTags": [
-                                ""
+                                "Barrage (2)","Shaped Charge","Strafing","Thermal Sights"
                             ]
                         }
                     ]
@@ -2537,8 +2819,8 @@ const rygolist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "T1 Tatter",
             "faction": [
                 "rygolic"
@@ -2563,51 +2845,51 @@ const rygolist = [
             "weapons": [
                 {
                     "weaponName": "\"Pitch Throat\" 35mm Autocannon",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "3",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R32\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S7/7",
                             "attackTags": [
-                                ""
+                                "Thermal Sights"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Ram Crutch\" 175mm Active AAM",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Air",
+                            "attackRange": "R60\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/3+",
+                            "attackStrength": "S7/7",
                             "attackTags": [
-                                ""
+                                "Air-Filling","Guided Missile (1)","Homing","Radar Anti-Air"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Mark Pate\" 180mm AGM",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Vec",
+                            "attackRange": "R12-60\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S18/4",
                             "attackTags": [
-                                ""
+                                "Guided Missile (1)","Shaped Charge"
                             ]
                         }
                     ]
@@ -2623,8 +2905,8 @@ const rygolist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "Destroying Angel",
             "faction": [
                 "rygolic"
@@ -2653,13 +2935,13 @@ const rygolist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R40\"",
+                            "attackDice": "D4",
+                            "attackAccuracy": "A1+/1+",
+                            "attackStrength": "S1+/1+",
                             "attackTags": [
-                                ""
+                                "Laser","Turret"
                             ]
                         }
                     ]
@@ -2687,8 +2969,8 @@ const rygolist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "B1 Blindsight",
             "faction": [
                 "rygolic"
@@ -2719,47 +3001,47 @@ const rygolist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R10\"",
+                            "attackDice": "D3",
+                            "attackAccuracy": "A1+",
+                            "attackStrength": "S1+",
                             "attackTags": [
-                                ""
+                                "Laser"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Ram Crutch\" 175mm Active AAM",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Air",
+                            "attackRange": "R60\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+",
+                            "attackStrength": "S7",
                             "attackTags": [
-                                ""
+                                "Air-Filling","Guided Missile (1)","Homing","Radar Anti-Air"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Mark Pate\" 180mm AGM",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Vec",
+                            "attackRange": "R60\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+",
+                            "attackStrength": "S18/4",
                             "attackTags": [
-                                ""
+                                "Guided Missile (1)","Shaped Charge"
                             ]
                         }
                     ]
@@ -2775,8 +3057,8 @@ const rygolist = [
                     "params": "2"
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "Z1 Zenith",
             "faction": [
                 "rygolic"
@@ -2803,17 +3085,17 @@ const rygolist = [
             "weapons": [
                 {
                     "weaponName": "\"Able Ivy\" 20t Guided Nuclear Bomb",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "1",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Guided Missile (2)","Nuclear (1\"-2\"-6\")"
                             ]
                         }
                     ]
@@ -2829,8 +3111,8 @@ const rygolist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "A1 Apogee",
             "faction": [
                 "rygolic"
@@ -2857,15 +3139,15 @@ const rygolist = [
             "weapons": [
                 {
                     "weaponName": "\"Yaw Switch\" 40mm Rotary Cannon",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D4",
+                            "attackAccuracy": "A4+",
+                            "attackStrength": "S6",
                             "attackTags": [
                                 ""
                             ]
@@ -2874,17 +3156,17 @@ const rygolist = [
                 },
                 {
                     "weaponName": "\"Lake Brush\" 275mm Guided Bomb",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R32\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A2+",
+                            "attackStrength": "S10",
                             "attackTags": [
-                                ""
+                                "Air-Filling","Barrage (2)", "Guided Missile (2)","Radius (3\")","Rear Attack"
                             ]
                         }
                     ]

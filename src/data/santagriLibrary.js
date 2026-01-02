@@ -69,30 +69,30 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D4",
+                            "attackAccuracy": "A4+/5+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Turret"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "Lerna 15-lber Rocket Pod",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "1",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R22\"",
+                            "attackDice": "D4",
+                            "attackAccuracy": "A6+/5+",
+                            "attackStrength": "S4/4",
                             "attackTags": [
-                                ""
+                                "Strafing"
                             ]
                         }
                     ]
@@ -103,13 +103,13 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R16\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Rally","Turret"
                             ]
                         }
                     ]
@@ -133,8 +133,8 @@ const santalist = [
                     "params": "4, 16\""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "UNI.28-AC Don",
             "faction": [
                 "santagri"
@@ -160,15 +160,15 @@ const santalist = [
             "weapons": [
                 {
                     "weaponName": "Allant 1.8-lber Rptary Cannon",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "3",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R32\"",
+                            "attackDice": "D3",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S4/6",
                             "attackTags": [
                                 ""
                             ]
@@ -177,17 +177,17 @@ const santalist = [
                 },
                 {
                     "weaponName": "SUR-4 127mm Air-to-Air Missile",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Air",
+                            "attackRange": "R60\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/3+",
+                            "attackStrength": "S6/6",
                             "attackTags": [
-                                ""
+                                "Air-Filling","Guided Missile (1)","Homing"
                             ]
                         }
                     ]
@@ -198,13 +198,13 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R16\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Rally","Turret"
                             ]
                         }
                     ]
@@ -228,8 +228,8 @@ const santalist = [
                     "params": "2"
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "VBD.127-DB Castellan",
             "faction": [
                 "santagri"
@@ -260,47 +260,58 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Thermal Sights","Turret"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "Sb.98 55-lber Gun",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackName": "55-lb. APDS",
+                            "attackTargets": "Vec",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/3+",
+                            "attackStrength": "S14/21",
                             "attackTags": [
-                                ""
+                                "No CC (Inf.)","Thermal Sights","Turret"
+                            ]
+                        },
+                        {
+                            "attackName": "55-lb. HESH",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/3+",
+                            "attackStrength": "S9/4",
+                            "attackTags": [
+                                "No CC (Inf.)","Thermal Sights","Turret","Shaped Charge"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "Lerna 15-lber Rocket Pod",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "1",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R22\"",
+                            "attackDice": "D4",
+                            "attackAccuracy": "A4+/5+",
+                            "attackStrength": "S4/4",
                             "attackTags": [
-                                ""
+                                "No CC (Inf.)","Turret"
                             ]
                         }
                     ]
@@ -324,8 +335,8 @@ const santalist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "Santagrine Militia",
             "faction": [
                 "santagri"
@@ -355,13 +366,13 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R10\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A5+/5+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
@@ -377,8 +388,8 @@ const santalist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "Mounted Serjeants",
             "faction": [
                 "santagri"
@@ -408,30 +419,30 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A5+/5+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "18-oz Lance Mine",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Vec",
+                            "attackRange": "R0\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A1+/1+",
+                            "attackStrength": "S6/1",
                             "attackTags": [
-                                ""
+                                "Melee","Shaped Charge"
                             ]
                         }
                     ]
@@ -442,13 +453,13 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf",
+                            "attackRange": "R0\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A1+/1+",
+                            "attackStrength": "S1/1",
                             "attackTags": [
-                                ""
+                                "Melee"
                             ]
                         }
                     ]
@@ -464,8 +475,8 @@ const santalist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "Yeoman Paras",
             "faction": [
                 "santagri"
@@ -495,30 +506,30 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A3+/3+",
+                            "attackStrength": "S1-/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "Hi-25 2.5-lber Spigot Mortar",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "3",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R6\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/5+",
+                            "attackStrength": "S7/1+",
                             "attackTags": [
-                                ""
+                                "Light Indirect (0)","Shaped Charge","Small Arm"
                             ]
                         }
                     ]
@@ -546,8 +557,8 @@ const santalist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "Volley Team",
             "faction": [
                 "santagri"
@@ -577,30 +588,30 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R10\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A5+/5+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Tricorne\" Triple RPG, improvized",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R8\"",
+                            "attackDice": "D3",
+                            "attackAccuracy": "A5+/6+",
+                            "attackStrength": "S5/1",
                             "attackTags": [
-                                ""
+                                "Shaped Charge","Small Arm"
                             ]
                         }
                     ]
@@ -616,8 +627,8 @@ const santalist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "Light Gun Team",
             "faction": [
                 "santagri"
@@ -647,30 +658,30 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "Sb.1 1-lber Gun",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "3",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R24\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A5+/xx",
+                            "attackStrength": "S14/2",
                             "attackTags": [
-                                ""
+                                "Defensive CC","Shaped Charge"
                             ]
                         }
                     ]
@@ -682,8 +693,8 @@ const santalist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "Grenadier Team",
             "faction": [
                 "santagri"
@@ -713,30 +724,41 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf",
+                            "attackRange": "R2\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A5+/5+",
+                            "attackStrength": "S1-/1-",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "S-5 40mm Grenade Pistol, sawn-off",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackName": "40mm HE",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R6\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1+/1+",
+                            "attackTags": [
+                                "Small Arm","Ignore Cover (1)"
+                            ]
+                        },
+                        {
+                            "attackName": "40mm Smoke",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R6\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Small Arm","No CC","Smoke (2\")"
                             ]
                         }
                     ]
@@ -752,8 +774,8 @@ const santalist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "Machine Gun Team",
             "faction": [
                 "santagri"
@@ -783,13 +805,13 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
@@ -800,13 +822,13 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R14\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/xx",
+                            "attackStrength": "S1+/2",
                             "attackTags": [
-                                ""
+                                "Defensive CC"
                             ]
                         }
                     ]
@@ -822,8 +844,8 @@ const santalist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "Bombard Team",
             "faction": [
                 "santagri"
@@ -853,30 +875,41 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "Hi-14 Three-Quarters Bombard",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackName": "26-lb HE",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R24\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/xx",
+                            "attackStrength": "S[D6]",
+                            "attackTags": [
+                                "Light Indirect (2)","No CC","Air-Filling","Radius (2\")"
+                            ]
+                        },
+                        {
+                            "attackName": "14-lb Plutonium Core",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R24\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/xx",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Light Indirect (2)","No CC","Radius (4\")","Roll a D6 for each unit in the radius. If the result is above the unit's Quality, it takes max pin, otherwise it takes one pin."
                             ]
                         }
                     ]
@@ -888,8 +921,8 @@ const santalist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "Groundsmen",
             "faction": [
                 "santagri"
@@ -919,13 +952,13 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Scoped","Small Arm"
                             ]
                         }
                     ]
@@ -936,13 +969,13 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R6\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A*",
+                            "attackStrength": "S1+/2",
                             "attackTags": [
-                                ""
+                                "Underbarrel (SMHH)"
                             ]
                         }
                     ]
@@ -970,8 +1003,8 @@ const santalist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "Pages",
             "faction": [
                 "santagri"
@@ -1001,13 +1034,13 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/6+",
+                            "attackStrength": "S1+/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
@@ -1018,13 +1051,13 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "All",
+                            "attackRange": "R32\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/xx",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Discreet","Designator"
                             ]
                         }
                     ]
@@ -1044,8 +1077,8 @@ const santalist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "Black Fangs",
             "faction": [
                 "santagri"
@@ -1075,30 +1108,30 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R10\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A2+/3+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "Lerna 15-lber Rocket Pod",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "1",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R22\"",
+                            "attackDice": "D4",
+                            "attackAccuracy": "A4+/5+",
+                            "attackStrength": "S4/4",
                             "attackTags": [
-                                ""
+                                "No CC (Inf.)"
                             ]
                         }
                     ]
@@ -1118,8 +1151,8 @@ const santalist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "Atomic Pilgrims",
             "faction": [
                 "santagri"
@@ -1149,30 +1182,30 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf",
+                            "attackRange": "R2\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A5+/5+",
+                            "attackStrength": "S1-/1-",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "\"Violet Mace\" Recoilless Gun, Nuclear",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "1",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R24\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/xx",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Nuclear (1\"-2\"-6\")"
                             ]
                         }
                     ]
@@ -1188,8 +1221,8 @@ const santalist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "Steam Tractor",
             "faction": [
                 "santagri"
@@ -1219,13 +1252,13 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A5+/6+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Turret"
                             ]
                         }
                     ]
@@ -1245,8 +1278,8 @@ const santalist = [
                     "params": "2"
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "War Wagon",
             "faction": [
                 "santagri"
@@ -1276,13 +1309,13 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf",
+                            "attackRange": "R2\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A5+/5+",
+                            "attackStrength": "S1-/1-",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
@@ -1306,8 +1339,8 @@ const santalist = [
                     "params": "Infinite"
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "CB.76 Misericorde",
             "faction": [
                 "santagri"
@@ -1337,30 +1370,41 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A5+/6+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Turret"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "Sb.21 20-lber Mountain Gun",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "3",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackName": "20-lb. HESH",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R24\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/6+",
+                            "attackStrength": "S8/3",
+                            "attackTags": [
+                                "No CC (Inf.)","Shaped Charge"
+                            ]
+                        },
+                        {
+                            "attackName": "20-lb. Smoke",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R24\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "No CC","Smoke (3\")"
                             ]
                         }
                     ]
@@ -1384,8 +1428,8 @@ const santalist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "Exto",
             "faction": [
                 "santagri"
@@ -1415,30 +1459,30 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "SAE 2-lber AA Gun",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R36\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/5+",
+                            "attackStrength": "S5/7",
                             "attackTags": [
-                                ""
+                                "No CC (Inf.)","Radar Anti-Air","Tracking","Turret"
                             ]
                         }
                     ]
@@ -1466,8 +1510,8 @@ const santalist = [
                     "params": "2"
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "Hexamer",
             "faction": [
                 "santagri"
@@ -1497,30 +1541,52 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A5+/6+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Multi-Gun"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "Sb.1 1-lber Gun",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackName": "1-lb. APDS",
+                            "attackTargets": "Vec",
+                            "attackRange": "R20\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/6+",
+                            "attackStrength": "S3/4",
                             "attackTags": [
                                 ""
+                            ]
+                        },
+                        {
+                            "attackName": "1-lb. SAPHE",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R20\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/6+",
+                            "attackStrength": "S1+/2",
+                            "attackTags": [
+                                "Ignore Cover (1)","No CC (Inf.)"
+                            ]
+                        },
+                        {
+                            "attackName": "1-lb. Smoke",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R20\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/++",
+                            "attackStrength": "",
+                            "attackTags": [
+                                "No CC","Smoke (2\")"
                             ]
                         }
                     ]
@@ -1536,8 +1602,8 @@ const santalist = [
                     "params": "2"
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "VC.2 Veldjen",
             "faction": [
                 "santagri"
@@ -1567,13 +1633,13 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A5+/6+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Turret"
                             ]
                         }
                     ]
@@ -1584,30 +1650,52 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R20\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/5+",
+                            "attackStrength": "S2/3",
                             "attackTags": [
-                                ""
+                                "Multi-Gun"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "14-lber Gun, various make",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "6",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackName": "14-lb. APHE",
+                            "attackTargets": "Vec",
+                            "attackRange": "R32\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/6+",
+                            "attackStrength": "S8/12",
+                            "attackTags": [
+                                "Turret","No CC (Inf.)"
+                            ]
+                        },
+                        {
+                            "attackName": "14-lb. HESH",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R32\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/6+",
+                            "attackStrength": "S7/2",
+                            "attackTags": [
+                                "Turret","No CC (Inf.)","Shaped Charge"
+                            ]
+                        },
+                        {
+                            "attackName": "14-lb. Smoke",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R32\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Turret","No CC","Smoke (3\")"
                             ]
                         }
                     ]
@@ -1623,8 +1711,8 @@ const santalist = [
                     "params": "2"
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "VC.44R Whirlwind",
             "faction": [
                 "santagri"
@@ -1654,30 +1742,52 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A5+/6+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Turret"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "24-lber Gun, local manufacture",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackName": "24-lb. APDS",
+                            "attackTargets": "Vec",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S12/18",
                             "attackTags": [
-                                ""
+                                "No CC (Inf.)","Turret"
+                            ]
+                        },
+                        {
+                            "attackName": "24-lb. HESH",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S8/3",
+                            "attackTags": [
+                                "No CC (Inf.)","Turret","Shaped Charge"
+                            ]
+                        },
+                        {
+                            "attackName": "24-lb. WP Smoke",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S1+/1+",
+                            "attackTags": [
+                                "No CC (Inf.)","Turret","Ignore Cover (2)","Smoke (3\")","Rear Attack"
                             ]
                         }
                     ]
@@ -1697,8 +1807,8 @@ const santalist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "VE.378 Cataphract",
             "faction": [
                 "santagri"
@@ -1728,47 +1838,69 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R20\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/6+",
+                            "attackStrength": "S2/3",
                             "attackTags": [
-                                ""
+                                "Turret"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "Sb.1 1-lber Gun",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "3",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackName": "1-lb. APDS",
+                            "attackTargets": "Vec",
+                            "attackRange": "R20\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/6+",
+                            "attackStrength": "S3/4",
                             "attackTags": [
-                                ""
+                                "Multi-Gun","No CC (Inf.)","Turret"
+                            ]
+                        },
+                        {
+                            "attackName": "1-lb. SAPHE",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R20\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/6+",
+                            "attackStrength": "S1+/2",
+                            "attackTags": [
+                                "Multi-Gun","No CC (Inf.)","Turret","Ignore Cover (1)"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "Sb.92 55-lber Gun",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackName": "55-lb. APDS",
+                            "attackTargets": "Vec",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A2+/5+",
+                            "attackStrength": "S14/21",
                             "attackTags": [
-                                ""
+                                "No CC (Inf.)","Thermal Sights","Turret"
+                            ]
+                        },
+                        {
+                            "attackName": "55-lb. HESH",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/5+",
+                            "attackStrength": "S9/4",
+                            "attackTags": [
+                                "No CC (Inf.)","Thermal Sights","Turret","Shaped Charge"
                             ]
                         }
                     ]
@@ -1780,8 +1912,8 @@ const santalist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "Vauban",
             "faction": [
                 "santagri"
@@ -1811,47 +1943,58 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R24\"",
+                            "attackDice": "D3",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S3/4",
                             "attackTags": [
-                                ""
+                                "Multi-Gun","Radar Anti-Air","Tracking","Turret"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "SAP 14-lber Naval Gun",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackName": "14-lb. APHE",
+                            "attackTargets": "Vec",
+                            "attackRange": "R40\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S8/12",
                             "attackTags": [
-                                ""
+                                "No CC (Inf.)","Radar Anti-Air","Tracking","Turret"
+                            ]
+                        },
+                        {
+                            "attackName": "14-lb. Proximity Fuze HE",
+                            "attackTargets": "All",
+                            "attackRange": "R40\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S3/3",
+                            "attackTags": [
+                                "No CC (Inf.)","Radar Anti-Air","Tracking","Turret","Air-Filling"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "VIM-4 \"Copa\" 90-lber VLS Missiles",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Vec/Air",
+                            "attackRange": "R24-60\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S8/8",
                             "attackTags": [
-                                ""
+                                "Air-Filling","Guided Missile (2)","Radar Anti-Air","Turret"
                             ]
                         }
                     ]
@@ -1879,8 +2022,8 @@ const santalist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "Field Gun",
             "faction": [
                 "santagri"
@@ -1910,30 +2053,41 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R10\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A5+/5+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "Field Gun, various make & caliber",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackName": "HESH, variable weight",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/xx",
+                            "attackStrength": "S9/4",
+                            "attackTags": [
+                                "No CC","Shaped Charge"
+                            ]
+                        },
+                        {
+                            "attackName": "Gas, variable composition & weight",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/xx",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "No CC","Chemical Weapon (4\")"
                             ]
                         }
                     ]
@@ -1945,8 +2099,8 @@ const santalist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "SB.15 1-lber Pom-Pom",
             "faction": [
                 "santagri"
@@ -1976,30 +2130,30 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R10\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A5+/5+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "Sb.15 1-lber Autocannon",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R32\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/xx",
+                            "attackStrength": "S4/6",
                             "attackTags": [
-                                ""
+                                "Tracking","Turret","No CC"
                             ]
                         }
                     ]
@@ -2011,8 +2165,8 @@ const santalist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "CB.61 Galgo",
             "faction": [
                 "santagri"
@@ -2042,30 +2196,30 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R24\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/5+",
+                            "attackStrength": "S3/4",
                             "attackTags": [
-                                ""
+                                "Turret"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "No.20 4-lb. Smoke Launchers",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "1",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R0\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Light Indirect (0)","No CC","Smoke (2\")","Turret"
                             ]
                         }
                     ]
@@ -2081,8 +2235,8 @@ const santalist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "SB.18 22-lber Retumbo",
             "faction": [
                 "santagri"
@@ -2112,30 +2266,52 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R10\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A5+/5+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Small Arm"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "Sb.18 22-lber Anti-Aircraft Gun",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackName": "22-lb. AP",
+                            "attackTargets": "Vec",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/xx",
+                            "attackStrength": "S8/12",
                             "attackTags": [
-                                ""
+                                "No CC","Radar Anti-Air","Tracking (Flak)","Turret"
+                            ]
+                        },
+                        {
+                            "attackName": "22-lb. Timed Fuze HE",
+                            "attackTargets": "All",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/xx",
+                            "attackStrength": "S3/3",
+                            "attackTags": [
+                                "No CC","Radar Anti-Air","Tracking (Flak)","Turret","Air-Filling"
+                            ]
+                        },
+                        {
+                            "attackName": "22-lb. Frag",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R∞\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/xx",
+                            "attackStrength": "S[D3]",
+                            "attackTags": [
+                                "No CC","Radar Anti-Air","Tracking (Flak)","Turret","Air-Filling","Heavy Indirect (3)","Radius (2\")"
                             ]
                         }
                     ]
@@ -2147,8 +2323,8 @@ const santalist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "OSM Mogul",
             "faction": [
                 "santagri"
@@ -2178,30 +2354,52 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A5+/6+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Turret"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "S-10 250-lber Siege Gun",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "3",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackName": "250-lb. HE",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S8/8",
+                            "attackTags": [
+                                "Ignore Cover (1)","No CC (Inf.)"
+                            ]
+                        },
+                        {
+                            "attackName": "250-lb. Phosgene Gas",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R∞\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Chemical Weapon (4\")","Heavy Indirect (3)","No CC"
+                            ]
+                        },
+                        {
+                            "attackName": "250-lb. WP Smoke",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R∞\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/5+",
+                            "attackStrength": "S1+/1+",
+                            "attackTags": [
+                                "Air-Filling","Heavy Indirect (3)","Ignore Cover (2)","No CC","Smoke (4\")","Rear Attack"
                             ]
                         }
                     ]
@@ -2217,8 +2415,8 @@ const santalist = [
                     "params": "2"
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "LDAL Pietro",
             "faction": [
                 "santagri"
@@ -2244,17 +2442,39 @@ const santalist = [
             "weapons": [
                 {
                     "weaponName": "Sb.1 1-lber Dual Guns",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "6",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackName": "1-lb. APDS",
+                            "attackTargets": "Vec",
+                            "attackRange": "R20\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/6+",
+                            "attackStrength": "S3/4",
+                            "attackTags": [
+                                "Barrage (2)","Turret"
+                            ]
+                        },
+                        {
+                            "attackName": "1-lb. SAPHE",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R20\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/6+",
+                            "attackStrength": "S1+/2",
+                            "attackTags": [
+                                "Barrage (2)","Turret","Ignore Cover (1)","No CC (Inf.)"
+                            ]
+                        },
+                        {
+                            "attackName": "1-lb. Smoke",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R20\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Barrage (2)","Turret","No CC","Smoke (2\")"
                             ]
                         }
                     ]
@@ -2270,8 +2490,8 @@ const santalist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "PEG.60-11 Squire",
             "faction": [
                 "santagri"
@@ -2300,30 +2520,30 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A5+/6+",
+                            "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Turret"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "Lerna 15-lber Rocket Pod",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "1",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R22\"",
+                            "attackDice": "D4",
+                            "attackAccuracy": "A4+/5+",
+                            "attackStrength": "S4/4",
                             "attackTags": [
-                                ""
+                                "No CC (Inf.)"
                             ]
                         }
                     ]
@@ -2339,8 +2559,8 @@ const santalist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "PEG.80-01A Sambuca",
             "faction": [
                 "santagri"
@@ -2369,30 +2589,30 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R20\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/5+",
+                            "attackStrength": "S2/3",
                             "attackTags": [
-                                ""
+                                "Door Gun (sides, Rear)"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "Lerna 15-lber Rocket Pod",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "1",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R22\"",
+                            "attackDice": "D4",
+                            "attackAccuracy": "A4+/5+",
+                            "attackStrength": "S4/4",
                             "attackTags": [
-                                ""
+                                "No CC (Inf.)"
                             ]
                         }
                     ]
@@ -2416,8 +2636,8 @@ const santalist = [
                     "params": "2"
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "PEG.123-00 Knight-Errant",
             "faction": [
                 "santagri"
@@ -2446,30 +2666,41 @@ const santalist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
+                            "attackTargets": "All",
+                            "attackRange": "R40\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                ""
+                                "Discreet","Designator"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "Chilon 30-lber High-Velocity Missile",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackName": "Air-to-Ground Targeting",
+                            "attackTargets": "Vec",
+                            "attackRange": "R12-60\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/3+",
+                            "attackStrength": "S8/5",
                             "attackTags": [
-                                ""
+                                "Guided Missile (1)"
+                            ]
+                        },
+                        {
+                            "attackName": "Air-to-Air Targeting",
+                            "attackTargets": "Air",
+                            "attackRange": "R60\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S8/5",
+                            "attackTags": [
+                                "Guided Missile (1)"
                             ]
                         }
                     ]
@@ -2485,8 +2716,8 @@ const santalist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "UNI.28-05 Conquistador",
             "faction": [
                 "santagri"
@@ -2511,15 +2742,15 @@ const santalist = [
             "weapons": [
                 {
                     "weaponName": "Sb.38 20mm Autocannon",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R32\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S4/6",
                             "attackTags": [
                                 ""
                             ]
@@ -2527,35 +2758,35 @@ const santalist = [
                     ]
                 },
                 {
-                    "weaponName": "Sarvara 46-lber Dual Rocket Pod",
-                    "weaponAmmo": "",
+                    "weaponName": "Sarvara 46-lber Dual Rocket Pods",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R24\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A6+/5+",
+                            "attackStrength": "S10/2",
                             "attackTags": [
-                                ""
+                                "Barrage (2)","Shaped Charge","Strafing"
                             ]
                         }
                     ]
                 },
                 {
-                    "weaponName": "Lerna 15-lber Rocket Pod",
-                    "weaponAmmo": "",
+                    "weaponName": "Lerna 15-lber Dual Rocket Pods",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R22\"",
+                            "attackDice": "D4",
+                            "attackAccuracy": "A4+/5+",
+                            "attackStrength": "S4/4",
                             "attackTags": [
-                                ""
+                                "No CC (Inf.)"
                             ]
                         }
                     ]
@@ -2571,8 +2802,8 @@ const santalist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "UNI.28-03 Man-At-Arms",
             "faction": [
                 "santagri"
@@ -2597,15 +2828,15 @@ const santalist = [
             "weapons": [
                 {
                     "weaponName": "Allant 1.8-lber Rotary Cannon",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "3",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R32\"",
+                            "attackDice": "D3",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S4/6",
                             "attackTags": [
                                 ""
                             ]
@@ -2614,34 +2845,34 @@ const santalist = [
                 },
                 {
                     "weaponName": "9GR1M 125mm ATGM",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Vec",
+                            "attackRange": "R6-60\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/4+",
+                            "attackStrength": "S16/3",
                             "attackTags": [
-                                ""
+                                "Guided Missile (2)","Shaped Charge"
                             ]
                         }
                     ]
                 },
                 {
-                    "weaponName": "Lerna 15-lber Rocket Pod",
-                    "weaponAmmo": "",
+                    "weaponName": "Lerna 15-lber Dual Rocket Pods",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R22\"",
+                            "attackDice": "D4",
+                            "attackAccuracy": "A4+/5+",
+                            "attackStrength": "S4/4",
                             "attackTags": [
-                                ""
+                                "No CC (Inf.)"
                             ]
                         }
                     ]
@@ -2657,8 +2888,8 @@ const santalist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "UNI.28-08 Lancer",
             "faction": [
                 "santagri"
@@ -2683,51 +2914,62 @@ const santalist = [
             "weapons": [
                 {
                     "weaponName": "SDV 6-lber High-Velocity Autocannon",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "3",
                     "attacks": [
                         {
-                            "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackName": "Air-to-Air Targeting",
+                            "attackTargets": "Air",
+                            "attackRange": "R40\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A5+/5+",
+                            "attackStrength": "S12/18",
                             "attackTags": [
-                                ""
+                                "Thermal Sights"
+                            ]
+                        },
+                        {
+                            "attackName": "Air-to-Ground Targeting",
+                            "attackTargets": "Vec",
+                            "attackRange": "R40\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S12/18",
+                            "attackTags": [
+                                "Thermal Sights"
                             ]
                         }
                     ]
                 },
                 {
-                    "weaponName": "Lerna 15-lber Rocket Pod",
-                    "weaponAmmo": "",
+                    "weaponName": "Lerna 15-lber Dual Rocket Pod",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R22\"",
+                            "attackDice": "D4",
+                            "attackAccuracy": "A4+/5+",
+                            "attackStrength": "S4/4",
                             "attackTags": [
-                                ""
+                                "No CC (Inf.)"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "Silene 285-lber Dual WP Rocket Pod",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R28\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1+/1+",
                             "attackTags": [
-                                ""
+                                "Barrage (2)","Ignore Cover (2)","Rear Attack","Smoke (4\")"
                             ]
                         }
                     ]
@@ -2743,8 +2985,8 @@ const santalist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "MC.17-86 Spada-Fresco",
             "faction": [
                 "santagri"
@@ -2771,15 +3013,15 @@ const santalist = [
             "weapons": [
                 {
                     "weaponName": "Sb.38 20mm Autocannons, dual",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "3",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A3+",
+                            "attackStrength": "S4",
                             "attackTags": [
                                 ""
                             ]
@@ -2788,17 +3030,17 @@ const santalist = [
                 },
                 {
                     "weaponName": "500-lber HE Bombs, various models",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R0\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+",
+                            "attackStrength": "S6",
                             "attackTags": [
-                                ""
+                                "Air-Filling","Barrage (2)","Radius (3\")","Rear Attack"
                             ]
                         }
                     ]
@@ -2810,8 +3052,8 @@ const santalist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "MC.20-01C Rocinante",
             "faction": [
                 "santagri"
@@ -2838,15 +3080,15 @@ const santalist = [
             "weapons": [
                 {
                     "weaponName": "Allant 1.8-lber Rotary Cannon",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D3",
+                            "attackAccuracy": "A3+",
+                            "attackStrength": "S4",
                             "attackTags": [
                                 ""
                             ]
@@ -2854,35 +3096,35 @@ const santalist = [
                     ]
                 },
                 {
-                    "weaponName": "Lerna 15-lber Rocket Pod",
-                    "weaponAmmo": "",
+                    "weaponName": "Lerna 15-lber Dual Rocket Pods",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Inf/Vec",
+                            "attackRange": "R22\"",
+                            "attackDice": "D4",
+                            "attackAccuracy": "A4+/5+",
+                            "attackStrength": "S4/4",
                             "attackTags": [
-                                ""
+                                "Barrage (2)"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "SUR-4 127mm Infrared AAM",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Air",
+                            "attackRange": "R24\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+",
+                            "attackStrength": "S6",
                             "attackTags": [
-                                ""
+                                "Air-Filling","Guided Missile (1)","Homing"
                             ]
                         }
                     ]
@@ -2902,8 +3144,8 @@ const santalist = [
                     "params": ""
                 }
             ]
-        },
-        {
+    },
+    {
             "name": "DC/B.2K Jonquil",
             "faction": [
                 "santagri"
@@ -2930,51 +3172,51 @@ const santalist = [
             "weapons": [
                 {
                     "weaponName": "Rb.12 9-lber Air-to-Air Rockets",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R6\"",
+                            "attackDice": "D3",
+                            "attackAccuracy": "A4+",
+                            "attackStrength": "S3",
                             "attackTags": [
-                                ""
+                                "Barrage (2)"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "Mf.59 60-lber Semi-Active AAM",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Air",
+                            "attackRange": "R50\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+",
+                            "attackStrength": "S8",
                             "attackTags": [
-                                ""
+                                "Air-Filling","Guided Missile (1)","No CC"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "9GR3 275mm AGM",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "3",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Vec",
+                            "attackRange": "R60\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A2+",
+                            "attackStrength": "S24/8",
                             "attackTags": [
-                                ""
+                                "Guided Missile (2)","MCLOS","Shaped Charge"
                             ]
                         }
                     ]
@@ -3018,15 +3260,15 @@ const santalist = [
             "weapons": [
                 {
                     "weaponName": "Allant 1.8-lber Rotary Cannon, modified",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D4",
+                            "attackAccuracy": "A3+",
+                            "attackStrength": "S4",
                             "attackTags": [
                                 ""
                             ]
@@ -3035,34 +3277,34 @@ const santalist = [
                 },
                 {
                     "weaponName": "Breakspear 60-lber Semi-Active AAM",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Air",
+                            "attackRange": "R60\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+",
+                            "attackStrength": "S8",
                             "attackTags": [
-                                ""
+                                "Air-Filling","Guided Missile (1)","No CC"
                             ]
                         }
                     ]
                 },
                 {
                     "weaponName": "SUR-4 127mm IR AAM, modified",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "",
-                            "attackRange": "",
-                            "attackDice": "",
-                            "attackAccuracy": "",
-                            "attackStrength": "",
+                            "attackTargets": "Vec/Air",
+                            "attackRange": "R30\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+",
+                            "attackStrength": "S6",
                             "attackTags": [
-                                ""
+                                "Air-Filling","Barrage (2)","Guided Missile (1)","Homing"
                             ]
                         }
                     ]
