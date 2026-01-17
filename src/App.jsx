@@ -10,7 +10,8 @@ import peoplenames from './data/characterNames.js'
 
 function App() {
   let localLib  = fedlist.concat(luplist,rygolist,santalist,generics)
-  let idNum = 100; //unique number for each entry, hopefully faster searching
+  //unique number for each entry, hopefully faster searching
+  const [idNum, updateId] = useState(100)
   //Values being tracked: Faction filter/unit library, army list, sum of unit point values, number of TACOMs and Command Points generated per round
   const [workingList, updateArmyList] = useState([])
   const [workingLibrary, filterUnits] = useState(localLib)
@@ -96,6 +97,7 @@ function App() {
             <th>Unit Library</th>
             <th>Army List</th>
           </tr>
+
           <tr>
             <td className="LibraryHolder">
               <div className="FloatingTable">
@@ -112,6 +114,7 @@ function App() {
                         <td>
                           <button 
                             type="button" className="FullSquareButton" onClick={() => {
+                            updateId(idNum+1)
                             //Add only the items necessary to be saved on the army list side + values being tracked
                             updateArmyList([
                               ...workingList,
@@ -120,14 +123,16 @@ function App() {
                                 "unitData":unit,
                                 "unitCallsign":generate_callsign(),
                                 "unitLeader":generate_name(unit.faction),
-                                "unitTransport":null
+                                "unitTransport":{"transportId":null,"transportSeat":null},
+                                "unitEmbark":[],
+                                "unitDesant":[],
+                                "unitTowing":[]
                               }
                               ])
-                            console.log(unit.faction)
                             //Update tracked values on unit add to army list
                             updateListValue(workingValue+unit.value)
                             updateCommandGen(workingCommandGen+unit.command)
-                            idNum++
+                            
                             if(unit.tags.some(tag => tag.rule == "TACOM") && !unit.tags.some(tag => tag.params == "Additional")){
                               updateTacCount(workingTacCount+1)
                             }}}>Add Unit +</button>
@@ -136,8 +141,9 @@ function App() {
                     ))}
                 </tbody>
               </table>
-            </div>
-          </td>
+              </div>
+            </td>
+
           <td className="ListHolder">
             <div className="FloatingTable">      
               <table id="armyList">
@@ -145,23 +151,82 @@ function App() {
                 {workingList.map((unit, index) => (
                   <tr key={index} id="armyUnit">
                     <td className="UnitName"> 
-                      <button style={{textAlign:'left'}} onClick={() => { //Allow user to assign custom callsigns, names
+                      <button style={{textAlign:'left'}} onClick={() => { //Allow user to assign custom callsigns, TODO:names, custom prompt interface?
                         let newCallsign = prompt("What is this unit's callsign?",unit.unitCallsign)
-                        if(newCallsign!=null){//DON'T REPLACE CALLSIGN ON CANCEL
+                        if((newCallsign!=null)&&(newCallsign!="")){//DON'T REPLACE CALLSIGN ON CANCEL OR IF EMPTY STRING
                           workingList[index].unitCallsign = newCallsign
                         }
                         updateArmyList([...workingList])
+                        
+                        console.log(unit)
+                        
                       }}>
                         <p style={{marginLeft:5}}>{unit.unitData.name}</p>
                         <p style={{marginLeft:5, fontSize:10}}>"{unit.unitCallsign}" | {unit.unitLeader}</p>
                       </button>
                     </td>
+                    
                     <td style={{width:"50%"}}>
-                      {unit.unitData.value} pts
+                      <span>
+                        <select style={{width:250}} id={unit.unitNum} name="transport" defaultValue={"*"} onChange={
+                            changeEvent => {
+                              let chosen = changeEvent.target
+                              unit.unitTransport.transportId=chosen.value
+                              unit.unitTransport.transportSeat=chosen.options.item(chosen.selectedIndex).getAttribute("data-seat")
+                              //console.log(chosen.options.item(chosen.selectedIndex).getAttribute("data-seat"))
+                            }
+                          }>
+                          <option key="-1*" data-seat={null} value="*">No Transport</option>
+                          {
+                            
+                            //Desant option
+                             desant_filter(workingList,unit).map((transportUnit,indexD) => (
+                              <option key={indexD} data-seat="D" value={transportUnit.unitNum}>[Desant] {transportUnit.unitData.name} | {transportUnit.unitCallsign}</option>
+                              
+                              )
+                            )
+                          }
+                          {
+                            //Embark option
+                             embark_filter(workingList,unit).map((transportUnit,indexE) => (
+                              <option key={indexE} data-seat="E" value={transportUnit.unitNum}>[Embark] {transportUnit.unitData.name} | {transportUnit.unitCallsign}</option>
+                              )
+                            )
+                          }
+                          {
+                            //Tow options
+                            tow_filter(workingList,unit).map((transportUnit,indexT) => (
+                              <option key={indexT} data-seat="T" value={transportUnit.unitNum}>[Tow] {transportUnit.unitData.name} | {transportUnit.unitCallsign}</option>
+                              )
+                            )
+                          }
+                            
+                        </select>
+                        <button 
+                          type="button" className="NormalButton" style={{backgroundColor:"transparent", fontWeight:"bold", color:"red", width:50, textAlign:'center'}} onClick={()=>{
+                            console.log(unit)
+                            //Set the transport for this unit to "No Transport", then set selected value to "No Transport"
+                            document.getElementById(unit.unitNum).value="*" //Search document for row with ID unitNum and set it's value to "No Transport"
+                            unit.unitTransport.transportId=null
+                            unit.unitTransport.transportSeat=null
+                          }}>X</button>
+                      </span>
                     </td>
+                    
                     <td>
                       <button
-                        type="button" className="NormalButton" style={{backgroundColor:"transparent", fontWeight:"bold", color:"red"}} onClick={()=>{
+                        type="button" className="NormalButton" style={{backgroundColor:"#FF000088", fontWeight:"bold"}} onClick={()=>{
+                          //TODO: TECHDEBT: upgrade logic so relations are persisted through list changes. 
+                          //When removing relation, remove all relations so the UI doesn't have to be rearranged. 
+                          for(const i in workingList){
+                            workingList.at(i).unitTransport.transportId=null
+                            workingList.at(i).unitTransport.transportSeat=null
+                          }
+                          //Set all relation selects to "No transport"
+                          let transportSelects = document.getElementsByName("transport")
+                          for(const s in transportSelects){
+                            transportSelects.item(s).value="*"
+                          }
                           //Update workinglist to everything except the value at index
                           updateArmyList(workingList.slice(0, index).concat(workingList.slice(index+1)))
                           //update tracked values on unit being removed from army list
@@ -170,7 +235,9 @@ function App() {
                           if(unit.unitData.tags.some(tag => tag.rule == "TACOM") && !unit.unitData.tags.some(tag => tag.params == "Additional")){
                             updateTacCount(workingTacCount-1)
                           }
-                        }}>X</button>
+                          //Update Transport for all units,search for units that reference for that unit and set to "No Transport"
+                          
+                        }}>Remove Unit</button>
                     </td>
                   </tr>
                 ))}</tbody>
@@ -178,6 +245,7 @@ function App() {
             </div>
           </td>
         </tr>
+        
         <tr>
           <td style={{fontSize:10, textAlign:'left'}}><p>Source Code: <a href="https://github.com/nullAurelian/firelock-198X-armybuilder">https://github.com/nullAurelian/firelock-198X-armybuilder</a></p></td>
           <td>
@@ -186,21 +254,20 @@ function App() {
                 <tr>
                   <td className='UtilityMenu'>
                     <button type="button" className="NormalButton" //Reset Army list related tracked data
-                      onClick={() => {updateArmyList([]); updateListValue(0); updateTacCount(0); updateCommandGen(0)}}> Clear List </button>
-                    <button type="button" className="NormalButton" //Export values to clipboard for pasting elsewhere
-                      onClick={() => {handle_export(workingList)}}>Export to Clipboard</button>
-                    <button type='button' className='NormalButton' //For every unit with a callsign of null, change to <consonent><vowel>-<index+1>.
+                      onClick={() => {updateArmyList([]); updateListValue(0); updateTacCount(0); updateCommandGen(0)}}> Clear Army List </button>
+                    <button type='button' className='NormalButton' //Reset unit transport relations
                       onClick={() => {
-                        for (let i = 0; i < workingList.length; i++) {
-                          if(workingList[i].unitCallsign==""){
-                            workingList[i].unitCallsign = generate_callsign()
+                        for(const i in workingList){
+                            workingList.at(i).unitTransport.transportId=null
+                            workingList.at(i).unitTransport.transportSeat=null
                           }
-                          if(workingList[i].unitLeader==""){
-                            workingList[i].unitLeader = generate_name(workingList[i].unitData.faction)
-                          }
-                        }
-                        updateArmyList([...workingList])
-                      }}>Generate Callsigns and Names</button>
+                        let transportSelects = document.getElementsByName("transport")
+                        for(const s in transportSelects){
+                            transportSelects.item(s).value="*"
+                          }  
+                      }}>Reset Transports</button>
+                    <button type="button" className="NormalButton" //Export values to clipboard for pasting elsewhere
+                      onClick={() => {handle_export(workingList,workingCommandGen,workingValue)}}>Export to Clipboard</button>
                   </td>
                   <td style={{textAlign:'right'}}>
                     <p id="totalPts">List Value: {workingValue}</p>
@@ -218,30 +285,48 @@ function App() {
   )
 }
 /**
+ * Converts unit data into a human-readable string
+ * @param {Object} data unit data JSON
+ * @returns String of unit data for export purposes
+ */
+function unit_data_toString(data){
+  let seat = (data.unitTransport.transportId==null) ? "" : "["+data.unitTransport.transportSeat+"] "+"("+data.unitTransport.transportId+") "
+  return "\r\n"+seat+data.unitData.name+" ("+data.unitCallsign+", "+data.unitLeader+") ["+data.unitData.value+" pts]"
+}
+
+function listToTrees(armylist){
+  let templist = armylist
+  var map = {}
+  for(i=0;i<armylist.length;i++){
+    map[armylist[i].unitNum]=i
+  }
+  return [] //Array of trees
+}
+
+/**
  * Takes the array of units of the user army list and converts it to text that is copied to the user's clipboard.
  * @param {Array} armylist all units selected for use in the user's army.
  */
-function handle_export(armylist) { //Trigger copy list content to clipboard
-  let armyString = ""
-  let armyCost = 0
-  console.log(armylist)
+function handle_export(armylist, armyCmd, armyCost) { //Trigger copy list content to clipboard
+  let armyString = "" //Final string to be copied to clipbord
+  let exportList=armylist //Use temp array to allow rearrangement of list during export
+  //Convert to tree
+  //Convert tree to string
+  console.log(orderByRelation(exportList))
   //Format everything in the current army list to a simple text of name only
-  for (const u of armylist){
-    let uName = ""
-    if(u.unitData.tags.some(tag => tag.rule == "TACOM")) {uName = ", "+u.unitLeader}
-    armyString = armyString.concat(" \r\n ",u.unitData.name, " (",u.unitCallsign,uName,") [",u.unitData.value," pts]")
-    armyCost += u.unitData.value
+  for (const u of exportList){
+    armyString = armyString.concat(unit_data_toString(u))
   }
   console.log(armyString)
-  navigator.clipboard.writeText(armyString.concat("\r\nTotal Point Value:",armyCost)).then(
+  navigator.clipboard.writeText(armyString.concat("\r\nTotal Point Value: ",armyCost,"\r\nCommand points: ",armyCmd)).then(
     () => {
       console.log("Copied list to clipboard!")
       alert("Copied contents to clipboard!")
     },
     () => {console.log("Failed to copy list to clipboard!")}
   )
+  
 }
-
 /**
  * Takes the global library of units and filters them based on checkbox state.
  * @param {Array} library of all units
@@ -299,7 +384,47 @@ function build_list_filter(library){
   }
   return [...new Set(temp)]
 }
-
+/**
+ * Returns a list of units that self can be embarked on
+ * @param {Array} armylist working army list
+ * @param {Object} self unit Object to filter self
+ * @returns list of units that target can be embarked on 
+ */
+function embark_filter(armylist, self){
+  //Step 1: filter out for self-reference
+  let selfFilteredList = armylist.filter(units => units.unitNum != self.unitNum)
+  //Step 2: infantry sees anything with PC, Desant tag (special carve out for Mounted Serjeants)
+  if((self.unitData.type.super.includes("Infantry"))&&(self.unitData.name!="Mounted Serjeants")){
+    return [...new Set(selfFilteredList.filter(units => units.unitData.tags.some(tag => tag.rule == "PC")))]
+  }
+  return []
+}
+/**
+ * Returns a list of units that self can be desanted on
+ * @param {Array} armylist 
+ * @param {Object} self 
+ * @returns list of valid desanting targets
+ */
+function desant_filter(armylist, self){
+  let selfFilteredList = armylist.filter(units => units.unitNum != self.unitNum)
+  if((self.unitData.type.super.includes("Infantry"))&&(self.unitData.name!="Mounted Serjeants")){
+    return selfFilteredList.filter(units => units.unitData.tags.some(tag => tag.rule == "Desant"))
+  }
+  return []
+}
+/**
+ * Returns a list of units that self can be Towed by
+ * @param {Array} armylist 
+ * @param {Object} self 
+ * @returns list of valid towing targets
+ */
+function tow_filter(armylist, self){
+  let selfFilteredList = armylist.filter(units => units.unitNum != self.unitNum)
+  if((self.unitData.type.super.includes("Vehicle") || self.unitData.type.super.includes("Helicopter"))&&!(self.unitData.tags.some(tag => tag.rule == "Leviathan"))){
+    return selfFilteredList.filter(units => units.unitData.tags.some(tag => tag.rule == "Tow"))
+  }
+  return []
+}
 /**
  * Renders a single unit's data as an active 
  * @param {JSON} unit JSON of unit data saved to the army list.
@@ -308,8 +433,8 @@ function build_list_filter(library){
 function render_unit_data(unit){
   let t = unit.name +"\n\rUnit type: " +unit.type.super +"("+unit.type.sub+")"+"\n\rUnit stats: "+unit.stats+ "\n\rUnit traits: \n\r"
   for(let i = 0; i < unit.tags.length; i++){
-    let e = "(" + unit.tags[i].params +")"
-    if(e==="()"){e=""}
+    let e = " (" + unit.tags[i].params +")"
+    if(e===" ()"){e=""}
     t += unit.tags[i].rule +e + ", "
     }
     t+="\n\rUnit Weapons: \n\r"
@@ -342,7 +467,6 @@ function generate_callsign(){
  * @returns string of names
  */
 function generate_name(faction){
-  console.log(faction)
   switch(faction[0]){
     case "federal":
       return peoplenames.federal.firstNames[Math.floor(Math.random() * peoplenames.federal.firstNames.length)].concat(peoplenames.federal.lastNames[Math.floor(Math.random() * peoplenames.federal.lastNames.length)]);

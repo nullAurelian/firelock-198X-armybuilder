@@ -26,10 +26,10 @@ const nameData = {
              " Abras"," Auclair"," Armand"," Bacri"," Barrat"," Balteux"," Belloq"," Bouchet"," Boussard"," Calvet"," Carrere"," Chevallier"," Delacroix"," Delamare"," Delacour",
              " Deviliers"," Dubost"," Dupin"," Durand"," Echaurd"," Fauche"," Favre"," Freche"," Galliot"," Girard"," Guy"," Hugo"," Huby"," Joffrin"," Jouve"," Kaplan"," Labre",
              " Laffite"," Lajoie"," Lamarche"," Larousse"," Le Blanc"," Magne"," Masse"," Matthieu"," Michel"," Noire"," Olivier"," Papin"," Paquet"," Picard"," Poux"," Ramonde",
-             " Renard"," Renaut"," Roche"," Roy"," Sarte"," Tomas"," Tulard"," Vaudreyes"," Vollant"
+             " Renard"," Renaut"," Roche"," Roy"," Sarte"," Tomas"," Tulard"," Vaugn"," Vollant"
         ]
     },
-    "rygolic":{
+    "rygolic":{ //Rygolic constructs don't have names typically
         "firstNames":[
              " " 
         ],

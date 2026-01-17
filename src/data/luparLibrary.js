@@ -1527,6 +1527,10 @@ const luplist = [
                 {
                     "rule": "Tow",
                     "params": "2"
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -1588,6 +1592,10 @@ const luplist = [
                 {
                     "rule": "Units embarked may spot and be spotted by Sense.",
                     "params": ""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -1645,6 +1653,10 @@ const luplist = [
                 {
                     "rule": "PC",
                     "params": "2, Rear"
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -1732,6 +1744,10 @@ const luplist = [
                 {
                     "rule": "PC",
                     "params": "2, Rear"
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -1819,6 +1835,10 @@ const luplist = [
                 {
                     "rule": "PC",
                     "params": "2, Rear, Front"
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -1913,6 +1933,10 @@ const luplist = [
                 {
                     "rule": "NBC",
                     "params": ""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -2018,6 +2042,10 @@ const luplist = [
                 {
                     "rule": "NBC",
                     "params": ""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -2092,9 +2120,10 @@ const luplist = [
                 }
             ],
             "tags": [
+                
                 {
-                    "rule": "",
-                    "params": ""
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -2174,6 +2203,10 @@ const luplist = [
                 {
                     "rule": "PC",
                     "params": "2, Rear"
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -2240,6 +2273,10 @@ const luplist = [
                 {
                     "rule": "NBC",
                     "params": ""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -2336,9 +2373,10 @@ const luplist = [
                 }
             ],
             "tags": [
+                
                 {
-                    "rule": "",
-                    "params": ""
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -2425,8 +2463,8 @@ const luplist = [
             ],
             "tags": [
                 {
-                    "rule": "",
-                    "params": ""
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -2490,9 +2528,10 @@ const luplist = [
                 }
             ],
             "tags": [
+                
                 {
-                    "rule": "",
-                    "params": ""
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -2556,9 +2595,10 @@ const luplist = [
                 }
             ],
             "tags": [
+                
                 {
-                    "rule": "",
-                    "params": ""
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -2608,6 +2648,10 @@ const luplist = [
                 {
                     "rule": "PC",
                     "params": "4, Any"
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },

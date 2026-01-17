@@ -306,6 +306,10 @@ const rygolist = [
                 {
                     "rule": "This unit may not lend actions to friendly units via Rygonet.",
                     "params": ""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
     },
@@ -389,6 +393,10 @@ const rygolist = [
                 {
                     "rule": "When this unit activates in the Fire Phase, it may select one friendly Rygolic unit within Line of Sight up to 8\" away which has not already acted that round. The Stoma and the selected unit fire at the same target simultaneously. Units activated this way are treated as having already fired for the round.",
                     "params": ""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
     },
@@ -1386,6 +1394,10 @@ const rygolist = [
                 {
                     "rule": "PC",
                     "params": "2, Rear"
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
     },
@@ -1494,6 +1506,10 @@ const rygolist = [
                 {
                     "rule": "PC",
                     "params": "2, Rear"
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
     },
@@ -1602,6 +1618,10 @@ const rygolist = [
                 {
                     "rule": "PC",
                     "params": "2, Rear"
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
     },
@@ -1760,6 +1780,14 @@ const rygolist = [
                 {
                     "rule": "NBC",
                     "params": ""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
     },
@@ -1869,6 +1897,10 @@ const rygolist = [
                 {
                     "rule": "NBC",
                     "params": ""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
     },
@@ -1967,6 +1999,10 @@ const rygolist = [
                 {
                     "rule": "NBC",
                     "params": ""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
     },
@@ -2028,6 +2064,10 @@ const rygolist = [
                 {
                     "rule":"This unit cannot fire during the first Fire Phase of the game if Paradropped",
                     "params":""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
     },
@@ -2089,6 +2129,10 @@ const rygolist = [
                 {
                     "rule":"This unit cannot fire during the first Fire Phase of the game if Paradropped",
                     "params":""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
     },
@@ -2155,6 +2199,10 @@ const rygolist = [
                 {
                     "rule": "NBC",
                     "params": ""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
     },
@@ -2266,6 +2314,10 @@ const rygolist = [
                 {
                     "rule": "NBC",
                     "params": ""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
     },
@@ -2358,6 +2410,10 @@ const rygolist = [
                 {
                     "rule": "NBC",
                     "params": ""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
     },
@@ -2473,6 +2529,10 @@ const rygolist = [
                 {
                     "rule": "NBC",
                     "params": ""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
     },
@@ -2543,6 +2603,10 @@ const rygolist = [
                 {
                     "rule": "NBC",
                     "params": ""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
     },

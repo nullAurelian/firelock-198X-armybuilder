@@ -135,6 +135,10 @@ const fedlist = [
                 {
                     "rule": "Brigade",
                     "params": "3, 12\""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -320,6 +324,10 @@ const fedlist = [
                 {
                     "rule": "Brigade",
                     "params": "4, 6\""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -434,6 +442,10 @@ const fedlist = [
                 {
                     "rule": "Brigade",
                     "params": "4, 6\""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -555,6 +567,10 @@ const fedlist = [
                 {
                     "rule": "Brigade",
                     "params": "4, 6\""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -687,6 +703,10 @@ const fedlist = [
                 {
                     "rule": "Brigade",
                     "params": "4, 6\""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -797,6 +817,10 @@ const fedlist = [
                 {
                     "rule": "Brigade",
                     "params": "4, 6\""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -919,6 +943,10 @@ const fedlist = [
                 {
                     "rule": "Brigade",
                     "params": "4, 6\""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -1743,6 +1771,10 @@ const fedlist = [
                 {
                     "rule": "Tow",
                     "params": "2"
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -1818,6 +1850,10 @@ const fedlist = [
                 {
                     "rule": "NBC",
                     "params": ""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -1944,6 +1980,10 @@ const fedlist = [
                 {
                     "rule": "Steel Watchbands",
                     "params": ""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -2059,6 +2099,10 @@ const fedlist = [
                 {
                     "rule": "Steel Watchbands",
                     "params": ""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -2252,6 +2296,10 @@ const fedlist = [
                 {
                     "rule": "Steel Watchbands",
                     "params": ""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -2364,6 +2412,10 @@ const fedlist = [
                 {
                     "rule": "Steel Watchbands",
                     "params": ""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -2487,6 +2539,10 @@ const fedlist = [
                 {
                     "rule": "Steel Watchbands",
                     "params": ""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -2588,6 +2644,10 @@ const fedlist = [
                 {
                     "rule": "Steel Watchbands",
                     "params": ""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -2701,6 +2761,10 @@ const fedlist = [
                 {
                     "rule": "Steel Watchbands",
                     "params": ""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -2798,8 +2862,8 @@ const fedlist = [
             ],
             "tags": [
                 {
-                    "rule": "",
-                    "params": ""
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -2897,8 +2961,8 @@ const fedlist = [
             ],
             "tags": [
                 {
-                    "rule": "",
-                    "params": ""
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -2969,6 +3033,10 @@ const fedlist = [
                 {
                     "rule": "PC",
                     "params": "2, Rear"
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -3039,6 +3107,10 @@ const fedlist = [
                 {
                     "rule": "NBC",
                     "params": ""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -3131,6 +3203,10 @@ const fedlist = [
                 {
                     "rule": "PC",
                     "params": "2, Rear"
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -3234,6 +3310,10 @@ const fedlist = [
                 {
                     "rule": "Steel Watchbands",
                     "params": ""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },
@@ -3319,6 +3399,10 @@ const fedlist = [
                 {
                     "rule": "PC",
                     "params": "3, Any"
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
         },

@@ -333,6 +333,10 @@ const santalist = [
                 {
                     "rule": "Whenever this unit scores a kill on an enemy Vehicle, it may Rally a friendly unit within 8\".",
                     "params": ""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
     },
@@ -1276,6 +1280,10 @@ const santalist = [
                 {
                     "rule": "Tow",
                     "params": "2"
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
     },
@@ -1337,6 +1345,10 @@ const santalist = [
                 {
                     "rule": "Tow",
                     "params": "Infinite"
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
     },
@@ -1426,6 +1438,10 @@ const santalist = [
                 {
                     "rule": "May fire while carrying desanting infantry and can carry PC(3) desants instead of PC(2)",
                     "params": ""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"3, Any"
                 }
             ]
     },
@@ -1508,6 +1524,10 @@ const santalist = [
                 {
                     "rule": "Tow",
                     "params": "2"
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
     },
@@ -1600,6 +1620,10 @@ const santalist = [
                 {
                     "rule": "Tow",
                     "params": "2"
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
     },
@@ -1709,6 +1733,10 @@ const santalist = [
                 {
                     "rule": "Tow",
                     "params": "2"
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
     },
@@ -1805,6 +1833,10 @@ const santalist = [
                 {
                     "rule": "This unit pays an additional 1\" when rotating left. When rotating right, the rotation is free up to 180 degrees.",
                     "params": ""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
     },
@@ -1910,6 +1942,10 @@ const santalist = [
                 {
                     "rule": "NBC",
                     "params": ""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
     },
@@ -2018,6 +2054,10 @@ const santalist = [
                     "params": ""
                 },
                 {
+                    "rule":"Desant",
+                    "params":"4, Any"
+                },
+                {
                     "rule": "If the CWIS has not been destroyed this unit gains APS(6+, Infinite). This APS has infinite ammo but may only trigger once per round and only against Guided Missiles.",
                     "params": ""
                 }
@@ -2097,6 +2137,10 @@ const santalist = [
                 {
                     "rule": "NBC",
                     "params": ""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
     },
@@ -2163,6 +2207,10 @@ const santalist = [
                 {
                     "rule": "NBC",
                     "params": ""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
     },
@@ -2233,6 +2281,10 @@ const santalist = [
                 {
                     "rule": "Paradrop",
                     "params": ""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
     },
@@ -2321,6 +2373,10 @@ const santalist = [
                 {
                     "rule": "NBC",
                     "params": ""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
     },
@@ -2413,6 +2469,10 @@ const santalist = [
                 {
                     "rule": "Tow",
                     "params": "2"
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
     },
@@ -2488,6 +2548,10 @@ const santalist = [
                 {
                     "rule": "NBC",
                     "params": ""
+                },
+                {
+                    "rule":"Desant",
+                    "params":"2, Any"
                 }
             ]
     },
