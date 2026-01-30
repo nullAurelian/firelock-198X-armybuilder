@@ -1,5 +1,5 @@
-const nameData = {
-    "federal":{
+const nameData = { //Names used by unit name generator. Trying to keep at least 4:1 masculine:feminine names at least.
+    "federal":{ //Federal names: typically dutch/germanic origins with a touch of french for cydoland
         "firstNames":[
              " Albert"," Alf"," Alice" ," Arthur"," Baldur"," Bart"," Bjarne"," Braum"," Bruno"," Carl"," Coen"," Conrad"," Cornelis"," Catherine"," Daniel"," Daud"," Donovan",
              " Edwin"," Egon"," Erik"," Felix"," Fredik"," Georg"," Gottfried"," Gustav"," Hendrik"," Henk"," Hubert"," Ib"," Jakob"," Jesper"," Judith"," Karen"," Kasper"," Klaus",
@@ -14,7 +14,7 @@ const nameData = {
              " Ullrich"," Urban"," Utting"," Vahlen"," van Veld"," Vieusseux"," Vollen"," Walser"," Wackker"," Wegmann"," Wiener"," Wuttke"," Zantop"," Zettmann"," Zimm"," Zwiel"
         ]
     },
-    "lupar":{
+    "lupar":{ //Luparic names: typically french/celtic origins with a touch of dutch
         "firstNames":[
              " Aeron"," Alex"," Alphonse"," Auguste"," Baptiste"," Branwyn"," Benoit"," Bryn"," Claude"," Ceawlin"," Cecil"," Carolus"," Camile"," Cedric"," Clemente"," Clovis",
              " Dai"," Damien"," Delbert"," Eduoard"," Emmanuel"," Elisee"," Emrys"," Esme"," Florent"," Fleury"," Gilbet"," Glyn"," Gwilym"," Gwyn"," Guy"," Henri"," Hugo"," Hubert",
@@ -37,12 +37,12 @@ const nameData = {
              " " 
         ]
     },
-    "santagri":{
+    "santagri":{ //Santagrian names: spanish/portugeuse with a touch of polish because mounted serjeants = winged hussars imo
         "firstNames":[
-             " Adri"," Adrianna"," Angelo"," Alonso"," Baltazar"," Bartholome"," Belisario"," Bruno"," Carmen"," Cesar"," Chayo"," Damien"," Dante"," Diego"," Dimas"," Domingo",
-             " Eduardo"," Elias"," Elan"," Enrique"," Fabio"," Felipe"," Franco"," Falco"," Gabo"," Galo"," Gabrielle"," Garcia"," Gaspar"," Gaston"," Gregorio"," Guiliermo",
-             " Hector"," Herman"," Henre"," Iago"," Jai"," Javier"," Juan"," Jose"," Justin"," Lalo"," Leon"," Lope"," Luis"," Lucio"," Macario"," Manuel"," Maria"," Miguel"," Memo",
-             " Oscar"," Pablo"," Paca"," Pascal"," Pepe"," Rafael"," Rafi"," Ramon"," Rosario"," Salvador"," Sancha"," Santiago"," Sebastian"," Silva"," Theodore"," Tobias"," Valeria"," Xavier"
+             " Adri"," Adrianna"," Arkady"," Alonso"," Baltazar"," Boguslaw"," Belisario"," Bruno"," Carmen"," Cesar"," Chayo"," Celestyn"," Damien"," Dionizy"," Diego"," Dimas"," Domingo",
+             " Eduardo"," Elias"," Elan"," Enrique", " Eugeniusz"," Fabio"," Felipe"," Franco"," Fotunat"," Gabo"," Gerard"," Gabrielle"," Garcia"," Grodzislaw"," Gaston"," Gregorio"," Guiliermo",
+             " Hector"," Herman"," Hilary"," Iago", " Ireneusz"," Jai"," Javier"," Juan"," Jose"," Justin"," Lalo"," Leon"," Lope"," Luis"," Lucio"," Macario"," Manuel"," Maria"," Miguel"," Memo",
+             " Nikodem"," Oskar"," Pablo"," Paca"," Pawel"," Pepe"," Rafael"," Rafi"," Ramon"," Rosario"," Salvador"," Sara"," Santiago"," Sebastian"," Silva"," Theodore"," Tobias"," Valeria"," Waclaw"," Xavier"," Zenobia"
         ],
         "lastNames":[
             " Abril"," Aguiar"," Arruda"," Barros"," Bessa"," Borges"," Campo"," Calvo"," Castillo"," Diaz"," Delgado"," Dalva"," Elzo"," Escobar"," Estrada"," Estaba",
