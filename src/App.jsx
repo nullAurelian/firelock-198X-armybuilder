@@ -8,6 +8,7 @@ import santalist from './data/santagriLibrary.js'
 
 import peoplenames from './data/characterNames.js'
 
+
 function App() {
   let localLib  = fedlist.concat(luplist,rygolist,santalist,generics)
   let idNum = 100; //unique number for each entry, hopefully faster searching
@@ -153,7 +154,7 @@ function App() {
                         updateArmyList([...workingList])
                       }}>
                         <p style={{marginLeft:5}}>{unit.unitData.name}</p>
-                        <p style={{marginLeft:5, fontSize:10}}>{unit.unitCallsign} {unit.unitLeader}</p>
+                        <p style={{marginLeft:5, fontSize:10}}>`{unit.unitCallsign}` | {unit.unitLeader}</p>
                       </button>
                     </td>
                     <td style={{width:"50%"}}>

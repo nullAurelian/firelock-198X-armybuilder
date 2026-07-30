@@ -83,7 +83,7 @@ const luplist = [
                 },
                 {
                     "weaponName": "Mle. 44 3.5-inch RPG",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
@@ -93,7 +93,7 @@ const luplist = [
                             "attackAccuracy": "A4+/6+",
                             "attackStrength": "S8/1",
                             "attackTags": [
-                                "Shaped Charge","Small Arm"
+                                "Shaped Charge","Small Arm","Slow Round"
                             ]
                         }
                     ]
@@ -509,7 +509,7 @@ const luplist = [
                 },
                 {
                     "weaponName": "Mle. 44 3.5-inch RPG",
-                    "weaponAmmo": "",
+                    "weaponAmmo": "4",
                     "attacks": [
                         {
                             "attackName": "",
@@ -519,7 +519,7 @@ const luplist = [
                             "attackAccuracy": "A4+/6+",
                             "attackStrength": "S8/1",
                             "attackTags": [
-                                "Shaped Charge","Small Arm"
+                                "Shaped Charge","Small Arm", "Slow Round"
                             ]
                         }
                     ]
@@ -621,7 +621,7 @@ const luplist = [
                             "attackAccuracy": "A3+/5+",
                             "attackStrength": "S9/1+",
                             "attackTags": [
-                                "Small Arm", "Shaped Charge"
+                                "Small Arm", "Shaped Charge", "Slow Round"
                             ]
                         },
 						{
@@ -632,7 +632,7 @@ const luplist = [
                             "attackAccuracy": "A3+/5+",
                             "attackStrength": "S1+/1+",
                             "attackTags": [
-                                "Small Arm", "Ignore Cover (2)","Rear Attack"
+                                "Small Arm", "Ignore Cover (2)","Rear Attack", "Slow Round"
                             ]
                         }
                     ]
@@ -929,7 +929,7 @@ const luplist = [
                             "attackAccuracy": "A4+/xx",
                             "attackStrength": "S8/1+",
                             "attackTags": [
-                                "Shaped Charge"
+                                "Shaped Charge", "Slow Round"
                             ]
                         },
 						{
@@ -1032,7 +1032,7 @@ const luplist = [
                             "attackAccuracy": "A4+/6+",
                             "attackStrength": "S8/1+",
                             "attackTags": [
-                                "No CC (Inf.)","Shaped Charge"
+                                "No CC (Inf.)","Shaped Charge", "Slow Round"
                             ]
                         },
 						{
@@ -1164,10 +1164,10 @@ const luplist = [
             "value": 10,
             "stats": [
                 "H1",
-                "S32\"",
-                "M8\"",
-                "Q3",
-                "T1/1/1"
+                "S24\"",
+                "M5\"",
+                "Q4",
+                "T1/1-/1-"
             ],
             "type": {
                 "super": [
@@ -1210,6 +1210,25 @@ const luplist = [
                             "attackStrength": "S1/1",
                             "attackTags": [
                                 "Melee"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "weaponName": "MdG. 341 Smoke Bomb",
+                    "weaponAmmo": "1",
+                    "attacks": [
+                        {
+                            "attackName": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R6\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A++/++",
+                            "attackStrength": "",
+                            "attackTags": [
+                                "Light Indirect(0)",
+                                "Small Arm",
+                                "Smoke (2\")"
                             ]
                         }
                     ]
@@ -1644,7 +1663,7 @@ const luplist = [
                 },
                 {
                     "rule": "PC",
-                    "params": "2, Rear"
+                    "params": "3, Rear"
                 }
             ]
         },
@@ -1875,7 +1894,7 @@ const luplist = [
                             "attackAccuracy": "A4+/6+",
                             "attackStrength": "S8/12",
                             "attackTags": [
-                                "No CC Inf.)","Turret"
+                                "No CC (Inf.)","Turret","Slow Round"
                             ]
                         },
 						{
@@ -1886,7 +1905,7 @@ const luplist = [
                             "attackAccuracy": "A4+/6+",
                             "attackStrength": "S3/3",
                             "attackTags": [
-                                "No CC Inf.)","Turret","Ignore Cover (1)"
+                                "No CC (Inf.)","Turret","Ignore Cover (1)", "Slow Round"
                             ]
                         }
                     ]
@@ -1969,7 +1988,7 @@ const luplist = [
                             "attackAccuracy": "A3+/4+",
                             "attackStrength": "S8/12",
                             "attackTags": [
-                                "Barrage (2)","Thermal Sights","Tracking","No CC (Inf.)","Turret"
+                                "Barrage (2)","Thermal Sights","Tracking","No CC (Inf.)","Turret", "Slow Round"
                             ]
                         },
 						{
@@ -1978,9 +1997,9 @@ const luplist = [
                             "attackRange": "R40\"",
                             "attackDice": "D1",
                             "attackAccuracy": "A3+/4+",
-                            "attackStrength": "S8/1+",
+                            "attackStrength": "S9/1+",
                             "attackTags": [
-                                "Barrage (2)","Thermal Sights","Tracking","Turret","No CC (Inf.)","Shaped Charge"
+                                "Barrage (2)","Thermal Sights","Tracking","Turret","No CC (Inf.)","Shaped Charge", "Slow Round"
                             ]
                         },
 						{
@@ -2067,7 +2086,7 @@ const luplist = [
                     "weaponAmmo": "4",
                     "attacks": [
                         {
-                            "attackName": "3.3-inch APDS",
+                            "attackName": "3.3-inch Sabot",
                             "attackTargets": "Vec",
                             "attackRange": "R40\"",
                             "attackDice": "D1",
@@ -2085,7 +2104,7 @@ const luplist = [
                             "attackAccuracy": "A3+/xx",
                             "attackStrength": "S3/3",
                             "attackTags": [
-                                "No CC","Thermal Sight","Ignore Cover (1)"
+                                "No CC","Thermal Sight","Ignore Cover (1)", "Slow Round"
                             ]
                         }
                     ]
@@ -2123,6 +2142,23 @@ const luplist = [
             "command": 0,
             "weapons": [
                 {
+                    "weaponName": "Mle. 32 .30 Self-Loading Rifle",
+                    "weaponAmmo": "",
+                    "attacks": [
+                        {
+                            "attackName": "",
+                            "attackTargets": "All",
+                            "attackRange": "R8\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1/1+",
+                            "attackTags": [
+                                "Small Arm"
+                            ]
+                        }
+                    ]
+                },
+                {
                     "weaponName": "TAP 30 4.2-inch Recoilless Rifle",
                     "weaponAmmo": "4",
                     "attacks": [
@@ -2134,7 +2170,7 @@ const luplist = [
                             "attackAccuracy": "A4+/6+",
                             "attackStrength": "S10/2",
                             "attackTags": [
-                                "No CC (Inf.)","Shaped Charge"
+                                "No CC (Inf.)","Shaped Charge", "Slow Round"
                             ]
                         },
 						{
@@ -2173,7 +2209,57 @@ const luplist = [
                 },
                 {
                     "rule": "PC",
-                    "params": "2, Rear"
+                    "params": "1, Rear"
+                }
+            ]
+        },
+        {
+            "name": "CdS-F3 \"Forester\"",
+            "faction": [
+                "lupar"
+            ],
+            "value": 15,
+            "stats": [
+                "H2",
+                "S16\"",
+                "M8\"",
+                "Q2",
+                "T2/2/1"
+            ],
+            "type": {
+                "super": [
+                    "Vehicle"
+                ],
+                "sub": [
+                    "Wheeled",
+                    "40x60"
+                ]
+            },
+            "command": 0,
+            "weapons": [
+                {
+                    "weaponName": "AMA-2 .60 Dual HMGs",
+                    "weaponAmmo": "",
+                    "attacks": [
+                        {
+                            "attackName": "",
+                            "attackTargets": "All",
+                            "attackRange": "R24\"",
+                            "attackDice": "D3",
+                            "attackAccuracy": "A4+/6+",
+                            "attackStrength": "S3/4",
+                            "attackTags": [
+                                "Turret",
+                                "Tracking Anti-Air"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "tags": [
+                {
+                    "rule": "Tow",
+                    "params": "2"
                 }
             ]
         },
@@ -2186,7 +2272,7 @@ const luplist = [
             "stats": [
                 "H1",
                 "S32\"",
-                "M8\"",
+                "M10\"",
                 "Q2",
                 "T6/3/2"
             ],
@@ -2220,18 +2306,16 @@ const luplist = [
                 },
                 {
                     "weaponName": "SA25 2.5-inch High Velocity Gun",
-                    "weaponAmmo": "4",
+                    "weaponAmmo": "6",
                     "attacks": [
                         {
                             "attackName": "",
                             "attackTargets": "Vec",
                             "attackRange": "R40\"",
                             "attackDice": "D1",
-                            "attackAccuracy": "A4+/6+",
+                            "attackAccuracy": "A4+/5+",
                             "attackStrength": "S12/18",
-                            "attackTags": [
-                                "No CC (Inf.)"
-                            ]
+                            "attackTags": []
                         }
                     ]
                 }
@@ -2296,7 +2380,7 @@ const luplist = [
                             "attackAccuracy": "A3+/xx",
                             "attackStrength": "S16/3",
                             "attackTags": [
-                                "No CC", "Shaped Charge"
+                                "No CC", "Shaped Charge", "Slow Round"
                             ]
                         },
 						{
@@ -2395,7 +2479,7 @@ const luplist = [
                             "attackAccuracy": "A4+/6+",
                             "attackStrength": "S10/2",
                             "attackTags": [
-                                "Barrage (6, point)", "No CC (Inf.)","Shaped Charge"
+                                "Barrage (6, point)", "No CC (Inf.)","Shaped Charge", "Slow Round"
                             ]
                         },
 						{
@@ -2663,7 +2747,7 @@ const luplist = [
                             "attackAccuracy": "A4+/6+",
                             "attackStrength": "S8/1",
                             "attackTags": [
-                                "Shaped Charge","Small Arm"
+                                "Shaped Charge","Small Arm", "Slow Round", "Turret"
                             ]
                         }
                     ]
@@ -2731,8 +2815,8 @@ const luplist = [
             ],
             "tags": [
                 {
-                    "rule": "Chaff-Flares",
-                    "params": "3"
+                    "rule": "Decoy Protection",
+                    "params": "2"
                 },
                 {
                     "rule": "PC",
@@ -2940,7 +3024,7 @@ const luplist = [
                             "attackAccuracy": "A4+",
                             "attackStrength": "S2",
                             "attackTags": [
-                                ""
+                                "Radar Anti-Air"
                             ]
                         }
                     ]
@@ -2992,7 +3076,7 @@ const luplist = [
             "faction": [
                 "lupar"
             ],
-            "value": 40,
+            "value": 35,
             "stats": [
                 "H*",
                 "S*\"",
@@ -3024,7 +3108,7 @@ const luplist = [
                             "attackAccuracy": "A4+",
                             "attackStrength": "S5",
                             "attackTags": [
-                                ""
+                                "Radar Anti-Air"
                             ]
                         }
                     ]
@@ -3036,7 +3120,7 @@ const luplist = [
                         {
                             "attackName": "",
                             "attackTargets": "Air",
-                            "attackRange": "R24\"",
+                            "attackRange": "R30\"",
                             "attackDice": "D1",
                             "attackAccuracy": "A3+",
                             "attackStrength": "S6",
@@ -3112,7 +3196,7 @@ const luplist = [
                             "attackAccuracy": "A3+",
                             "attackStrength": "S5",
                             "attackTags": [
-                                ""
+                                "Radar Anti-Air"
                             ]
                         }
                     ]
@@ -3124,7 +3208,7 @@ const luplist = [
                         {
                             "attackName": "",
                             "attackTargets": "Air",
-                            "attackRange": "R30\"",
+                            "attackRange": "R36\"",
                             "attackDice": "D1",
                             "attackAccuracy": "A3+",
                             "attackStrength": "S6",
@@ -3158,7 +3242,7 @@ const luplist = [
                     "params": ""
                 },
                 {
-                    "rule": "Chaff-Flares",
+                    "rule": "Decoy Protection",
                     "params": "2"
                 }
             ]

@@ -86,25 +86,25 @@ const rygolist = [
                     "weaponAmmo": "3",
                     "attacks": [
                         {
-                            "attackName": "",
+                            "attackName": "20mm KE",
                             "attackTargets": "Vec",
                             "attackRange": "R8\"",
                             "attackDice": "D1",
                             "attackAccuracy": "A*",
                             "attackStrength": "S3/4",
                             "attackTags": [
-                                "Underbarrel (Snake Green)"
+                                "Underbarrel (Snake Green)", "Slow Round"
                             ]
                         },
                         {
-                            "attackName": "",
+                            "attackName": "20mm HE",
                             "attackTargets": "Inf/Vec",
                             "attackRange": "R8\"",
                             "attackDice": "D1",
                             "attackAccuracy": "A*",
                             "attackStrength": "S1+/1+",
                             "attackTags": [
-                                "Underbarrel (Snake Green)","Ignore Cover (1)"
+                                "Underbarrel (Snake Green)","Ignore Cover (1)", "Slow Round"
                             ]
                         }
                     ]
@@ -184,25 +184,25 @@ const rygolist = [
                     "weaponAmmo": "3",
                     "attacks": [
                         {
-                            "attackName": "",
+                            "attackName": "20mm KE",
                             "attackTargets": "Vec",
                             "attackRange": "R8\"",
                             "attackDice": "D1",
                             "attackAccuracy": "A*",
                             "attackStrength": "S3/4",
                             "attackTags": [
-                                "Underbarrel (Snake Green)"
+                                "Underbarrel (Snake Green)", "Slow Round"
                             ]
                         },
                         {
-                            "attackName": "",
+                            "attackName": "20mm HE",
                             "attackTargets": "Inf/Vec",
                             "attackRange": "R8\"",
                             "attackDice": "D1",
                             "attackAccuracy": "A*",
                             "attackStrength": "S1+/1+",
                             "attackTags": [
-                                "Underbarrel (Snake Green)","Ignore Cover (1)"
+                                "Underbarrel (Snake Green)","Ignore Cover (1)", "Slow Round"
                             ]
                         }
                     ]
@@ -363,7 +363,7 @@ const rygolist = [
                             "attackAccuracy": "A3+/3+",
                             "attackStrength": "S4/6",
                             "attackTags": [
-                                "No CC (Inf.)","Thermal Sights","Tracking","Turret"
+                                "No CC (Inf.)","Thermal Sights","Tracking Anti-Air","Turret"
                             ]
                         }
                     ]
@@ -438,25 +438,25 @@ const rygolist = [
                     "weaponAmmo": "3",
                     "attacks": [
                         {
-                            "attackName": "",
+                            "attackName": "20mm KE",
                             "attackTargets": "Vec",
                             "attackRange": "R8\"",
                             "attackDice": "D1",
                             "attackAccuracy": "A*",
                             "attackStrength": "S3/4",
                             "attackTags": [
-                                "Underbarrel (Snake Green)"
+                                "Underbarrel (Snake Green)", "Slow Round"
                             ]
                         },
                         {
-                            "attackName": "",
+                            "attackName": "20mm HE",
                             "attackTargets": "Inf/Vec",
                             "attackRange": "R8\"",
                             "attackDice": "D1",
                             "attackAccuracy": "A*",
                             "attackStrength": "S1+/1+",
                             "attackTags": [
-                                "Underbarrel (Snake Green)","Ignore Cover (1)"
+                                "Underbarrel (Snake Green)","Ignore Cover (1)", "Slow Round"
                             ]
                         }
                     ]
@@ -536,25 +536,25 @@ const rygolist = [
                     "weaponAmmo": "3",
                     "attacks": [
                         {
-                            "attackName": "",
+                            "attackName": "20mm KE",
                             "attackTargets": "Vec",
                             "attackRange": "R8\"",
                             "attackDice": "D1",
                             "attackAccuracy": "A*",
                             "attackStrength": "S3/4",
                             "attackTags": [
-                                "Underbarrel (Snake Green)"
+                                "Underbarrel (Snake Green)", "Slow Round"
                             ]
                         },
                         {
-                            "attackName": "",
+                            "attackName": "20mm HE",
                             "attackTargets": "Inf/Vec",
                             "attackRange": "R8\"",
                             "attackDice": "D1",
                             "attackAccuracy": "A*",
                             "attackStrength": "S1+/1+",
                             "attackTags": [
-                                "Underbarrel (Snake Green)","Ignore Cover (1)"
+                                "Underbarrel (Snake Green)","Ignore Cover (1)", "Slow Round"
                             ]
                         }
                     ]
@@ -641,7 +641,7 @@ const rygolist = [
                             "attackAccuracy": "A2+/3+",
                             "attackStrength": "S1/1",
                             "attackTags": [
-                                "Scoped","Thermal Sights","Tracking","Turret"
+                                "Scoped","Thermal Sights","Tracking Anti-Air","Turret"
                             ]
                         }
                     ]
@@ -774,25 +774,25 @@ const rygolist = [
                     "weaponAmmo": "3",
                     "attacks": [
                         {
-                            "attackName": "",
+                            "attackName": "20mm KE",
                             "attackTargets": "Vec",
                             "attackRange": "R8\"",
                             "attackDice": "D1",
                             "attackAccuracy": "A*",
                             "attackStrength": "S3/4",
                             "attackTags": [
-                                "Underbarrel (Snake Green)"
+                                "Underbarrel (Snake Green)", "Slow Round"
                             ]
                         },
                         {
-                            "attackName": "",
+                            "attackName": "20mm HE",
                             "attackTargets": "Inf/Vec",
                             "attackRange": "R8\"",
                             "attackDice": "D1",
                             "attackAccuracy": "A*",
                             "attackStrength": "S1+/1+",
                             "attackTags": [
-                                "Underbarrel (Snake Green)","Ignore Cover (1)"
+                                "Underbarrel (Snake Green)","Ignore Cover (1)", "Slow Round"
                             ]
                         }
                     ]
@@ -879,7 +879,7 @@ const rygolist = [
                             "attackAccuracy": "A3+/4+",
                             "attackStrength": "S7/1+",
                             "attackTags": [
-                                "Barrage (2)","Small Arm","Thermal Sights","Shaped Charge"
+                                "Barrage (2)","Small Arm","Thermal Sights","Shaped Charge", "Slow Round"
                             ]
                         },
                         {
@@ -890,7 +890,7 @@ const rygolist = [
                             "attackAccuracy": "A3+/4+",
                             "attackStrength": "S2/2",
                             "attackTags": [
-                                "Barrage (2)","Small Arm","Thermal Sights","Ignore Cover (2)","Rear Attack"
+                                "Barrage (2)","Small Arm","Thermal Sights","Ignore Cover (2)","Rear Attack", "Slow Round"
                             ]
                         },
                         {
@@ -917,7 +917,11 @@ const rygolist = [
                     "params": ""
                 },
                 {
-                    "rule": "May always lose up to 3 pin during Upkeep, even when inside of Chemical Weapons.",
+                    "rule": "This unit is not negatively affected by Chemical Weapons.",
+                    "params": ""
+                },
+                {
+                    "rule": "If this unit or a unit it charged is within a Chemical Weapon radius during Close Combat, this unit resolves its attacks before all enemy units, including Assault Specialists.",
                     "params": ""
                 }
             ]
@@ -1099,25 +1103,25 @@ const rygolist = [
                     "weaponAmmo": "3",
                     "attacks": [
                         {
-                            "attackName": "",
+                            "attackName": "20mm KE",
                             "attackTargets": "Vec",
                             "attackRange": "R8\"",
                             "attackDice": "D1",
                             "attackAccuracy": "A*",
                             "attackStrength": "S3/4",
                             "attackTags": [
-                                "Underbarrel (Snake Green)"
+                                "Underbarrel (Snake Green)", "Slow Round"
                             ]
                         },
                         {
-                            "attackName": "",
+                            "attackName": "20mm HE",
                             "attackTargets": "Inf/Vec",
                             "attackRange": "R8\"",
                             "attackDice": "D1",
                             "attackAccuracy": "A*",
                             "attackStrength": "S1+/1+",
                             "attackTags": [
-                                "Underbarrel (Snake Green)","Ignore Cover (1)"
+                                "Underbarrel (Snake Green)","Ignore Cover (1)", "Slow Round"
                             ]
                         }
                     ]
@@ -1289,16 +1293,16 @@ const rygolist = [
                     "params": ""
                 },
                 {
-                    "rule": "This unit's base is always 40mmx40mm and always leaves a corpse token.",
+                    "rule": "In the Fire Phase, the Simulacrum may copy one non-Nuclear weapon from a single unit. Copied weapons have infinite Ammo. The Simulacrum cannot copy a new weapon if it has a time-to-target attack in progress.",
                     "params": ""
                 },
                 {
-                    "rule": "During the Support Phase this unit imitates the closest enemy infantry or vehicle that it can sport. While imitating this unit gains its enemy's weapons, statline and unit class but not any special rules, instead retaining Fearless and NBC and having infinite ammunition.",
+                    "rule": "In the Manuever Phase, the Simulacrum may copy the Move statistic of a single unit.",
                     "params": ""
                 },
                 {
-                    "rule": "When entering Close Combat this unit may opt to copy any enemy unit that it would enter close combat with. If two or more Simulacrum units would enter Close Quarter with each other immediately kill them.",
-                    "params": ""
+                    "rule":"If engaged in Close Combat, the Simulacrum must copy one enemy in basal contact as per the Fire Phase for each close combat round.",
+                    "params":""
                 }
             ]
     },
@@ -1550,7 +1554,7 @@ const rygolist = [
                             "attackAccuracy": "A3+/3+",
                             "attackStrength": "S4/6",
                             "attackTags": [
-                                "No CC (Inf.)","Thermal Sights","Tracking","Turret"
+                                "No CC (Inf.)","Thermal Sights","Tracking Anti-Air","Turret"
                             ]
                         }
                     ]
@@ -1641,7 +1645,7 @@ const rygolist = [
                             "attackAccuracy": "A3+/3+",
                             "attackStrength": "S4/6",
                             "attackTags": [
-                                "No CC (Inf.)","Thermal Sights","Tracking","Turret"
+                                "No CC (Inf.)","Thermal Sights","Turret"
                             ]
                         }
                     ]
@@ -1655,6 +1659,10 @@ const rygolist = [
                 {
                     "rule": "NBC",
                     "params": ""
+                },
+                {
+                    "rule":"This unit uses a 40x40 infantry base.",
+                    "params":""
                 }
             ]
     },
@@ -1722,7 +1730,7 @@ const rygolist = [
                             "attackAccuracy": "A3+/3+",
                             "attackStrength": "S8/1+",
                             "attackTags": [
-                                "Round Extruder","Thermal Sights","Turret","No CC (Inf.)","Shaped Charge"
+                                "Round Extruder","Thermal Sights","Turret","No CC (Inf.)","Shaped Charge", "Slow Round"
                             ]
                         },
                         {
@@ -1760,6 +1768,10 @@ const rygolist = [
                 {
                     "rule": "NBC",
                     "params": ""
+                },
+                {
+                    "rule":"This unit uses a 40x40 infantry base.",
+                    "params":""
                 }
             ]
     },
@@ -1827,7 +1839,7 @@ const rygolist = [
                             "attackAccuracy": "A2+/3+",
                             "attackStrength": "S10/2",
                             "attackTags": [
-                                "No CC (Inf.)","Thermal Sights","Turret","Shaped Charge"
+                                "No CC (Inf.)","Thermal Sights","Turret","Shaped Charge","Slow Round"
                             ]
                         },
                         {
@@ -1838,7 +1850,7 @@ const rygolist = [
                             "attackAccuracy": "A2+/3+",
                             "attackStrength": "S4/4",
                             "attackTags": [
-                                "No CC (Inf.)","Thermal Sights","Turret","Air-Filling","Tracking (Flak)"
+                                "No CC (Inf.)","Thermal Sights","Turret","Air-Filling","Tracking (Flak)","Slow Round"
                             ]
                         }
                     ]
@@ -1863,8 +1875,8 @@ const rygolist = [
             ],
             "tags": [
                 {
-                    "rule": "APS",
-                    "params": "5+, 2"
+                    "rule": "Active Protection",
+                    "params": "2"
                 },
                 {
                     "rule": "NBC",
@@ -1936,7 +1948,7 @@ const rygolist = [
                             "attackAccuracy": "A2+/3+",
                             "attackStrength": "S10/2",
                             "attackTags": [
-                                "No CC (Inf.)","Round Extruder","Thermal Sights","Turret","Shaped Charge"
+                                "No CC (Inf.)","Round Extruder","Thermal Sights","Turret","Shaped Charge", "Slow Round"
                             ]
                         }
                     ]
@@ -1961,8 +1973,8 @@ const rygolist = [
             ],
             "tags": [
                 {
-                    "rule": "APS",
-                    "params": "6+, 3"
+                    "rule": "Active Protection",
+                    "params": "2"
                 },
                 {
                     "rule": "NBC",
@@ -2006,7 +2018,7 @@ const rygolist = [
                             "attackAccuracy": "A4+/xx",
                             "attackStrength": "S2/3",
                             "attackTags": [
-                                "Thermal Sights","Tracking","Turret"
+                                "Thermal Sights","Tracking Anti-Air","Turret"
                             ]
                         }
                     ]
@@ -2027,6 +2039,10 @@ const rygolist = [
                 },
                 {
                     "rule":"This unit cannot fire during the first Fire Phase of the game if Paradropped",
+                    "params":""
+                },
+                {
+                    "rule":"This unit uses a 40x40 infantry base.",
                     "params":""
                 }
             ]
@@ -2155,6 +2171,10 @@ const rygolist = [
                 {
                     "rule": "NBC",
                     "params": ""
+                },
+                {
+                    "rule":"This unit uses a 40x40 infantry base.",
+                    "params":""
                 }
             ]
     },
@@ -2228,7 +2248,7 @@ const rygolist = [
                             "attackAccuracy": "A3+/xx",
                             "attackStrength": "S16/3",
                             "attackTags": [
-                                "Guided Missile (1)","Shaped Charge","Turret"
+                                "Guided Missile (1)","Shaped Charge","Turret", "Radar Anti-Air"
                             ]
                         },
                         {
@@ -2315,7 +2335,7 @@ const rygolist = [
                     "weaponAmmo": "4",
                     "attacks": [
                         {
-                            "attackName": "155mm LOSAT",
+                            "attackName": "155mm Kinetic Energy Missile",
                             "attackTargets": "Vec",
                             "attackRange": "R60\"",
                             "attackDice": "D1",
@@ -2352,8 +2372,8 @@ const rygolist = [
             ],
             "tags": [
                 {
-                    "rule": "APS",
-                    "params": "6+, 2"
+                    "rule": "Active Protection",
+                    "params": "2"
                 },
                 {
                     "rule": "NBC",
@@ -2467,8 +2487,8 @@ const rygolist = [
             ],
             "tags": [
                 {
-                    "rule": "APS",
-                    "params": "6+, 2"
+                    "rule": "Active Protection",
+                    "params": "2"
                 },
                 {
                     "rule": "NBC",
@@ -2589,7 +2609,7 @@ const rygolist = [
             ],
             "tags": [
                 {
-                    "rule": "Chaff-Flares",
+                    "rule": "Decoy Protection",
                     "params": "1"
                 },
                 {
@@ -2611,6 +2631,10 @@ const rygolist = [
                 {
                     "rule": "If this unit falls back from close combat, choose one engaged enemy unit to take a Strength 1+ hit on it's rear arc.",
                     "params": ""
+                },
+                {
+                    "rule":"This unit uses a 40x40 base.",
+                    "params":""
                 }
             ]
     },
@@ -2657,7 +2681,7 @@ const rygolist = [
             ],
             "tags": [
                 {
-                    "rule": "Chaff-Flares",
+                    "rule": "Decoy Protection",
                     "params": "1"
                 },
                 {
@@ -2675,6 +2699,10 @@ const rygolist = [
                 {
                     "rule": "If this unit falls back from close combat, choose one engaged enemy unit to take a Strength 1+ hit on it's rear arc.",
                     "params": ""
+                },
+                {
+                    "rule":"This unit uses a 40x40 base.",
+                    "params":""
                 }
             ]
     },
@@ -2799,7 +2827,7 @@ const rygolist = [
                             "attackAccuracy": "A6+/5+",
                             "attackStrength": "S7/1+",
                             "attackTags": [
-                                "Barrage (2)","Shaped Charge","Strafing","Thermal Sights"
+                                "Barrage (2)","Shaped Charge","Strafing","Thermal Sights", "Slow Round"
                             ]
                         }
                     ]
@@ -2967,6 +2995,10 @@ const rygolist = [
                 {
                     "rule": "Every time this unit uses APS, its weapon Dice statistic decreases by 1 for the rest of the round. If the Dice value hits 0 it cannot be fired this round and APS cannot be triggered again this round. During Upkeep the laser weapon's Dice value is reset to 4 regardless of how many munitions were intercepted last round.",
                     "params": ""
+                },
+                {
+                    "rule":"This unit uses a 40x40 base.",
+                    "params":""
                 }
             ]
     },
@@ -3007,7 +3039,7 @@ const rygolist = [
                             "attackAccuracy": "A1+",
                             "attackStrength": "S1+",
                             "attackTags": [
-                                "Laser"
+                                "Laser","Radar Anti-Air"
                             ]
                         }
                     ]
@@ -3053,7 +3085,7 @@ const rygolist = [
                     "params": ""
                 },
                 {
-                    "rule": "Chaff-Flares",
+                    "rule": "Decoy Protection",
                     "params": "2"
                 }
             ]
@@ -3149,7 +3181,7 @@ const rygolist = [
                             "attackAccuracy": "A4+",
                             "attackStrength": "S6",
                             "attackTags": [
-                                ""
+                                "Radar Anti-Air"
                             ]
                         }
                     ]
@@ -3174,8 +3206,8 @@ const rygolist = [
             ],
             "tags": [
                 {
-                    "rule": "Chaff-Flares",
-                    "params": "2"
+                    "rule": "Decoy Protection",
+                    "params": "1"
                 }
             ]
         }
