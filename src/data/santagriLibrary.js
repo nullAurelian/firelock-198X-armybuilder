@@ -92,7 +92,24 @@ const santalist = [
                             "attackAccuracy": "A6+/5+",
                             "attackStrength": "S4/4",
                             "attackTags": [
-                                "Strafing"
+                                "Strafing", "Slow Round"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "weaponName": "SUR-4 127mm Air-to-Air Missile",
+                    "weaponAmmo": "1",
+                    "attacks": [
+                        {
+                            "attackName": "",
+                            "attackTargets": "Air",
+                            "attackRange": "R60\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A3+/3+",
+                            "attackStrength": "S6/6",
+                            "attackTags": [
+                                "Air-Filling", "Guided Missile (1)", "Homing"
                             ]
                         }
                     ]
@@ -121,7 +138,7 @@ const santalist = [
                     "params": ""
                 },
                 {
-                    "rule": "Chaff-Flares",
+                    "rule": "Decoy Protection",
                     "params": "1"
                 },
                 {
@@ -294,7 +311,7 @@ const santalist = [
                             "attackAccuracy": "A3+/3+",
                             "attackStrength": "S9/4",
                             "attackTags": [
-                                "No CC (Inf.)","Thermal Sights","Turret","Shaped Charge"
+                                "No CC (Inf.)","Thermal Sights","Turret","Shaped Charge", "Slow Round"
                             ]
                         }
                     ]
@@ -311,7 +328,7 @@ const santalist = [
                             "attackAccuracy": "A4+/5+",
                             "attackStrength": "S4/4",
                             "attackTags": [
-                                "No CC (Inf.)","Turret"
+                                "No CC (Inf.)","Turret", "Slow Round"
                             ]
                         }
                     ]
@@ -529,7 +546,7 @@ const santalist = [
                             "attackAccuracy": "A3+/5+",
                             "attackStrength": "S7/1+",
                             "attackTags": [
-                                "Light Indirect (0)","Shaped Charge","Small Arm"
+                                "Light Indirect (0)","Shaped Charge","Small Arm", "Slow Round"
                             ]
                         }
                     ]
@@ -611,7 +628,7 @@ const santalist = [
                             "attackAccuracy": "A5+/6+",
                             "attackStrength": "S5/1",
                             "attackTags": [
-                                "Shaped Charge","Small Arm"
+                                "Shaped Charge","Small Arm", "Slow Round"
                             ]
                         }
                     ]
@@ -681,7 +698,7 @@ const santalist = [
                             "attackAccuracy": "A5+/xx",
                             "attackStrength": "S14/2",
                             "attackTags": [
-                                "Defensive CC","Shaped Charge"
+                                "Defensive CC","Shaped Charge", "Slow Round"
                             ]
                         }
                     ]
@@ -747,7 +764,7 @@ const santalist = [
                             "attackAccuracy": "A4+/4+",
                             "attackStrength": "S1+/1+",
                             "attackTags": [
-                                "Small Arm","Ignore Cover (1)"
+                                "Small Arm","Ignore Cover (1)","Slow Round"
                             ]
                         },
                         {
@@ -1073,7 +1090,7 @@ const santalist = [
                     "params": ""
                 },
                 {
-                    "rule": "This unit may activate to call a plane mission during the Support Phase, replace a friendly TACOM's turn.",
+                    "rule": "This unit may activate to call a plane mission during the Support Phase, replacing a friendly TACOM's turn.",
                     "params": ""
                 }
             ]
@@ -1131,7 +1148,7 @@ const santalist = [
                             "attackAccuracy": "A4+/5+",
                             "attackStrength": "S4/4",
                             "attackTags": [
-                                "No CC (Inf.)"
+                                "No CC (Inf.)", "Slow Round"
                             ]
                         }
                     ]
@@ -1393,7 +1410,7 @@ const santalist = [
                             "attackAccuracy": "A4+/6+",
                             "attackStrength": "S8/3",
                             "attackTags": [
-                                "No CC (Inf.)","Shaped Charge"
+                                "No CC (Inf.)","Shaped Charge", "Slow Round"
                             ]
                         },
                         {
@@ -1575,7 +1592,7 @@ const santalist = [
                             "attackAccuracy": "A4+/6+",
                             "attackStrength": "S1+/2",
                             "attackTags": [
-                                "Ignore Cover (1)","No CC (Inf.)"
+                                "Ignore Cover (1)","No CC (Inf.)","Slow Round"
                             ]
                         },
                         {
@@ -1673,7 +1690,7 @@ const santalist = [
                             "attackAccuracy": "A4+/6+",
                             "attackStrength": "S8/12",
                             "attackTags": [
-                                "Turret","No CC (Inf.)"
+                                "Turret","No CC (Inf.)","Slow Round"
                             ]
                         },
                         {
@@ -1684,7 +1701,7 @@ const santalist = [
                             "attackAccuracy": "A4+/6+",
                             "attackStrength": "S7/2",
                             "attackTags": [
-                                "Turret","No CC (Inf.)","Shaped Charge"
+                                "Turret","No CC (Inf.)","Shaped Charge","Slow Round"
                             ]
                         },
                         {
@@ -1708,7 +1725,7 @@ const santalist = [
                 },
                 {
                     "rule": "Tow",
-                    "params": "2"
+                    "params": "3"
                 }
             ]
     },
@@ -1776,7 +1793,7 @@ const santalist = [
                             "attackAccuracy": "A3+/4+",
                             "attackStrength": "S8/3",
                             "attackTags": [
-                                "No CC (Inf.)","Turret","Shaped Charge"
+                                "No CC (Inf.)","Turret","Shaped Charge","Slow Round"
                             ]
                         },
                         {
@@ -1800,7 +1817,7 @@ const santalist = [
                 },
                 {
                     "rule": "Tow",
-                    "params": "2"
+                    "params": "5"
                 },
                 {
                     "rule": "This unit pays an additional 1\" when rotating left. When rotating right, the rotation is free up to 180 degrees.",
@@ -1872,7 +1889,7 @@ const santalist = [
                             "attackAccuracy": "A4+/6+",
                             "attackStrength": "S1+/2",
                             "attackTags": [
-                                "Multi-Gun","No CC (Inf.)","Turret","Ignore Cover (1)"
+                                "Multi-Gun","No CC (Inf.)","Turret","Ignore Cover (1)","Slow Round"
                             ]
                         }
                     ]
@@ -1900,7 +1917,7 @@ const santalist = [
                             "attackAccuracy": "A3+/5+",
                             "attackStrength": "S9/4",
                             "attackTags": [
-                                "No CC (Inf.)","Thermal Sights","Turret","Shaped Charge"
+                                "No CC (Inf.)","Thermal Sights","Turret","Shaped Charge","Slow Round"
                             ]
                         }
                     ]
@@ -1966,7 +1983,7 @@ const santalist = [
                             "attackAccuracy": "A4+/4+",
                             "attackStrength": "S8/12",
                             "attackTags": [
-                                "No CC (Inf.)","Radar Anti-Air","Tracking","Turret"
+                                "No CC (Inf.)","Radar Anti-Air","Tracking","Turret","Slow Round"
                             ]
                         },
                         {
@@ -1977,7 +1994,7 @@ const santalist = [
                             "attackAccuracy": "A4+/4+",
                             "attackStrength": "S3/3",
                             "attackTags": [
-                                "No CC (Inf.)","Radar Anti-Air","Tracking","Turret","Air-Filling"
+                                "No CC (Inf.)","Radar Anti-Air","Tracking","Turret","Air-Filling","Slow Round"
                             ]
                         }
                     ]
@@ -2076,7 +2093,7 @@ const santalist = [
                             "attackAccuracy": "A4+/xx",
                             "attackStrength": "S9/4",
                             "attackTags": [
-                                "No CC","Shaped Charge"
+                                "No CC","Shaped Charge","Slow Round"
                             ]
                         },
                         {
@@ -2153,7 +2170,7 @@ const santalist = [
                             "attackAccuracy": "A4+/xx",
                             "attackStrength": "S4/6",
                             "attackTags": [
-                                "Tracking","Turret","No CC"
+                                "Tracking Anti-Air","Turret","No CC"
                             ]
                         }
                     ]
@@ -2289,7 +2306,7 @@ const santalist = [
                             "attackAccuracy": "A3+/xx",
                             "attackStrength": "S8/12",
                             "attackTags": [
-                                "No CC","Radar Anti-Air","Tracking (Flak)","Turret"
+                                "No CC","Radar Anti-Air","Turret","Slow Round"
                             ]
                         },
                         {
@@ -2300,7 +2317,7 @@ const santalist = [
                             "attackAccuracy": "A4+/xx",
                             "attackStrength": "S3/3",
                             "attackTags": [
-                                "No CC","Radar Anti-Air","Tracking (Flak)","Turret","Air-Filling"
+                                "No CC","Radar Anti-Air","Turret","Air-Filling","Slow Round"
                             ]
                         },
                         {
@@ -2311,7 +2328,7 @@ const santalist = [
                             "attackAccuracy": "A4+/xx",
                             "attackStrength": "S[D3]",
                             "attackTags": [
-                                "No CC","Radar Anti-Air","Tracking (Flak)","Turret","Air-Filling","Heavy Indirect (3)","Radius (2\")"
+                                "No CC","Radar Anti-Air","Turret","Air-Filling","Heavy Indirect (3)","Radius (2\")"
                             ]
                         }
                     ]
@@ -2357,7 +2374,7 @@ const santalist = [
                             "attackTargets": "All",
                             "attackRange": "R12\"",
                             "attackDice": "D2",
-                            "attackAccuracy": "A5+/6+",
+                            "attackAccuracy": "A4+/5+",
                             "attackStrength": "S1/1+",
                             "attackTags": [
                                 "Turret"
@@ -2377,7 +2394,7 @@ const santalist = [
                             "attackAccuracy": "A3+/4+",
                             "attackStrength": "S8/8",
                             "attackTags": [
-                                "Ignore Cover (1)","No CC (Inf.)"
+                                "Ignore Cover (1)","No CC (Inf.)", "Slow Round"
                             ]
                         },
                         {
@@ -2463,7 +2480,7 @@ const santalist = [
                             "attackAccuracy": "A4+/6+",
                             "attackStrength": "S1+/2",
                             "attackTags": [
-                                "Barrage (2)","Turret","Ignore Cover (1)","No CC (Inf.)"
+                                "Barrage (2)","Turret","Ignore Cover (1)","No CC (Inf.)", "Slow Round"
                             ]
                         },
                         {
@@ -2540,10 +2557,10 @@ const santalist = [
                             "attackTargets": "Inf/Vec",
                             "attackRange": "R22\"",
                             "attackDice": "D4",
-                            "attackAccuracy": "A4+/5+",
+                            "attackAccuracy": "A6+/5+",
                             "attackStrength": "S4/4",
                             "attackTags": [
-                                "No CC (Inf.)"
+                                "Strafing","Slow Round"
                             ]
                         }
                     ]
@@ -2609,10 +2626,10 @@ const santalist = [
                             "attackTargets": "Inf/Vec",
                             "attackRange": "R22\"",
                             "attackDice": "D4",
-                            "attackAccuracy": "A4+/5+",
+                            "attackAccuracy": "A6+/5+",
                             "attackStrength": "S4/4",
                             "attackTags": [
-                                "No CC (Inf.)"
+                                "Strafing","Slow Round"
                             ]
                         }
                     ]
@@ -2620,7 +2637,7 @@ const santalist = [
             ],
             "tags": [
                 {
-                    "rule": "Chaff-Flares",
+                    "rule": "Decoy Protection",
                     "params": "1"
                 },
                 {
@@ -2708,7 +2725,7 @@ const santalist = [
             ],
             "tags": [
                 {
-                    "rule": "Chaff-Flares",
+                    "rule": "Decoy Protection",
                     "params": "2"
                 },
                 {
@@ -2769,13 +2786,13 @@ const santalist = [
                             "attackAccuracy": "A6+/5+",
                             "attackStrength": "S10/2",
                             "attackTags": [
-                                "Barrage (2)","Shaped Charge","Strafing"
+                                "Barrage (2)","Shaped Charge","Strafing","Slow Round"
                             ]
                         }
                     ]
                 },
                 {
-                    "weaponName": "Lerna 15-lber Dual Rocket Pods",
+                    "weaponName": "Lerna 15-lber Dual Rocket Pod",
                     "weaponAmmo": "2",
                     "attacks": [
                         {
@@ -2783,10 +2800,10 @@ const santalist = [
                             "attackTargets": "Inf/Vec",
                             "attackRange": "R22\"",
                             "attackDice": "D4",
-                            "attackAccuracy": "A4+/5+",
+                            "attackAccuracy": "A6+/5+",
                             "attackStrength": "S4/4",
                             "attackTags": [
-                                "No CC (Inf.)"
+                                "Barrage (2)","Strafing","Slow Round"
                             ]
                         }
                     ]
@@ -2860,8 +2877,8 @@ const santalist = [
                         }
                     ]
                 },
-                {
-                    "weaponName": "Lerna 15-lber Dual Rocket Pods",
+                 {
+                    "weaponName": "Lerna 15-lber Dual Rocket Pod",
                     "weaponAmmo": "2",
                     "attacks": [
                         {
@@ -2869,10 +2886,10 @@ const santalist = [
                             "attackTargets": "Inf/Vec",
                             "attackRange": "R22\"",
                             "attackDice": "D4",
-                            "attackAccuracy": "A4+/5+",
+                            "attackAccuracy": "A6+/5+",
                             "attackStrength": "S4/4",
                             "attackTags": [
-                                "No CC (Inf.)"
+                                "Barrage (2)","Strafing","Slow Round"
                             ]
                         }
                     ]
@@ -2940,7 +2957,7 @@ const santalist = [
                         }
                     ]
                 },
-                {
+                 {
                     "weaponName": "Lerna 15-lber Dual Rocket Pod",
                     "weaponAmmo": "2",
                     "attacks": [
@@ -2949,10 +2966,10 @@ const santalist = [
                             "attackTargets": "Inf/Vec",
                             "attackRange": "R22\"",
                             "attackDice": "D4",
-                            "attackAccuracy": "A4+/5+",
+                            "attackAccuracy": "A6+/5+",
                             "attackStrength": "S4/4",
                             "attackTags": [
-                                "No CC (Inf.)"
+                                "Barrage (2)","Strafing","Slow Round"
                             ]
                         }
                     ]
@@ -3023,7 +3040,7 @@ const santalist = [
                             "attackAccuracy": "A3+",
                             "attackStrength": "S4",
                             "attackTags": [
-                                ""
+                                "Radar Anti-Air"
                             ]
                         }
                     ]
@@ -3102,12 +3119,12 @@ const santalist = [
                         {
                             "attackName": "",
                             "attackTargets": "Inf/Vec",
-                            "attackRange": "R22\"",
+                            "attackRange": "R6\"",
                             "attackDice": "D4",
-                            "attackAccuracy": "A4+/5+",
-                            "attackStrength": "S4/4",
+                            "attackAccuracy": "A4+",
+                            "attackStrength": "S4",
                             "attackTags": [
-                                "Barrage (2)"
+                                "Barrage (2)","Slow Round"
                             ]
                         }
                     ]
@@ -3119,7 +3136,7 @@ const santalist = [
                         {
                             "attackName": "",
                             "attackTargets": "Air",
-                            "attackRange": "R24\"",
+                            "attackRange": "R30\"",
                             "attackDice": "D1",
                             "attackAccuracy": "A3+",
                             "attackStrength": "S6",
@@ -3136,7 +3153,7 @@ const santalist = [
                     "params": ""
                 },
                 {
-                    "rule": "Chaff-Flares",
+                    "rule": "Decoy Protection",
                     "params": "1"
                 },
                 {
@@ -3182,7 +3199,7 @@ const santalist = [
                             "attackAccuracy": "A4+",
                             "attackStrength": "S3",
                             "attackTags": [
-                                "Barrage (2)"
+                                "Barrage (2)","Radar Anti-Air","Slow Round"
                             ]
                         }
                     ]
@@ -3228,6 +3245,10 @@ const santalist = [
                     "params": ""
                 },
                 {
+                    "rule":"Decoy Protection",
+                    "params": "2"
+                },
+                {
                     "rule": "Flower of the Atom",
                     "params": ""
                 }
@@ -3270,7 +3291,7 @@ const santalist = [
                             "attackAccuracy": "A3+",
                             "attackStrength": "S4",
                             "attackTags": [
-                                ""
+                                "Radar Anti-Air"
                             ]
                         }
                     ]
@@ -3299,7 +3320,7 @@ const santalist = [
                         {
                             "attackName": "",
                             "attackTargets": "Vec/Air",
-                            "attackRange": "R30\"",
+                            "attackRange": "R36\"",
                             "attackDice": "D1",
                             "attackAccuracy": "A3+",
                             "attackStrength": "S6",
@@ -3316,7 +3337,7 @@ const santalist = [
                     "params": ""
                 },
                 {
-                    "rule": "Chaff-Flares",
+                    "rule": "Decoy Protection",
                     "params": "2"
                 },
                 {

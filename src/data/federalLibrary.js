@@ -193,6 +193,7 @@ const fedlist = [
                             "attackStrength": "S5/1+",
                             "attackTags": [
                                 "Shaped Charge",
+                                "Slow Round",
                                 "Underbarrel (6G1A)"
                             ]
                         }
@@ -292,13 +293,14 @@ const fedlist = [
                         {
                             "attackName": "",
                             "attackTargets": "Inf/Vec",
-                            "attackRange": "R14\"",
+                            "attackRange": "R20\"",
                             "attackDice": "D2",
                             "attackAccuracy": "A4+/5+",
                             "attackStrength": "S1+/2",
                             "attackTags": [
                                 "Ignore Cover (1)",
-                                "Multi-Gun"
+                                "Multi-Gun",
+                                "Slow Round"
                             ]
                         }
                     ]
@@ -334,7 +336,7 @@ const fedlist = [
                 "S32\"",
                 "M10\"",
                 "Q3",
-                "T6/4/4",
+                "T6/5/4",
                 "C4"
             ],
             "type": {
@@ -377,7 +379,7 @@ const fedlist = [
                             "attackAccuracy": "A4+/5+",
                             "attackStrength": "S14/2",
                             "attackTags": [
-                                "No CC (Inf.)", "Shaped Charge"
+                                "No CC (Inf.)", "Shaped Charge", "Slow Round", "Turret"
                             ]
                         },
                         {
@@ -388,7 +390,7 @@ const fedlist = [
                             "attackAccuracy": "A4+/5+",
                             "attackStrength": "S1/1+",
                             "attackTags": [
-                                "Defensive CC (Inf.)"
+                                "Defensive CC (Inf.)", "Turret"
                             ]
                         }
                     ]
@@ -492,6 +494,7 @@ const fedlist = [
                             "attackStrength": "S8/15",
                             "attackTags": [
                                 "No CC (Inf.)",
+                                "Slow Round",
 								"Turret"
                             ]
                         },
@@ -504,6 +507,7 @@ const fedlist = [
                             "attackStrength": "S3/3",
                             "attackTags": [
                                 "No CC (Inf.)",
+                                "Slow Round",
 								"Turret",
 								"Ignore Cover (1)"
                             ]
@@ -555,6 +559,10 @@ const fedlist = [
                 {
                     "rule": "Brigade",
                     "params": "4, 6\""
+                },
+                {
+                    "rule":"Active Protection",
+                    "params": "1"
                 }
             ]
         },
@@ -568,7 +576,7 @@ const fedlist = [
                 "H2",
                 "S32\"",
                 "M8\"",
-                "Q3",
+                "Q4",
                 "T14/7/5",
                 "C4"
             ],
@@ -645,7 +653,8 @@ const fedlist = [
 								"No CC (Inf.)",
 								"Thermal Sights",
 								"Turret",
-                                "Ignore Cover (1)"
+                                "Ignore Cover (1)",
+                                "Slow Round"
                             ]
                         }
                     ]
@@ -755,7 +764,7 @@ const fedlist = [
                             "attackAccuracy": "A2+/3+",
                             "attackStrength": "S11/2",
                             "attackTags": [
-                                "Shaped Charge"
+                                "Shaped Charge", "Slow Round"
                             ]
                         }
                     ]
@@ -877,7 +886,7 @@ const fedlist = [
                             "attackAccuracy": "A2+/3+",
                             "attackStrength": "S18/3",
                             "attackTags": [
-                                "No CC (Inf.)","Thermal Sights","Turret","Shaped Charge"
+                                "No CC (Inf.)","Thermal Sights","Turret","Shaped Charge","Slow Round"
                             ]
                         }
                     ]
@@ -975,7 +984,7 @@ const fedlist = [
                             "attackAccuracy": "A5+/6+",
                             "attackStrength": "S6/1",
                             "attackTags": [
-                                "Shaped Charge","Small Arm"
+                                "Shaped Charge","Small Arm","Slow Round"
                             ]
                         }
                     ]
@@ -1056,9 +1065,9 @@ const fedlist = [
                             "attackRange": "R8\"",
                             "attackDice": "D1",
                             "attackAccuracy": "A4+/6+",
-                            "attackStrength": "S8/1+",
+                            "attackStrength": "S9/1+",
                             "attackTags": [
-                                "Shaped Charge","Small Arm"
+                                "Shaped Charge","Small Arm","Slow Round"
                             ]
                         }
                     ]
@@ -1125,6 +1134,7 @@ const fedlist = [
                             "attackStrength": "S5/1+",
                             "attackTags": [
                                 "Shaped Charge",
+                                "Slow Round",
                                 "Underbarrel (6G1A)"
                             ]
                         }
@@ -1408,7 +1418,7 @@ const fedlist = [
                             "attackAccuracy": "A3+/xx",
                             "attackStrength": "S8/1+",
                             "attackTags": [
-                                "No CC (Inf.)","Shaped Charge"
+                                "No CC (Inf.)","Shaped Charge","Slow Round"
                             ]
                         },
                         {
@@ -1419,7 +1429,7 @@ const fedlist = [
                             "attackAccuracy": "A3+/xx",
                             "attackStrength": "S1+/1+",
                             "attackTags": [
-                                "Ignore Cover (2)","No CC (Inf.)","Rear Attack"
+                                "Ignore Cover (2)","No CC (Inf.)","Rear Attack", "Slow Round"
                             ]
                         },
                         {
@@ -1496,7 +1506,7 @@ const fedlist = [
                             "attackAccuracy": "A3+/5+",
                             "attackStrength": "S6/1",
                             "attackTags": [
-                                "Small Arm","Shaped Charge"
+                                "Small Arm","Shaped Charge","Slow Round"
                             ]
                         }, 
 						{
@@ -1575,7 +1585,7 @@ const fedlist = [
                     "attacks": [
                         {
                             "attackName": "",
-                            "attackTargets": "All",
+                            "attackTargets": "Inf",
                             "attackRange": "R0\"",
                             "attackDice": "D1",
                             "attackAccuracy": "A1+/1+",
@@ -1800,7 +1810,8 @@ const fedlist = [
                             "attackStrength": "S1+/2",
                             "attackTags": [
                                 "Ignore Cover (1)",
-                                "Turret"
+                                "Turret",
+                                "Slow Round"
                             ]
                         }
                     ]
@@ -1874,7 +1885,7 @@ const fedlist = [
                             "attackAccuracy": "A4+/4+",
                             "attackStrength": "S8/1+",
                             "attackTags": [
-                                "No CC (Inf.)","Turret","Shaped Charge"
+                                "No CC (Inf.)","Turret","Slow Round","Shaped Charge"
                             ]
                         },
 						{
@@ -1885,7 +1896,7 @@ const fedlist = [
                             "attackAccuracy": "A4+/4+",
                             "attackStrength": "S3/3",
                             "attackTags": [
-                                "No CC (Inf.)","Turret","Ignore Cover (1)"
+                                "No CC (Inf.)","Turret","Slow Round","Ignore Cover (1)"
                             ]
                         }
                     ]
@@ -2133,7 +2144,8 @@ const fedlist = [
                             "attackStrength": "S1+/2",
                             "attackTags": [
                                 "Ignore Cover (1)",
-                                "Multi-Gun"
+                                "Multi-Gun",
+                                "Slow Round"
                             ]
                         }
                     ]
@@ -2203,7 +2215,7 @@ const fedlist = [
                             "attackAccuracy": "A4+/5+",
                             "attackStrength": "S14/2",
                             "attackTags": [
-                                "No CC (Inf.)", "Shaped Charge"
+                                "No CC (Inf.)", "Shaped Charge", "Slow Round"
                             ]
                         },
                         {
@@ -2309,7 +2321,8 @@ const fedlist = [
                             "attackStrength": "S8/15",
                             "attackTags": [
                                 "No CC (Inf.)",
-								"Turret"
+								"Turret",
+                                "Slow Round"
                             ]
                         },
                         {
@@ -2322,6 +2335,7 @@ const fedlist = [
                             "attackTags": [
                                 "No CC (Inf.)",
 								"Turret",
+                                "Slow Round",
 								"Ignore Cover (1)"
                             ]
                         }
@@ -2364,6 +2378,10 @@ const fedlist = [
                 {
                     "rule": "Steel Watchbands",
                     "params": ""
+                },
+                {
+                    "rule":"APS",
+                    "params": "1"
                 }
             ]
         },
@@ -2453,6 +2471,7 @@ const fedlist = [
 								"No CC (Inf.)",
 								"Thermal Sights",
 								"Turret",
+                                "Slow Round",
                                 "Ignore Cover (1)"
                             ]
                         }
@@ -2554,6 +2573,8 @@ const fedlist = [
                             "attackAccuracy": "A2+/3+",
                             "attackStrength": "S11/2",
                             "attackTags": [
+                                "No CC (Inf.)", "Thermal Sights", "Turret",
+                                "Slow Round",
                                 "Shaped Charge"
                             ]
                         }
@@ -2667,7 +2688,7 @@ const fedlist = [
                             "attackAccuracy": "A2+/3+",
                             "attackStrength": "S18/3",
                             "attackTags": [
-                                "No CC (Inf.)","Thermal Sights","Turret","Shaped Charge"
+                                "No CC (Inf.)","Thermal Sights","Turret","Shaped Charge","Slow Round"
                             ]
                         }
                     ]
@@ -2757,7 +2778,7 @@ const fedlist = [
                             "attackAccuracy": "A3+/xx",
                             "attackStrength": "S8/1+",
                             "attackTags": [
-                                "Barrage (3)", "No CC", "Shaped Charge"
+                                "Barrage (3)", "No CC", "Shaped Charge", "Slow Round"
                             ]
                         },
 						{
@@ -2856,7 +2877,7 @@ const fedlist = [
                             "attackAccuracy": "A3+/xx",
                             "attackStrength": "S14/2",
                             "attackTags": [
-                                "No CC","Shaped Charge"
+                                "No CC","Shaped Charge","Slow Round"
                             ]
                         },
 						{
@@ -2968,7 +2989,7 @@ const fedlist = [
                 },
                 {
                     "rule": "PC",
-                    "params": "2, Rear"
+                    "params": "1, Rear"
                 }
             ]
         },
@@ -3130,7 +3151,77 @@ const fedlist = [
                 },
                 {
                     "rule": "PC",
-                    "params": "2, Rear"
+                    "params": "1, Rear"
+                }
+            ]
+        },
+        {
+             "name": "Type 60LW \"Coachman\"",
+            "faction": [
+                "federal"
+            ],
+            "value": 30,
+            "stats": [
+                "H2",
+                "S32\"",
+                "M8\"",
+                "Q2",
+                "T4/4/3"
+            ],
+            "command": 0,
+            "type": {
+                "super": [
+                    "Vehicle"
+                ],
+                "sub": [
+                    "Wheeled",
+                    "40x60"
+                ]
+            },
+            "weapons": [
+                {
+                    "weaponName": "6G2 7.76mm MG",
+                    "weaponAmmo": "",
+                    "attacks": [
+                        {
+                            "attackName": "",
+                            "attackTargets": "All",
+                            "attackRange": "R12\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A4+/4+",
+                            "attackStrength": "S1/1+",
+                            "attackTags": [
+                                "Turret"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "weaponName": "9GR5 120mm Infrared SAM",
+                    "weaponAmmo": "4",
+                    "attacks": [
+                        {
+                            "attackName": "",
+                            "attackTargets": "Air",
+                            "attackRange": "R60\"",
+                            "attackDice": "D1",
+                            "attackAccuracy": "A4+/xx",
+                            "attackStrength": "S6/6",
+                            "attackTags": [
+                                "Air-Filling","Barrage (2)","Guided Missile (2)","Homing","Turret"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "tags": [
+                {
+                    "rule": "Amphibious",
+                    "params": ""
+                },
+                {
+                    "rule": "PC",
+                    "params": "1, Rear"
                 }
             ]
         },
@@ -3187,7 +3278,7 @@ const fedlist = [
                             "attackAccuracy": "A3+/xx",
                             "attackStrength": "S14/2",
                             "attackTags": [
-                                "No CC","Shaped Charge"
+                                "No CC","Shaped Charge","Slow Round"
                             ]
                         },
 						{
@@ -3309,7 +3400,7 @@ const fedlist = [
                             "attackStrength": "S1+/2",
                             "attackTags": [
                                 "Ignore Cover (1)",
-                                "Multi-Gun", "Turret"
+                                "Multi-Gun", "Turret", "Slow Round"
                             ]
                         }
                     ]
@@ -3478,7 +3569,7 @@ const fedlist = [
                             "attackAccuracy": "A4+/5+",
                             "attackStrength": "S5/1+",
                             "attackTags": [
-                                "Shaped Charge"
+                                "Shaped Charge", "Slow Round"
                             ]
                         }
                     ]
@@ -3549,7 +3640,7 @@ const fedlist = [
                             "attackAccuracy": "A4+",
                             "attackStrength": "S1",
                             "attackTags": [
-                                ""
+                                "Radar Anti-Air"
                             ]
                         }
                     ]
@@ -3566,7 +3657,7 @@ const fedlist = [
                             "attackAccuracy": "A2+",
                             "attackStrength": "S6/1",
                             "attackTags": [
-                                "Rear Attack", "Saturating (6\")","Shaped Charge"
+                                "Rear Attack", "Saturating (6)","Shaped Charge"
                             ]
                         }
                     ]
@@ -3601,7 +3692,7 @@ const fedlist = [
             "faction": [
                 "federal"
             ],
-            "value": 20,
+            "value": 25,
             "stats": [
                 "H*",
                 "S*\"",
@@ -3633,7 +3724,7 @@ const fedlist = [
                             "attackAccuracy": "A4+",
                             "attackStrength": "S4",
                             "attackTags": [
-                                ""
+                                "Radar Anti-Air"
                             ]
                         }
                     ]
@@ -3719,7 +3810,7 @@ const fedlist = [
                             "attackAccuracy": "A4+",
                             "attackStrength": "S5",
                             "attackTags": [
-                                ""
+                                "Radar Anti-Air"
                             ]
                         }
                     ]
@@ -3761,7 +3852,7 @@ const fedlist = [
             ],
             "tags": [
                 {
-                    "rule": "Chaff-Flares",
+                    "rule": "Decoy Protection",
                     "params": "2"
                 },
                 {
