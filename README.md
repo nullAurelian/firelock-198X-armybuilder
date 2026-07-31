@@ -2,7 +2,7 @@
 
 This application is a simple web application to calculate army lists for the tabletop game Firelock 198X. This application is powered by React in Vite with HMR and some ESLint rules. 
 
-The application is current for Firelock 198X Edition 0.9.6.
+The application is current for Firelock 198X Edition 0.9.7.
 
 ## Firelock 198X
 
