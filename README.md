@@ -4,6 +4,8 @@ This application is a simple web application to calculate army lists for the tab
 
 The application is current for Firelock 198X Edition 0.9.7.
 
+Application found here: [https://nullaurelian.github.io/firelock-198X-armybuilder/](https://nullaurelian.github.io/firelock-198X-armybuilder/)
+
 ## Firelock 198X
 
 Firelock 198X can be found [on itch.io](https://drekfortmdc.itch.io/firelock-198x-09-public) or on [neoCities](https://drekfortmdc.neocities.org/)
