@@ -306,6 +306,10 @@ const rygolist = [
                 {
                     "rule": "This unit may not lend actions to friendly units via Rygonet.",
                     "params": ""
+                },
+                {
+                    "rule":"Always dies if in close combat without friendly units.",
+                    "params":""
                 }
             ]
     },
@@ -385,6 +389,10 @@ const rygolist = [
                 {
                     "rule": "Brigade",
                     "params": "4,8\""
+                },
+                {
+                    "rule":"Strider",
+                    "params":""
                 },
                 {
                     "rule": "When this unit activates in the Fire Phase, it may select one friendly Rygolic unit within Line of Sight up to 8\" away which has not already acted that round. The Stoma and the selected unit fire at the same target simultaneously. Units activated this way are treated as having already fired for the round.",
@@ -809,7 +817,7 @@ const rygolist = [
                             "attackAccuracy": "A3+/xx",
                             "attackStrength": "S5/5",
                             "attackTags": [
-                                "Guided Missile (1)","Homing","Small Arm"
+                                "Guided Missile (1)","Homing","Small Arm","Thermal Sights"
                             ]
                         }
                     ]
@@ -877,7 +885,7 @@ const rygolist = [
                             "attackRange": "R10\"",
                             "attackDice": "1",
                             "attackAccuracy": "A3+/4+",
-                            "attackStrength": "S7/1+",
+                            "attackStrength": "S8/1+",
                             "attackTags": [
                                 "Barrage (2)","Small Arm","Thermal Sights","Shaped Charge", "Slow Round"
                             ]
@@ -1220,7 +1228,7 @@ const rygolist = [
             ],
             "tags": [
                 {
-                    "rule": "Active Camoflauge",
+                    "rule": "Active Camouflage",
                     "params": ""
                 },
                 {
@@ -1251,8 +1259,8 @@ const rygolist = [
                 "H1",
                 "S32\"",
                 "M4\"",
-                "Q3",
-                "T1/1/1"
+                "Q4",
+                "T1+/1+/1+"
             ],
             "type": {
                 "super": [
@@ -1571,7 +1579,7 @@ const rygolist = [
                             "attackAccuracy": "A3+/xx",
                             "attackStrength": "S5/5",
                             "attackTags": [
-                                "Guided Missile (1)","Homing", "Turret"
+                                "Guided Missile (1)","Homing", "Themal Sights","Turret"
                             ]
                         }
                     ]
@@ -1728,7 +1736,7 @@ const rygolist = [
                             "attackRange": "R40\"",
                             "attackDice": "D1",
                             "attackAccuracy": "A3+/3+",
-                            "attackStrength": "S8/1+",
+                            "attackStrength": "S10/1+",
                             "attackTags": [
                                 "Round Extruder","Thermal Sights","Turret","No CC (Inf.)","Shaped Charge", "Slow Round"
                             ]
@@ -1771,6 +1779,10 @@ const rygolist = [
                 },
                 {
                     "rule":"This unit uses a 40x40 infantry base.",
+                    "params":""
+                },
+                {
+                    "rule":"Strider",
                     "params":""
                 }
             ]
@@ -1837,7 +1849,7 @@ const rygolist = [
                             "attackRange": "R40\"",
                             "attackDice": "D1",
                             "attackAccuracy": "A2+/3+",
-                            "attackStrength": "S10/2",
+                            "attackStrength": "S12/2",
                             "attackTags": [
                                 "No CC (Inf.)","Thermal Sights","Turret","Shaped Charge","Slow Round"
                             ]
@@ -1946,7 +1958,7 @@ const rygolist = [
                             "attackRange": "R50\"",
                             "attackDice": "D1",
                             "attackAccuracy": "A2+/3+",
-                            "attackStrength": "S10/2",
+                            "attackStrength": "S12/2",
                             "attackTags": [
                                 "No CC (Inf.)","Round Extruder","Thermal Sights","Turret","Shaped Charge", "Slow Round"
                             ]
@@ -1954,14 +1966,14 @@ const rygolist = [
                     ]
                 },
                 {
-                    "weaponName": "\"Tread Bus\" 65mm Smoke Launchers",
-                    "weaponAmmo": "1",
+                    "weaponName": "\"Tread Port\" 65mm Smoke Launchers",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
                             "attackTargets": "Gnd",
                             "attackRange": "R6\"",
-                            "attackDice": "D1",
+                            "attackDice": "D2",
                             "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
@@ -2151,7 +2163,7 @@ const rygolist = [
                 },
                 {
                     "weaponName": "\"Ink Strake\" 55mm Thermobaric Rockets",
-                    "weaponAmmo": "4",
+                    "weaponAmmo": "3",
                     "attacks": [
                         {
                             "attackName": "",
@@ -2161,7 +2173,7 @@ const rygolist = [
                             "attackAccuracy": "A4+/4+",
                             "attackStrength": "S2/2",
                             "attackTags": [
-                                "Ignore Cover (2)","No CC","Rear Attack","Saturating (4)","Thermal Sights","Turret"
+                                "Ignore Cover (2)","No CC","Rear Attack","Radius (2-4\")","Round Extruder","Thermal Sights","Turret"
                             ]
                         }
                     ]
@@ -2171,6 +2183,10 @@ const rygolist = [
                 {
                     "rule": "NBC",
                     "params": ""
+                },
+                {
+                    "rule":"Strider",
+                    "params":""
                 },
                 {
                     "rule":"This unit uses a 40x40 infantry base.",
@@ -2368,6 +2384,23 @@ const rygolist = [
                             ]
                         }
                     ]
+                },
+                {
+                    "weaponName": "\"Tread Port\" 65mm Smoke Launchers",
+                    "weaponAmmo": "2",
+                    "attacks": [
+                        {
+                            "attackName": "",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R6\"",
+                            "attackDice": "D2",
+                            "attackAccuracy": "A++/++",
+                            "attackStrength": "",
+                            "attackTags": [
+                                "Light Indirect (0)","No CC","Smoke (2\")", "Turret"
+                            ]
+                        }
+                    ]
                 }
             ],
             "tags": [
@@ -2468,14 +2501,14 @@ const rygolist = [
                     ]
                 },
                 {
-                    "weaponName": "\"Tread Bus\" 65mm Smoke Launchers",
-                    "weaponAmmo": "1",
+                    "weaponName": "\"Tread Port\" 65mm Smoke Launchers",
+                    "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
                             "attackTargets": "Gnd",
                             "attackRange": "R6\"",
-                            "attackDice": "D1",
+                            "attackDice": "D2",
                             "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
@@ -2557,7 +2590,7 @@ const rygolist = [
             ],
             "tags": [
                 {
-                    "rule": "Active Camoflauge",
+                    "rule": "Active Camouflage",
                     "params": ""
                 },
                 {
@@ -2747,7 +2780,7 @@ const rygolist = [
                     ]
                 },
                 {
-                    "weaponName": "\"Tread Plate\" 65mm Smoke Array",
+                    "weaponName": "\"Tread Rake\" 65mm Smoke Array",
                     "weaponAmmo": "2",
                     "attacks": [
                         {
@@ -2835,7 +2868,7 @@ const rygolist = [
             ],
             "tags": [
                 {
-                    "rule": "Chaff-Flares",
+                    "rule": "Decoy Protection",
                     "params": "1"
                 },
                 {
@@ -2859,7 +2892,7 @@ const rygolist = [
                 "S32\"",
                 "M32\"",
                 "Q3",
-                "T3/3/3"
+                "T3/3/2"
             ],
             "type": {
                 "super": [
@@ -2881,7 +2914,7 @@ const rygolist = [
                             "attackRange": "R32\"",
                             "attackDice": "D2",
                             "attackAccuracy": "A4+/4+",
-                            "attackStrength": "S7/7",
+                            "attackStrength": "S5/7",
                             "attackTags": [
                                 "Thermal Sights"
                             ]
@@ -2900,7 +2933,7 @@ const rygolist = [
                             "attackAccuracy": "A3+/3+",
                             "attackStrength": "S7/7",
                             "attackTags": [
-                                "Air-Filling","Guided Missile (1)","Homing","Radar Anti-Air"
+                                "Air-Filling","Guided Missile (1)","Homing","Radar Anti-Air","Thermal Sights"
                             ]
                         }
                     ]
@@ -2925,7 +2958,7 @@ const rygolist = [
             ],
             "tags": [
                 {
-                    "rule": "Chaff-Flares",
+                    "rule": "Decoy Protection",
                     "params": "2"
                 },
                 {
@@ -2966,7 +2999,7 @@ const rygolist = [
                             "attackTargets": "All",
                             "attackRange": "R40\"",
                             "attackDice": "D4",
-                            "attackAccuracy": "A1+/1+",
+                            "attackAccuracy": "A1+/xx",
                             "attackStrength": "S1+/1+",
                             "attackTags": [
                                 "Laser","Turret"
@@ -2976,10 +3009,6 @@ const rygolist = [
                 }
             ],
             "tags": [
-                {
-                    "rule": "APS",
-                    "params": "6+, 4"
-                },
                 {
                     "rule": "NBC",
                     "params": ""
@@ -2993,11 +3022,15 @@ const rygolist = [
                     "params": ""
                 },
                 {
-                    "rule": "Every time this unit uses APS, its weapon Dice statistic decreases by 1 for the rest of the round. If the Dice value hits 0 it cannot be fired this round and APS cannot be triggered again this round. During Upkeep the laser weapon's Dice value is reset to 4 regardless of how many munitions were intercepted last round.",
+                    "rule":"This unit uses a 40x40 base.",
+                    "params":""
+                },
+                {
+                    "rule": "Hits against this unit do not need to be confirmed.",
                     "params": ""
                 },
                 {
-                    "rule":"This unit uses a 40x40 base.",
+                    "rule":"When this unit suffers a successful kill, it automatically forces that kill to reroll at an unmodified 6+ (fails applying 3 pin), then its weapon's Dice statistic decreases by 1 for the rest of the round. If Dice hits 0 the weapon cannot fire and no further attacks are forced to re-roll that round. During Upkeep the weapon's Dice value resets to D4.",
                     "params":""
                 }
             ]
@@ -3056,7 +3089,7 @@ const rygolist = [
                             "attackAccuracy": "A3+",
                             "attackStrength": "S7",
                             "attackTags": [
-                                "Air-Filling","Guided Missile (1)","Homing","Radar Anti-Air"
+                                "Air-Filling","Guided Missile (1)","Homing","Radar Anti-Air","Thermal Sights"
                             ]
                         }
                     ]
@@ -3073,7 +3106,7 @@ const rygolist = [
                             "attackAccuracy": "A3+",
                             "attackStrength": "S18/4",
                             "attackTags": [
-                                "Guided Missile (1)","Shaped Charge"
+                                "Guided Missile (1)","Shaped Charge","Standoff"
                             ]
                         }
                     ]
@@ -3127,7 +3160,7 @@ const rygolist = [
                             "attackAccuracy": "A++",
                             "attackStrength": "",
                             "attackTags": [
-                                "Guided Missile (2)","Nuclear (1\"-2\"-6\")"
+                                "Guided Missile (2)","Nuclear (1\"-2\"-6\")","Standoff"
                             ]
                         }
                     ]
@@ -3135,7 +3168,7 @@ const rygolist = [
             ],
             "tags": [
                 {
-                    "rule": "Active Camoflauge",
+                    "rule": "Active Camouflage",
                     "params": ""
                 },
                 {
@@ -3181,7 +3214,7 @@ const rygolist = [
                             "attackAccuracy": "A4+",
                             "attackStrength": "S6",
                             "attackTags": [
-                                "Radar Anti-Air"
+                                "Radar Anti-Air","Thermal Sights"
                             ]
                         }
                     ]
@@ -3198,7 +3231,7 @@ const rygolist = [
                             "attackAccuracy": "A2+",
                             "attackStrength": "S10",
                             "attackTags": [
-                                "Air-Filling","Barrage (2)", "Guided Missile (2)","Radius (3\")","Rear Attack"
+                                "Air-Filling","Barrage (2)", "Guided Missile (2)","Radius (3\")","Rear Attack", "Standoff"
                             ]
                         }
                     ]
