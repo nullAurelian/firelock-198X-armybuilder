@@ -73,7 +73,7 @@ const fedlist = [
                             "attackTargets": "All",
                             "attackRange": "R2\"",
                             "attackDice": "D1",
-                            "attackAccuracy": "A5+/5+",
+                            "attackAccuracy": "A4+/4+",
                             "attackStrength": "S1+/1+",
                             "attackTags": [
                                 "Small Arm"
@@ -277,7 +277,7 @@ const fedlist = [
                             "attackName": "",
                             "attackTargets": "Vec",
                             "attackRange": "R40\"",
-                            "attackDice": "1",
+                            "attackDice": "D1",
                             "attackAccuracy": "A4+/4+",
                             "attackStrength": "S12/18",
                             "attackTags": [
@@ -733,7 +733,7 @@ const fedlist = [
                             "attackTargets": "All",
                             "attackRange": "R24\"",
                             "attackDice": "D2",
-                            "attackAccuracy": "A4+/6+",
+                            "attackAccuracy": "A4+/5+",
                             "attackStrength": "S3/4",
                             "attackTags": [
                                 "Turret"
@@ -762,9 +762,9 @@ const fedlist = [
                             "attackRange": "R40\"",
                             "attackDice": "D1",
                             "attackAccuracy": "A2+/3+",
-                            "attackStrength": "S11/2",
+                            "attackStrength": "S12/2",
                             "attackTags": [
-                                "Shaped Charge", "Slow Round"
+                                "No CC (Inf.)","Shaped Charge", "Slow Round","Thermal Sights", "Turret"
                             ]
                         }
                     ]
@@ -843,7 +843,7 @@ const fedlist = [
                             "attackTargets": "All",
                             "attackRange": "R24\"",
                             "attackDice": "D2",
-                            "attackAccuracy": "A4+/6+",
+                            "attackAccuracy": "A4+/4+",
                             "attackStrength": "S3/4",
                             "attackTags": [
 								"Thermal Sights",
@@ -982,7 +982,7 @@ const fedlist = [
                             "attackRange": "R8\"",
                             "attackDice": "D1",
                             "attackAccuracy": "A5+/6+",
-                            "attackStrength": "S6/1",
+                            "attackStrength": "S8/1",
                             "attackTags": [
                                 "Shaped Charge","Small Arm","Slow Round"
                             ]
@@ -1220,7 +1220,7 @@ const fedlist = [
                             "attackAccuracy": "A++/xx",
                             "attackStrength": "",
                             "attackTags": [
-                                "Smoke (3\")"
+                                "Light Indirect (1)","No CC","Smoke (3\")"
                             ]
                         }
                     ]
@@ -1283,7 +1283,7 @@ const fedlist = [
                             "attackTargets": "Vec",
                             "attackRange": "R12-60\"",
                             "attackDice": "D1",
-                            "attackAccuracy": "A3+/4+",
+                            "attackAccuracy": "A3+/xx",
                             "attackStrength": "S14/2",
                             "attackTags": [
                                 "Guided Missile (2)","MCLOS","Shaped Charge"
@@ -1352,7 +1352,7 @@ const fedlist = [
                             "attackAccuracy": "A4+/xx",
                             "attackStrength": "S5/5",
                             "attackTags": [
-                                "Air-Filling","Guided Missle (2)","Homing","Small Arm"
+                                "Air-Filling","Guided Missle (2)","Homing","Small Arm","Thermal Sights"
                             ]
                         }
                     ]
@@ -1418,7 +1418,7 @@ const fedlist = [
                             "attackAccuracy": "A3+/xx",
                             "attackStrength": "S8/1+",
                             "attackTags": [
-                                "No CC (Inf.)","Shaped Charge","Slow Round"
+                                "Defensive CC","Shaped Charge","Slow Round"
                             ]
                         },
                         {
@@ -1429,7 +1429,7 @@ const fedlist = [
                             "attackAccuracy": "A3+/xx",
                             "attackStrength": "S1+/1+",
                             "attackTags": [
-                                "Ignore Cover (2)","No CC (Inf.)","Rear Attack", "Slow Round"
+                                "Defensive CC","Ignore Cover (2)","Rear Attack", "Slow Round"
                             ]
                         },
                         {
@@ -1504,7 +1504,7 @@ const fedlist = [
                             "attackRange": "R24\"",
                             "attackDice": "D1",
                             "attackAccuracy": "A3+/5+",
-                            "attackStrength": "S6/1",
+                            "attackStrength": "S6/1+",
                             "attackTags": [
                                 "Small Arm","Shaped Charge","Slow Round"
                             ]
@@ -1571,7 +1571,7 @@ const fedlist = [
                             "attackTargets": "All",
                             "attackRange": "R8\"",
                             "attackDice": "D1",
-                            "attackAccuracy": "A3+/4+",
+                            "attackAccuracy": "A4+/4+",
                             "attackStrength": "S1/1+",
                             "attackTags": [
                                 "Small Arm"
@@ -1598,6 +1598,10 @@ const fedlist = [
                 }
             ],
             "tags": [
+                {
+                    "rule":"Amphibious",
+                    "params":""
+                },
                 {
                     "rule": "Sense",
                     "params": "6\""
@@ -1644,7 +1648,7 @@ const fedlist = [
                             "attackAccuracy": "A2+/xx",
                             "attackStrength": "S1/1+",
                             "attackTags": [
-                                "Discreet","No CC","Scoped","Small Arm","Thermal Sight"
+                                "Discreet","No CC","Scoped","Small Arm","Thermal Sights"
                             ]
                         }
                     ]
@@ -1658,7 +1662,7 @@ const fedlist = [
                             "attackTargets": "All",
                             "attackRange": "R8\"",
                             "attackDice": "D2",
-                            "attackAccuracy": "A5+/5+",
+                            "attackAccuracy": "A3+/3+",
                             "attackStrength": "S1-/1",
                             "attackTags": [
                                 "Small Arm"
@@ -1752,7 +1756,7 @@ const fedlist = [
                 },
                 {
                     "rule": "Tow",
-                    "params": "2"
+                    "params": "3"
                 }
             ]
         },
@@ -1789,7 +1793,7 @@ const fedlist = [
                             "attackTargets": "All",
                             "attackRange": "R12\"",
                             "attackDice": "D2",
-                            "attackAccuracy": "A4+/4+",
+                            "attackAccuracy": "A4+/6+",
                             "attackStrength": "S1/1+",
                             "attackTags": [
                                 "Turret"
@@ -1804,9 +1808,9 @@ const fedlist = [
                         {
                             "attackName": "",
                             "attackTargets": "Inf/Vec",
-                            "attackRange": "R14\"",
+                            "attackRange": "R20\"",
                             "attackDice": "D2",
-                            "attackAccuracy": "A4+/5+",
+                            "attackAccuracy": "A4+/6+",
                             "attackStrength": "S1+/2",
                             "attackTags": [
                                 "Ignore Cover (1)",
@@ -1824,7 +1828,7 @@ const fedlist = [
                 },
                 {
                     "rule": "PC",
-                    "params": "2, Rear"
+                    "params": "3, Rear"
                 },
                 {
                     "rule": "NBC",
@@ -1874,7 +1878,7 @@ const fedlist = [
                     ]
                 },
                 {
-                    "weaponName": "2K28 73mm Low-Pressure Gun (73mm HEAT, 73mm HE-Frag)",
+                    "weaponName": "2K28 73mm Low-Pressure Gun",
                     "weaponAmmo": "4",
                     "attacks": [
                         {
@@ -1883,7 +1887,7 @@ const fedlist = [
                             "attackRange": "R22\"",
                             "attackDice": "D1",
                             "attackAccuracy": "A4+/4+",
-                            "attackStrength": "S8/1+",
+                            "attackStrength": "S9/1+",
                             "attackTags": [
                                 "No CC (Inf.)","Turret","Slow Round","Shaped Charge"
                             ]
@@ -1910,7 +1914,7 @@ const fedlist = [
                             "attackTargets": "Vec",
                             "attackRange": "R12-60\"",
                             "attackDice": "D1",
-                            "attackAccuracy": "A3+/4+",
+                            "attackAccuracy": "A3+/xx",
                             "attackStrength": "S14/2",
                             "attackTags": [
                                 "Guided Missile (2)","MCLOS","Shaped Charge","Turret"
@@ -2025,7 +2029,7 @@ const fedlist = [
                             "attackTargets": "Vec",
                             "attackRange": "R12-60\"",
                             "attackDice": "D1",
-                            "attackAccuracy": "A3+/4+",
+                            "attackAccuracy": "A3+/xx",
                             "attackStrength": "S14/2",
                             "attackTags": [
                                 "Guided Missile (2)","MCLOS","Shaped Charge","Turret"
@@ -2122,7 +2126,7 @@ const fedlist = [
                             "attackName": "",
                             "attackTargets": "Vec",
                             "attackRange": "R40\"",
-                            "attackDice": "1",
+                            "attackDice": "D1",
                             "attackAccuracy": "A4+/4+",
                             "attackStrength": "S12/18",
                             "attackTags": [
@@ -2138,7 +2142,7 @@ const fedlist = [
                         {
                             "attackName": "",
                             "attackTargets": "Inf/Vec",
-                            "attackRange": "R14\"",
+                            "attackRange": "R20\"",
                             "attackDice": "D2",
                             "attackAccuracy": "A4+/5+",
                             "attackStrength": "S1+/2",
@@ -2195,7 +2199,7 @@ const fedlist = [
                             "attackTargets": "All",
                             "attackRange": "R12\"",
                             "attackDice": "D2",
-                            "attackAccuracy": "A4+/4+",
+                            "attackAccuracy": "A4+/5+",
                             "attackStrength": "S1/1+",
                             "attackTags": [
                                 "Turret"
@@ -2380,7 +2384,7 @@ const fedlist = [
                     "params": ""
                 },
                 {
-                    "rule":"APS",
+                    "rule":"Active Protection",
                     "params": "1"
                 }
             ]
@@ -2418,10 +2422,10 @@ const fedlist = [
                             "attackTargets": "All",
                             "attackRange": "R12\"",
                             "attackDice": "D2",
-                            "attackAccuracy": "A4+/4+",
+                            "attackAccuracy": "A4+/5+",
                             "attackStrength": "S1/1+",
                             "attackTags": [
-                                ""
+                                "Multi-Gun"
                             ]
                         }
                     ]
@@ -2542,7 +2546,7 @@ const fedlist = [
                             "attackTargets": "All",
                             "attackRange": "R24\"",
                             "attackDice": "D2",
-                            "attackAccuracy": "A4+/6+",
+                            "attackAccuracy": "A4+/5+",
                             "attackStrength": "S3/4",
                             "attackTags": [
                                 "Turret"
@@ -2571,7 +2575,7 @@ const fedlist = [
                             "attackRange": "R40\"",
                             "attackDice": "D1",
                             "attackAccuracy": "A2+/3+",
-                            "attackStrength": "S11/2",
+                            "attackStrength": "S12/2",
                             "attackTags": [
                                 "No CC (Inf.)", "Thermal Sights", "Turret",
                                 "Slow Round",
@@ -2645,7 +2649,7 @@ const fedlist = [
                             "attackTargets": "All",
                             "attackRange": "R24\"",
                             "attackDice": "D2",
-                            "attackAccuracy": "A4+/6+",
+                            "attackAccuracy": "A4+/4+",
                             "attackStrength": "S3/4",
                             "attackTags": [
 								"Thermal Sights",
@@ -2786,7 +2790,7 @@ const fedlist = [
                             "attackTargets": "Gnd",
                             "attackRange": "R40\"",
                             "attackDice": "D1",
-                            "attackAccuracy": "A4+/xx",
+                            "attackAccuracy": "A3+/xx",
                             "attackStrength": "S[D3]",
                             "attackTags": [
                                 "Barrage (3)", "No CC", "Air-Filling", "Light Indirect (3)","Radius (2\")"
@@ -2885,7 +2889,7 @@ const fedlist = [
                             "attackTargets": "Gnd",
                             "attackRange": "R∞\"",
                             "attackDice": "D2",
-                            "attackAccuracy": "A4++/xx",
+                            "attackAccuracy": "A4+/xx",
                             "attackStrength": "S[D6]",
                             "attackTags": [
                                 "No CC", "Air-Filling","Heavy Indirect (3)","Radius (3\")"
@@ -2956,7 +2960,7 @@ const fedlist = [
                             "attackTargets": "All",
                             "attackRange": "R12\"",
                             "attackDice": "D2",
-                            "attackAccuracy": "A4+/4+",
+                            "attackAccuracy": "A4+/6+",
                             "attackStrength": "S1/1+",
                             "attackTags": [
                                 "Turret"
@@ -3004,7 +3008,7 @@ const fedlist = [
                 "S32\"",
                 "M10\"",
                 "Q3",
-                "T6/4/4"
+                "T5/4/4"
             ],
             "command": 0,
             "type": {
@@ -3026,7 +3030,7 @@ const fedlist = [
                             "attackTargets": "All",
                             "attackRange": "R8\"",
                             "attackDice": "D2",
-                            "attackAccuracy": "A5+/5+",
+                            "attackAccuracy": "A4+/4+",
                             "attackStrength": "S1-/1",
                             "attackTags": [
                                 "Small Arm"
@@ -3096,7 +3100,7 @@ const fedlist = [
                             "attackTargets": "All",
                             "attackRange": "R12\"",
                             "attackDice": "D2",
-                            "attackAccuracy": "A4+/4+",
+                            "attackAccuracy": "A4+/6+",
                             "attackStrength": "S1/1+",
                             "attackTags": [
                                 "Turret"
@@ -3105,7 +3109,7 @@ const fedlist = [
                     ]
                 },
                 {
-                    "weaponName": "2M9 82mm Automatic Mortar (82mm Frag, 82mm Chemical-SP, 82mm Smoke)",
+                    "weaponName": "2M9 82mm Automatic Mortar",
                     "weaponAmmo": "6",
                     "attacks": [
                         {
@@ -3188,7 +3192,7 @@ const fedlist = [
                             "attackTargets": "All",
                             "attackRange": "R12\"",
                             "attackDice": "D2",
-                            "attackAccuracy": "A4+/4+",
+                            "attackAccuracy": "A4+/6+",
                             "attackStrength": "S1/1+",
                             "attackTags": [
                                 "Turret"
@@ -3275,7 +3279,7 @@ const fedlist = [
                             "attackTargets": "Inf/Vec",
                             "attackRange": "R40\"",
                             "attackDice": "D1",
-                            "attackAccuracy": "A3+/xx",
+                            "attackAccuracy": "A3+/4+",
                             "attackStrength": "S14/2",
                             "attackTags": [
                                 "No CC","Shaped Charge","Slow Round"
@@ -3286,7 +3290,7 @@ const fedlist = [
                             "attackTargets": "Gnd",
                             "attackRange": "R∞\"",
                             "attackDice": "D2",
-                            "attackAccuracy": "A4++/xx",
+                            "attackAccuracy": "A4+/5+",
                             "attackStrength": "S[D6]",
                             "attackTags": [
                                 "No CC", "Air-Filling","Heavy Indirect (3)","Radius (3\")"
@@ -3297,7 +3301,7 @@ const fedlist = [
                             "attackTargets": "Gnd",
                             "attackRange": "R∞\"",
                             "attackDice": "D1",
-                            "attackAccuracy": "A++/xx",
+                            "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
                                 "No CC", "Chemical-SP (4\")","Heavy Indirect (3)"
@@ -3361,7 +3365,7 @@ const fedlist = [
                             "attackTargets": "All",
                             "attackRange": "R24\"",
                             "attackDice": "D2",
-                            "attackAccuracy": "A4+/6+",
+                            "attackAccuracy": "A4+/4+",
                             "attackStrength": "S3/4",
                             "attackTags": [
                                 "Turret"
@@ -3394,9 +3398,9 @@ const fedlist = [
                         {
                             "attackName": "",
                             "attackTargets": "Inf/Vec",
-                            "attackRange": "R14\"",
+                            "attackRange": "R20\"",
                             "attackDice": "D2",
-                            "attackAccuracy": "A4+/5+",
+                            "attackAccuracy": "A4+/4+",
                             "attackStrength": "S1+/2",
                             "attackTags": [
                                 "Ignore Cover (1)",
@@ -3445,7 +3449,7 @@ const fedlist = [
                             "attackTargets": "All",
                             "attackRange": "R12\"",
                             "attackDice": "D2",
-                            "attackAccuracy": "A4+/4+",
+                            "attackAccuracy": "A4+/5+",
                             "attackStrength": "S1/1+",
                             "attackTags": [
                                 "Door Gun (Sides)"
@@ -3493,7 +3497,7 @@ const fedlist = [
                             "attackTargets": "All",
                             "attackRange": "R12\"",
                             "attackDice": "D4",
-                            "attackAccuracy": "A4+/6+",
+                            "attackAccuracy": "A4+/5+",
                             "attackStrength": "S1/1+",
                             "attackTags": [
                                 "Door Gun (Sides)"
@@ -3549,7 +3553,7 @@ const fedlist = [
                             "attackTargets": "All",
                             "attackRange": "R12\"",
                             "attackDice": "D4",
-                            "attackAccuracy": "A4+/6+",
+                            "attackAccuracy": "A4+/5+",
                             "attackStrength": "S1/1+",
                             "attackTags": [
                                 "Turret"
@@ -3564,7 +3568,7 @@ const fedlist = [
                         {
                             "attackName": "",
                             "attackTargets": "Inf/Vec",
-                            "attackRange": "R14\"",
+                            "attackRange": "R20\"",
                             "attackDice": "D2",
                             "attackAccuracy": "A4+/5+",
                             "attackStrength": "S5/1+",
@@ -3594,7 +3598,7 @@ const fedlist = [
             ],
             "tags": [
                 {
-                    "rule": "Chaff-Flares",
+                    "rule": "Decoy Protection",
                     "params": "1"
                 },
                 {
@@ -3612,7 +3616,7 @@ const fedlist = [
             "stats": [
                 "H*",
                 "S*\"",
-                "M10\"",
+                "M12\"",
                 "Q2",
                 "T3",
                 "E0"
@@ -3646,35 +3650,29 @@ const fedlist = [
                     ]
                 },
                 {
-                    "weaponName": "4BB2 350kg Dual-Purpose Cluster Bomb",
-                    "weaponAmmo": "6",
+                    "weaponName": "H1A1 Rotary Bomb Bay",
+                    "weaponAmmo": "5",
                     "attacks": [
                         {
-                            "attackName": "",
+                            "attackName": "350kg Dual-Purpose Cluster Bomb",
                             "attackTargets": "Gnd",
                             "attackRange": "R0\"",
                             "attackDice": "D2",
                             "attackAccuracy": "A2+",
                             "attackStrength": "S6/1",
                             "attackTags": [
-                                "Rear Attack", "Saturating (6)","Shaped Charge"
+                                "Radius(2-6\")","Rear Attack","Shaped Charge"
                             ]
-                        }
-                    ]
-                },
-                {
-                    "weaponName": "9GR6 200mm Beam-Riding AAM",
-                    "weaponAmmo": "4",
-                    "attacks": [
+                        },
                         {
-                            "attackName": "",
-                            "attackTargets": "Air",
-                            "attackRange": "R50\"",
-                            "attackDice": "D1",
-                            "attackAccuracy": "A5+",
-                            "attackStrength": "S6",
+                            "attackName": "350kg Dual-Purpose Cluster Bomb",
+                            "attackTargets": "Gnd",
+                            "attackRange": "R0\"",
+                            "attackDice": "D3",
+                            "attackAccuracy": "A2+",
+                            "attackStrength": "S[D3]]",
                             "attackTags": [
-                                "Air-Filling","Guided Missile (2)","Barrage (2)", "No CC"
+                                "Radius(2-6\")","Rear Attack","Air-Filling"
                             ]
                         }
                     ]
@@ -3682,8 +3680,8 @@ const fedlist = [
             ],
             "tags": [
                 {
-                    "rule": "",
-                    "params": ""
+                    "rule": "Decoy Protection",
+                    "params": "2"
                 }
             ]
         },
@@ -3753,7 +3751,7 @@ const fedlist = [
                         {
                             "attackName": "",
                             "attackTargets": "Air",
-                            "attackRange": "R24\"",
+                            "attackRange": "R30\"",
                             "attackDice": "D1",
                             "attackAccuracy": "A4+",
                             "attackStrength": "S6",
@@ -3816,18 +3814,18 @@ const fedlist = [
                     ]
                 },
                 {
-                    "weaponName": "4BE1 500kg HE Bomb",
+                    "weaponName": "4BE1 500kg Bunker Buster",
                     "weaponAmmo": "2",
                     "attacks": [
                         {
                             "attackName": "",
                             "attackTargets": "Gnd",
-                            "attackRange": "R0\"",
+                            "attackRange": "R8\"",
                             "attackDice": "D1",
                             "attackAccuracy": "A3+",
                             "attackStrength": "S8",
                             "attackTags": [
-                                "Air-Filling","Barrage (2)","Radius (3\")","Rear Attack"
+                                "Air-Filling","Barrage (2)","Ignore Cover (2)","Radius (2\")","Rear Attack"
                             ]
                         }
                     ]
@@ -3841,10 +3839,10 @@ const fedlist = [
                             "attackTargets": "Vec",
                             "attackRange": "R50\"",
                             "attackDice": "D1",
-                            "attackAccuracy": "A3+",
+                            "attackAccuracy": "A2+",
                             "attackStrength": "S24/8",
                             "attackTags": [
-                                "Guided Missile (2)", "MCLOS", "Shaped Charge", "Thermal Sights"
+                                "Guided Missile (2)", "MCLOS", "Shaped Charge", "Thermal Sights", "Standoff"
                             ]
                         }
                     ]
