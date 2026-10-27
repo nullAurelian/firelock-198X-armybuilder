@@ -3612,7 +3612,7 @@ const fedlist = [
             "faction": [
                 "federal"
             ],
-            "value": 20,
+            "value": 25,
             "stats": [
                 "H*",
                 "S*\"",
