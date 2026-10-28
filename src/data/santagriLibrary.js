@@ -109,7 +109,7 @@ const santalist = [
                             "attackAccuracy": "A3+/3+",
                             "attackStrength": "S6/6",
                             "attackTags": [
-                                "Air-Filling", "Guided Missile (1)", "Homing"
+                                "Air-Filling", "Guided Missile (1)", "Homing", "Thermal Sights"
                             ]
                         }
                     ]
@@ -126,7 +126,7 @@ const santalist = [
                             "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                "Rally","Turret"
+                                "Radius (3\")","Rally","Turret"
                             ]
                         }
                     ]
@@ -221,7 +221,7 @@ const santalist = [
                             "attackAccuracy": "A++/++",
                             "attackStrength": "",
                             "attackTags": [
-                                "Rally","Turret"
+                                "Radius (3\")","Rally","Turret"
                             ]
                         }
                     ]
@@ -490,6 +490,14 @@ const santalist = [
                 {
                     "rule": "NBC",
                     "params": ""
+                },
+                {
+                    "rule":"May not embark or desant.",
+                    "params":""
+                },
+                {
+                    "rule":"Becomes H1 while Gone to Ground.",
+                    "params":""
                 }
             ]
     },
@@ -566,7 +574,7 @@ const santalist = [
                     "params": ""
                 },
                 {
-                    "rule": "Amphibious",
+                    "rule": "Paradrop",
                     "params": ""
                 },
                 {
@@ -794,7 +802,7 @@ const santalist = [
     },
     {
             "name": "Machine Gun Team",
-            "faction": [
+            "faction": [  
                 "santagri"
             ],
             "value": 10,
@@ -1145,7 +1153,7 @@ const santalist = [
                             "attackTargets": "Inf/Vec",
                             "attackRange": "R22\"",
                             "attackDice": "D4",
-                            "attackAccuracy": "A4+/5+",
+                            "attackAccuracy": "A4+/xx",
                             "attackStrength": "S4/4",
                             "attackTags": [
                                 "No CC (Inf.)", "Slow Round"
@@ -1292,7 +1300,7 @@ const santalist = [
                 },
                 {
                     "rule": "Tow",
-                    "params": "2"
+                    "params": "16"
                 }
             ]
     },
@@ -1353,7 +1361,7 @@ const santalist = [
                 },
                 {
                     "rule": "Tow",
-                    "params": "Infinite"
+                    "params": "∞"
                 }
             ]
     },
@@ -1390,7 +1398,7 @@ const santalist = [
                             "attackTargets": "All",
                             "attackRange": "R12\"",
                             "attackDice": "D2",
-                            "attackAccuracy": "A5+/6+",
+                            "attackAccuracy": "A4+/6+",
                             "attackStrength": "S1/1+",
                             "attackTags": [
                                 "Turret"
@@ -1499,7 +1507,7 @@ const santalist = [
                             "attackAccuracy": "A4+/5+",
                             "attackStrength": "S5/7",
                             "attackTags": [
-                                "No CC (Inf.)","Radar Anti-Air","Tracking","Turret"
+                                "No CC (Inf.)","Radar Anti-Air","Turret"
                             ]
                         }
                     ]
@@ -1516,7 +1524,7 @@ const santalist = [
                 },
                 {
                     "rule": "PC",
-                    "params": "6, Side"
+                    "params": "6, Sides"
                 },
                 {
                     "rule": "Resupply",
@@ -1524,7 +1532,7 @@ const santalist = [
                 },
                 {
                     "rule": "Tow",
-                    "params": "2"
+                    "params": "3"
                 }
             ]
     },
@@ -1561,7 +1569,7 @@ const santalist = [
                             "attackTargets": "All",
                             "attackRange": "R12\"",
                             "attackDice": "D2",
-                            "attackAccuracy": "A5+/6+",
+                            "attackAccuracy": "A4+/5+",
                             "attackStrength": "S1/1+",
                             "attackTags": [
                                 "Multi-Gun"
@@ -1616,7 +1624,7 @@ const santalist = [
                 },
                 {
                     "rule": "Tow",
-                    "params": "2"
+                    "params": "6"
                 }
             ]
     },
@@ -1630,7 +1638,7 @@ const santalist = [
                 "H2",
                 "S32\"",
                 "M6\"",
-                "Q3",
+                "Q2",
                 "T8/6/5"
             ],
             "type": {
@@ -1653,7 +1661,7 @@ const santalist = [
                             "attackTargets": "All",
                             "attackRange": "R12\"",
                             "attackDice": "D2",
-                            "attackAccuracy": "A5+/6+",
+                            "attackAccuracy": "A4+/5+",
                             "attackStrength": "S1/1+",
                             "attackTags": [
                                 "Turret"
@@ -1762,7 +1770,7 @@ const santalist = [
                             "attackTargets": "All",
                             "attackRange": "R12\"",
                             "attackDice": "D2",
-                            "attackAccuracy": "A5+/6+",
+                            "attackAccuracy": "A4+/5+",
                             "attackStrength": "S1/1+",
                             "attackTags": [
                                 "Turret"
@@ -1820,7 +1828,7 @@ const santalist = [
                     "params": "5"
                 },
                 {
-                    "rule": "This unit pays an additional 1\" when rotating left. When rotating right, the rotation is free up to 180 degrees.",
+                    "rule": "This unit ignores up to 90 degrees of rotation to the right, but must pay an additional 1\" the first time it rotates to the left in a move. Does not apply while towing.",
                     "params": ""
                 }
             ]
@@ -1966,7 +1974,7 @@ const santalist = [
                             "attackAccuracy": "A4+/4+",
                             "attackStrength": "S3/4",
                             "attackTags": [
-                                "Multi-Gun","Radar Anti-Air","Tracking","Turret"
+                                "Multi-Gun","Radar Anti-Air","Turret"
                             ]
                         }
                     ]
@@ -1983,7 +1991,7 @@ const santalist = [
                             "attackAccuracy": "A4+/4+",
                             "attackStrength": "S8/12",
                             "attackTags": [
-                                "No CC (Inf.)","Radar Anti-Air","Tracking","Turret","Slow Round"
+                                "No CC (Inf.)","Radar Anti-Air","Turret","Slow Round"
                             ]
                         },
                         {
@@ -1994,7 +2002,7 @@ const santalist = [
                             "attackAccuracy": "A4+/4+",
                             "attackStrength": "S3/3",
                             "attackTags": [
-                                "No CC (Inf.)","Radar Anti-Air","Tracking","Turret","Air-Filling","Slow Round"
+                                "No CC (Inf.)","Radar Anti-Air","Turret","Air-Filling","Slow Round"
                             ]
                         }
                     ]
@@ -2035,7 +2043,7 @@ const santalist = [
                     "params": ""
                 },
                 {
-                    "rule": "If the CWIS has not been destroyed this unit gains APS(6+, Infinite). This APS has infinite ammo but may only trigger once per round and only against Guided Missiles.",
+                    "rule": "If the CWIS has not been destroyed this unit gains Active Protection  (∞). This Protection has infinite ammo but may only trigger once per round and only against Guided Missiles.",
                     "params": ""
                 }
             ]
@@ -2429,7 +2437,7 @@ const santalist = [
                 },
                 {
                     "rule": "Tow",
-                    "params": "2"
+                    "params": "5"
                 }
             ]
     },
@@ -2540,11 +2548,9 @@ const santalist = [
                             "attackTargets": "All",
                             "attackRange": "R12\"",
                             "attackDice": "D2",
-                            "attackAccuracy": "A5+/6+",
+                            "attackAccuracy": "A4+/5+",
                             "attackStrength": "S1/1+",
-                            "attackTags": [
-                                "Turret"
-                            ]
+                            "attackTags": [""]
                         }
                     ]
                 },
@@ -2612,7 +2618,7 @@ const santalist = [
                             "attackAccuracy": "A4+/5+",
                             "attackStrength": "S2/3",
                             "attackTags": [
-                                "Door Gun (sides, Rear)"
+                                "Door Gun (Sides, Rear)"
                             ]
                         }
                     ]
@@ -2934,19 +2940,8 @@ const santalist = [
                     "weaponAmmo": "3",
                     "attacks": [
                         {
-                            "attackName": "Air-to-Air Targeting",
-                            "attackTargets": "Air",
-                            "attackRange": "R40\"",
-                            "attackDice": "D2",
-                            "attackAccuracy": "A5+/5+",
-                            "attackStrength": "S12/18",
-                            "attackTags": [
-                                "Thermal Sights"
-                            ]
-                        },
-                        {
-                            "attackName": "Air-to-Ground Targeting",
-                            "attackTargets": "Vec",
+                            "attackName": "",
+                            "attackTargets": "Vec/Air",
                             "attackRange": "R40\"",
                             "attackDice": "D2",
                             "attackAccuracy": "A4+/4+",
@@ -2954,7 +2949,8 @@ const santalist = [
                             "attackTags": [
                                 "Thermal Sights"
                             ]
-                        }
+                        },
+                        
                     ]
                 },
                  {
@@ -3107,7 +3103,7 @@ const santalist = [
                             "attackAccuracy": "A3+",
                             "attackStrength": "S4",
                             "attackTags": [
-                                ""
+                                "Radar Anti-Air"
                             ]
                         }
                     ]
@@ -3141,7 +3137,7 @@ const santalist = [
                             "attackAccuracy": "A3+",
                             "attackStrength": "S6",
                             "attackTags": [
-                                "Air-Filling","Guided Missile (1)","Homing"
+                                "Air-Filling","Guided Missile (1)","Homing","Thermal Sights"
                             ]
                         }
                     ]
@@ -3173,7 +3169,7 @@ const santalist = [
                 "S*\"",
                 "M14\"",
                 "Q3",
-                "T4",
+                "T3",
                 "E1"
             ],
             "type": {
@@ -3233,7 +3229,7 @@ const santalist = [
                             "attackAccuracy": "A2+",
                             "attackStrength": "S24/8",
                             "attackTags": [
-                                "Guided Missile (2)","MCLOS","Shaped Charge"
+                                "Guided Missile (2)","MCLOS","Shaped Charge","Standoff"
                             ]
                         }
                     ]
@@ -3325,7 +3321,7 @@ const santalist = [
                             "attackAccuracy": "A3+",
                             "attackStrength": "S6",
                             "attackTags": [
-                                "Air-Filling","Barrage (2)","Guided Missile (1)","Homing"
+                                "Air-Filling","Barrage (2)","Guided Missile (1)","Homing","Thermal Sights"
                             ]
                         }
                     ]
